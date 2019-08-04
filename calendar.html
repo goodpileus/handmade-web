@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Handmade Web</title>
+    <title>HW...Calendar</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i|IBM+Plex+Sans:300,300i,400,400i,600,600i&display=swap" rel="stylesheet">
@@ -19,22 +19,82 @@
 </head>
 
 <body>
+    <div class="loading loaded"></div>
+
     <div class="main-wrap">
 
       <div class="nav-wrap">
         <div class="nav">
           <a class="nav-btn tl" href="index.html">Home</a>
           <a class="nav-btn tr sel" href="calendar.html">Calendar</a>
-          <a class="nav-btn bl" href="projects.html">Projects</a>
-          <a class="nav-btn br" href="library.html">Library</a>
+          <a class="nav-btn bl" href="projects/index.html">Projects</a>
+          <a class="nav-btn br" href="library/index.html">Library</a>
+          <a class="window-btn"></a>
         </div>
       </div>
 
       <div class="content">
 
         <div class="content-panel">
+          <h2>Calendar</h2>
 
+          <!-- WEEK 1 -->
+          <a class="accordion">Week 1<span>8/21</span></a>
+          <div class="panel">
+            <h3>wednesday</h3>
+            <ul>
+              <li>Syllabus</li>
+              <li>Introductions</li>
+              <li>Software and materials</li>
+              <li>Overview of terms and technologies</li>
+            </ul>
+            <!-- <h3 style="float:left">HW</h3> -->
+            <ul class="hwork">
+              <li>Make GitHub account</li>
+              <li>Make are.na account and post 1 website to class channel</li>
+            </ul>
+
+            <!-- <h3>R</h3> -->
+            <ul class="reading">
+              <li><a href="http://luckysoap.com/statements/handmadeweb.html" target="_blank">J.R. Carpenter, A Handmade Web</a></li>
+              <li><a href="https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" target="_blank">Laurel Schwulst, My Website is a Shifting House ...</a></li>
+              <li><a href="http://ursulakleguinarchive.com/Note-Technology.html" target="_blank">Ursula K. Le Guin, A Rant on Technology</a></li>
+            </ul>
+          </div>
+
+
+          <!-- WEEK 2 -->
+          <a class="accordion">Week 2<span>8/26, 8/28</span></a>
+          <div class="panel">
+            <h3>monday</h3>
+            <ul>
+              <li>HTML Basics</li>
+              <!-- <li><a href="assets/html.pdf" target="_blank">HTML Intro</a></li> -->
+            </ul>
+            <hr />
+            <h3>wednesday</h3>
+            <ul>
+              <li>CSS Basics</li>
+            </ul>
+          </div>
+
+
+          <!-- WEEK 3 -->
+          <a class="accordion">Week 3<span>9/2, 9/4</span></a>
+          <div class="panel">
+            <h3>monday</h3>
+            <p>holiday!</p>
+            <hr />
+            <h3>wednesday</h3>
+            <ul>
+              <li>...</li>
+            </ul>
+          </div>
+
+
+        <!-- end of content panel -->
         </div>
+      </div>
 
       </div>
 
@@ -48,7 +108,17 @@
 
     </div>
 
+    <div class="nav-wrap window-room open-window close-window">
+      <div class="nav">
+        <a class="nav-btn tl"></a>
+        <a class="nav-btn tr"></a>
+        <a class="nav-btn bl"></a>
+        <a class="nav-btn br"></a>
+        <a class="window-btn"></a>
+      </div>
+
     <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
 
 </body>
 </html>

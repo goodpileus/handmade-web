@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Handmade Web</title>
+    <title>HW...Poem</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i|IBM+Plex+Sans:300,300i,400,400i,600,600i&display=swap" rel="stylesheet">
@@ -19,14 +19,17 @@
 </head>
 
 <body>
+    <div class="loading loaded"></div>
+    
     <div class="main-wrap">
 
       <div class="nav-wrap">
         <div class="nav">
           <a class="nav-btn tl" href="../index.html">Home</a>
           <a class="nav-btn tr" href="../calendar.html">Calendar</a>
-          <a class="nav-btn bl sel" href="../projects.html">Projects</a>
-          <a class="nav-btn br" href="../library.html">Library</a>
+          <a class="nav-btn bl sel" href="index.html">Projects</a>
+          <a class="nav-btn br" href="../library/index.html">Library</a>
+          <a class="window-btn"></a>
         </div>
       </div>
 
@@ -130,9 +133,11 @@
       </div>
 
       <div class="bottom-nav">
-          <a class="bottom-btn" href="story.html">story</a>
-          <a class="bottom-btn" href="site.html">site specific</a>
-          <a class="bottom-btn" href="final.html">final</a>
+        <a class="bottom-btn" href="index.html">back</a>
+
+        <!-- <a class="bottom-btn" href="story.html">story</a>
+        <a class="bottom-btn" href="site.html">site specific</a>
+        <a class="bottom-btn" href="final.html">final</a> -->
       </div>
 
       <div class="fade-top"></div>
@@ -141,7 +146,17 @@
 
     </div>
 
-    <script src="js/jquery.min.js"></script>
+    <div class="nav-wrap window-room open-window close-window">
+      <div class="nav">
+        <a class="nav-btn tl"></a>
+        <a class="nav-btn tr"></a>
+        <a class="nav-btn bl"></a>
+        <a class="nav-btn br"></a>
+        <a class="window-btn"></a>
+      </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
 
 </body>
 </html>

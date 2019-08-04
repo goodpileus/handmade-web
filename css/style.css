@@ -2,6 +2,9 @@
   --orange: rgba(255, 166, 110, 1);
   --yellow: rgba(254, 223, 189, 1);
   --green: rgba(227, 254, 189, 1);
+  --red: rgba(217, 182, 182, 1);
+  --blue: rgba(189, 217, 254, 1);
+
   --btn: rgba(0, 0, 0, 0.07);
   --btn-lighter: rgba(0, 0, 0, 0.03);
   --text: rgba(74, 64, 54, 1);
@@ -24,8 +27,27 @@ body{
   margin:1rem;
   background: var(--yellow);
   color: var(--text);
-  font-size: 1.5rem;
+  /* cursor: url(../img/cursor.png) 16 16, default; */
   font-family: 'ibm plex sans', sans-serif;
+}
+
+img {
+  max-width: 80%;
+}
+/* -------------------------------------- */
+
+
+
+
+
+
+
+
+/* TYPOGRAPHY
+----------------------------------------- */
+p, h1, h2, h3, h4, h5, h6, ol, ul {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 p{
@@ -33,19 +55,15 @@ p{
   padding:0;
 }
 
-.indent {
-  width:80px;
-  display: inline-block;
+h1, h2, h3 {
+  font-style: italic;
 }
 
 h1 {
-  font-size: 1.5rem;
   text-align: center;
   margin-top:4rem;
-  /* margin-top:0rem; */
   margin-bottom: 2rem;
   font-weight: lighter;
-  font-style: italic;
 }
 
 h1::before {
@@ -56,49 +74,19 @@ h1::after {
   content:' )'
 }
 
-h2{
-  font-size: 1.5rem;
-  font-weight: normal;
-  font-style: italic;
+h2 {
   text-align: center;
   margin:0 0 2rem 0;
 }
 
-i {
-  font-family: 'ibm plex mono', monospace;
-  font-size: 1.4rem;
+h3 {
   font-weight: lighter;
-}
-
-img {
-  max-width: 80%;
-}
-
-xmp {
-  padding:1rem;
-  margin:0 auto;
-  font-size: 1rem;
-  text-align: left;
-  overflow-x: scroll;
-  font-family: 'ibm plex mono', monospace;
-}
-
-ul {
-  padding-left: 1.1em;
-}
-
-ol {
-  padding-left: 1.1em;
-}
-
-li {
-  padding-left: 29px;
 }
 
 a {
   font-family: 'ibm plex mono', monospace;
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--link);
   text-decoration: none;
   transition: color .1s ease-in-out;
@@ -121,17 +109,96 @@ a:hover {
   content:')'
 }
 
+i {
+  font-family: 'ibm plex mono', monospace;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.emph {
+  font-style: italic;
+}
+
+.indent {
+  width:80px;
+  display: inline-block;
+}
+
+.text-c {
+  text-align: center;
+}
+/* -------------------------------------- */
+
+
+
+
+
+
+
+/* LISTS, ETC
+----------------------------------------- */
+xmp {
+  padding:1rem;
+  margin:0 auto;
+  font-size: 1rem;
+  text-align: left;
+  overflow-x: scroll;
+  font-family: 'ibm plex mono', monospace;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ol {
+  padding-left: 1.1em;
+}
+
+ol li {
+  padding-left: 15px;
+}
+
+ul li {
+  padding-left: 2em;
+  list-style: none;
+  text-indent:-2em;
+}
+
+ul li::before {
+  display: inline-block;
+  width:40px;
+  content:'✽';
+  padding-right: .3em;
+  text-indent: 0;
+}
+
+.due li::before {
+  content:'d'
+}
+
+.hwork li::before {
+  content:'h'
+}
+
+.reading li::before {
+  content:'r'
+}
+/* -------------------------------------- */
+
+
+
+
+
+
+
+/* HORIZONTAL RULE
+----------------------------------------- */
 hr {
   border: none;
-  position: relative;
-  left:0;
-  right:0;
-  margin-left: -50%;
-  margin-right: -50%;
   margin-top:1rem;
   margin-bottom:1rem;
-  border-top:1px solid rgba(0, 0, 0, 0.2);
-  min-width:100vw;
+  border-top:2px dotted rgba(0, 0, 0, 0.2);
+  min-width:100%;
   height:0;
 }
 
@@ -151,45 +218,85 @@ hr {
 
 @keyframes pulse {
   0% {transform: scale(1);}
-  100% {transform: scale(1.2);}
+  100% {transform: scale(1.4);}
 }
+/* -------------------------------------- */
 
-.emph {
-  font-style: italic;
-}
 
-.content-panel p, ol, ul{
-  margin: 0 auto 1rem auto;
-  max-width:60rem;
-}
 
-.content-panel .footnote {
-  font-size: 1.2rem;
-  text-align: center;
-  margin:4rem auto 0 auto;
-  opacity: .6;
-}
 
-.footnote a {
-  font-size: 1.1rem;
-}
 
+
+
+/* NAV
+----------------------------------------- */
 .nav-wrap {
   width:100%;
   position: absolute;
-  z-index: 99999;
+  z-index: 9999;
   top:0;
   left:0;
-  padding:1rem 1rem 2rem 1rem;
+  padding:1rem 1rem 1rem 1rem;
   background: var(--yellow);
   background: linear-gradient(to bottom, var(--yellow) 0%, var(--yellow) 80%, rgba(254,223,189,0) 100%);
+  transition: opacity 3s;
+}
+
+.open-window {
+  padding: 15% 5%;
+  z-index: 999999999;
+  position: fixed;
+  height:100vh;
+  /* max-height:100vh; */
+  /* background: var(--yellow); */
+  background: linear-gradient(to bottom, var(--yellow) 0%, rgba(254,223,189,0) 75%);
+  animation: bg-window 40s infinite alternate ease;
+}
+
+.close-window {
+  opacity:0;
+  pointer-events: none;
+}
+
+.window-btn {
+  min-width:13px;
+  min-height:13px;
+  /* padding:1rem; */
+  border-radius: 50%;
+  position: absolute;
+  top:50%;
+  transform: rotate(45deg);
+  left:50%;
+  /* margin-top: -1px; */
+  transform:  translate(-50%, -50%);
+  z-index: 9999;
+  transition: background 1s ease;
+}
+
+.window-btn:hover {
+  background: var(--orange);
+  /* cursor: crosshair; */
+  /* cursor: pointer; */
+  /* cursor: url('/img/cursor.svg'); */
+  cursor: url(../img/cursor.png) 16 16, crosshair;
+
 }
 
 .nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  transition: all 0.5s ease;
   width:100%;
+}
+
+.open-window .nav {
+  height:100%;
+}
+
+.open-window .window-btn{
+  min-width: 21px;
+  min-height: 21px;
 }
 
 .nav-btn {
@@ -200,7 +307,6 @@ hr {
   padding:1.3rem;
   background: radial-gradient(ellipse at center, var(--orange) 0%, var(--orange) 15%, var(--btn) 21%, var(--btn) 100%);
   background-size:400% 1000%;
-  background-position:;
   background-repeat: repeat;
 }
 
@@ -242,9 +348,152 @@ hr {
   100% {background-position:  -200% -1800%;}
 }
 
-.nav-btn:hover {
+.loading {
+  background-color: var(--yellow);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 3s ease;
 }
 
+.loaded {
+  opacity:0;
+}
+
+.stop-scrolling {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.cancel-pointer {
+  pointer-events: none;
+}
+
+/*
+----------------------------------------- */
+
+
+
+
+
+/* CONTENT
+----------------------------------------- */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  margin-top: 15rem;
+  margin-bottom: 8rem;
+  overflow-x: hidden;
+}
+
+.content-panel {
+  width:100%;
+  margin-bottom:1vw;
+}
+
+.content-panel p, ol, ul, h3, .accordion, .btn {
+  margin: 0 auto 1rem auto;
+  max-width:60rem;
+}
+
+.content-panel .quote {
+  max-width:33rem;
+  margin: 0 auto;
+  /* font-family: 'ibm plex mono', monospace; */
+  font-style: italic;
+}
+
+.content-panel h3 {
+  margin-bottom:0rem;
+}
+
+.content-panel .footnote {
+  font-size: 1.2rem;
+  text-align: center;
+  margin:4rem auto 0 auto;
+  opacity: .6;
+}
+
+.footnote a {
+  font-size: 1.1rem;
+}
+/* -------------------------------------- */
+
+
+
+
+/* ACCORDION
+----------------------------------------- */
+.accordion {
+  /* text-align: center; */
+  padding:.8rem;
+  background: var(--btn);
+  border-radius: 10px;
+  margin: 0 auto .2vw auto;
+  width:100%;
+  display: block;
+}
+
+.accordion span {
+  float: right;
+}
+
+.accordion:hover {
+  cursor: pointer;
+  background: var(--btn-lighter);
+}
+
+.accordion::selection,
+.accordion span::selection {
+  background:transparent;
+}
+
+.panel {
+  max-height: 0;
+  max-width: 60rem;
+  overflow: hidden;
+  /* margin-bottom: 2rem; */
+  margin: 0 auto;
+  padding: 0 .8rem 0 .8rem;
+  transition: max-height 0.2s;
+  -webkit-transition: max-height 0.2s;
+  -moz-transition:  max-height 0.2s;
+  -o-transition:  max-height 0.2s;
+}
+
+.panel hr {
+  padding:0 .8rem;
+}
+
+.panel h3 {
+  padding-bottom:.5rem;
+  text-decoration: underline;
+}
+
+.panel h3:first-child {
+  padding-top:1rem;
+}
+
+.panel p:last-child,
+.panel ul:last-child {
+  padding-bottom:2rem;
+}
+/* -------------------------------------- */
+
+
+
+
+
+/* FLEX
+----------------------------------------- */
 .row {
   flex-direction: row;
 }
@@ -258,7 +507,13 @@ hr {
 .column {
   flex-direction: column;
 }
+/* -------------------------------------- */
 
+
+
+
+/* BUTTONS
+----------------------------------------- */
 .btn-wrap {
   width:100%;
   max-width:100%;
@@ -287,37 +542,17 @@ hr {
   background: var(--btn-lighter);
 }
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  width:100%;
-  margin-top: 15rem;
-  margin-bottom: 8rem;
-  overflow-x: hidden;
+.btn-long {
+  width: auto;
 }
+/* -------------------------------------- */
 
-.content-panel {
-  width:100%;
-  /* max-width:60rem; */
-  margin-bottom:1vw;
-}
 
-.text-c {
-  text-align: center;
-}
 
-.content-panel .quote {
-  max-width:33rem;
-  margin: 0 auto;
-  /* font-family: 'ibm plex mono', monospace; */
-  font-style: italic;
-}
 
-.student:hover {
-}
 
+/* BOTTOM NAV
+----------------------------------------- */
 .bottom-nav {
   width:100vw;
   position: fixed;
@@ -325,10 +560,9 @@ hr {
   justify-content: space-around;
   flex-wrap: wrap;
   height:2rem;
-  z-index: 99999999;
+  z-index: 999;
   bottom:1rem;
   left:0;
-
 }
 
 .bottom-btn {
@@ -343,16 +577,13 @@ hr {
 }
 
 .garden-btn {
-  /* border:1px solid rgba(0, 0, 0, 0.20); */
-  background: linear-gradient(to top, rgba(250,197,127,1) 0%, rgba(250,197,127,1) 30%, rgba(228, 201, 171, 0.0) 50%);
-  background: linear-gradient(to top, rgba(226, 198, 168, 1) 0%, rgba(226, 198, 168, 1) 30%, rgba(228, 201, 171, 0.0) 50%);
   background: linear-gradient(to bottom, var(--link-hover) 0%, var(--link-hover) 5%, rgba(254,223,189,0) 20%);
 
   background-size: 100% 100%;
   display: block;
   /* display: none; */
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   width:100vw;
   height:4rem;
   left:0;
@@ -367,7 +598,15 @@ hr {
   background-size: 100% 200%;
   /* height:8rem; */
 }
+/* -------------------------------------- */
 
+
+
+
+
+
+/* FADE
+----------------------------------------- */
 .fade-top {
   position: fixed;
   top:0;
@@ -386,15 +625,30 @@ hr {
   height:8rem;
   background: linear-gradient(to top, var(--yellow) 0%, var(--yellow) 40%, rgba(254,223,189,0) 100%);
 }
+/* -------------------------------------- */
 
-.full {
-  width:100%;
+
+
+
+
+
+/* ANIMATIONS
+----------------------------------------- */
+@keyframes bg-window {
+  0% {    background-color: var(--yellow);}
+
+  50% {    background-color: var(--orange);}
 }
 
+/* -------------------------------------- */
+
+
+
+
+
+
+/* MEDIA QUERY
+----------------------------------------- */
 @media only screen and (max-width: 800px) {
 
-  .footer {
-    align-content: center;
-    flex-direction: column;
-  }
 }

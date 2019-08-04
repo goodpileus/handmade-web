@@ -14,14 +14,18 @@
 </head>
 
 <body>
+    <div class="loading loaded"></div>
+
     <div class="main-wrap">
 
       <div class="nav-wrap">
         <div class="nav">
           <a class="nav-btn tl sel" href="index.html">Home</a>
           <a class="nav-btn tr" href="calendar.html">Calendar</a>
-          <a class="nav-btn bl" href="projects.html">Projects</a>
-          <a class="nav-btn br" href="library.html">Library</a>
+          <a class="nav-btn bl" href="projects/index.html">Projects</a>
+          <a class="nav-btn br" href="library/index.html">Library</a>
+          <a class="window-btn"></a>
+
         </div>
       </div>
 
@@ -49,7 +53,7 @@
           <h1>Overview</h1>
           <p>The hand has become increasingly less present in the web as we know it today. Websites are automated or built from templates, and the knowledge of how to make a website is resigned to a select few. It has only gotten easier to learn and make on the web, but the idea and perceived requirements for a website have become so convoluted and arcane that many avoid the subject. This course seeks to dispel these ideas and will emphasize the hand-quality of websites by developing an understanding of the best practices, language, history, and present context of the web. We will examine the space of the web at large and explore and challenge what a website is and can be with the hopes of reclaiming an important creative space.</p>
 
-          <p>The first half of the semester will be technically focused. It will comprise of a series of lessons, readings, workshops, and small projects to develop familiarity and confidence with the language of the web. We will focus on the basic languages of web development: HTML, CSS, and a little Javascript. This class is designed for students with no programming experience at all, but is friendly to any skill level. The second half will be focused on a larger project website, with some room for small workshops and discussion.</p>
+          <p>The first half of the semester will be technically focused. It will comprise of a series of lessons, readings, workshops, and small projects to develop familiarity and confidence with the language of the web. We will focus on the basic languages of web development: HTML, CSS, and a little Javascript. This class is designed for students with no programming experience at all, but should be friendly to any skill level. The second half will be focused on a larger project website, with some room for small workshops and discussion.</p>
 
           <h1>Philosophy</h1>
           <p>This class will place heavy emphasis on the hand, craft, and care of your design and code. We will learn how to borrow and learn from others’ code, but we will strive to understand how to code it ourselves. This class will question much of what is commonly understood about the web and technology in general.</p>
@@ -58,7 +62,7 @@
               <li>Why put something on the web?</li>
               <li>Does a website need to accessible, legible, efficient, fast?</li>
             </ul>
-          <p>Please note that I offer this as a framework and not a rulebook. Please feel free to challenge these ideas/questions and create a dialog!</p>
+          <p>Please note that I offer this as a framework and not a rulebook. Please feel free to challenge these ideas/questions and create a dialogue!</p>
 
           <h1>Goals</h1>
           <p>The first goal of this class is to demystify and remove the barrier for entry into web development and programming. Any and all questions are welcome. I will not know every answer, but we can work together to find one (and there are always many when it comes to programming). Learning how to search is the programmer’s greatest tool.</p>
@@ -70,16 +74,6 @@
               <li>Have an understanding of the history and present context of web</li>
               <div id="activities"></div>
             </ul>
-
-          <h1>Activities</h1>
-          <p>Monday class activities will vary from day to day and will pull from a range of formats:</p>
-          <ul>
-            <li>Example-based lesson</li>
-            <li>Reading discussion</li>
-            <li>Workshop</li>
-            <li>Project review/discussion</li>
-          </ul>
-          <p>Wednesday classes will largely be reserved for working and individual consultation/troubleshooting.</p>
 
           <h1>Class Websites</h1>
           <p>Early in the semester we will set up individual class websites to house all products of this class (projects, writing, anything else…). We will host them using Github Pages and purchase a domain name to attach to it. You can design and organize this however you like, so long all content is accessible and easily found—I will be grading from this!</p>
@@ -94,7 +88,7 @@
               <li>Story</li>
               <li>Site Specific</li>
             </ol>
-          <p>Details for each project will be outlined on the <a href="projects.html">Projects</a> page.</p>
+          <p>Details for each project will be outlined on the <a href="projects/index.html">Projects</a> page.</p>
 
           <h1>Final Project</h1>
           <p>The final project will take up the second-half of the semester. There is no prompt for this. It can be anything you like; a project you’ve had in mind for some time; an extension of your practice or an even larger project outside of this class; a portfolio website. What is important is the craft, care, and concept of the project. It will be graded on these qualities. It should be unique, personal, and a world of its own.</p>
@@ -119,7 +113,7 @@
           <h1>Materials</h1>
           <p>This class will require a laptop, a text-editor (I recommend <a href="https://atom.io/">Atom</a>), a browser (<a href="https://www.google.com/chrome/">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>), and image editing software (Adobe Creative Suite or anything really). I would also suggest a sketchbook for much encouraged off-screen thinking, note-taking, sketching, and journaling.</p>
 
-          <p>More details can be found in the <a href="library.html">Library</a>.</p>
+          <p>More details can be found in the <a href="library/index.html">Library</a>.</p>
 
           <h1>Attendance</h1>
           <p>This class will adhere to Department of Graphic Design attendance policy. If you are going to be absent from class, please email me with as much notice as possible.</p>
@@ -186,7 +180,17 @@
 
     </div>
 
+    <div class="nav-wrap window-room open-window close-window">
+      <div class="nav">
+        <a class="nav-btn tl"></a>
+        <a class="nav-btn tr"></a>
+        <a class="nav-btn bl"></a>
+        <a class="nav-btn br"></a>
+        <a class="window-btn"></a>
+      </div>
+
     <script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
 
 </body>
 </html>
