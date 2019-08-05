@@ -173,15 +173,15 @@ ul li::before {
 }
 
 .due li::before {
-  content:'d'
+  content:'⚑';
 }
 
 .hwork li::before {
-  content:'h'
+  content:'→'
 }
 
 .reading li::before {
-  content:'r'
+  content:'\2630'
 }
 /* -------------------------------------- */
 
@@ -399,7 +399,7 @@ hr {
   margin-bottom:1vw;
 }
 
-.content-panel p, ol, ul, h3, .accordion, .btn {
+.content-panel p, ol, ul, h3, .accordion, .btn, .legend {
   margin: 0 auto 1rem auto;
   max-width:60rem;
 }
@@ -440,10 +440,24 @@ hr {
   margin: 0 auto .2vw auto;
   width:100%;
   display: block;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .accordion span {
-  float: right;
+  width:33%;
+  /* float:left; */
+}
+
+.accordion span:first-child {
+  /* float: right; */
+  text-align: left;
+}
+
+.accordion span:last-child {
+  /* float: right; */
+  text-align: right;
 }
 
 .accordion:hover {
@@ -475,7 +489,8 @@ hr {
 
 .panel h3 {
   padding-bottom:.5rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-weight: normal;
 }
 
 .panel h3:first-child {
@@ -484,7 +499,28 @@ hr {
 
 .panel p:last-child,
 .panel ul:last-child {
-  padding-bottom:2rem;
+  margin-bottom:3rem;
+}
+
+.filler {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  /* width:100%; */
+  justify-content: center;
+  align-items: center;
+  height:5rem;
+  border:2px dotted rgba(0, 0, 0, 0.2);
+  /* border:1px dotted black; */
+  border-radius: 50%;
+  margin:1rem 0;
+}
+
+.legend {
+  text-align: center;
+  opacity: .5;
+  /* margin-top: -1rem;
+  margin-bottom: 2rem; */
 }
 /* -------------------------------------- */
 
