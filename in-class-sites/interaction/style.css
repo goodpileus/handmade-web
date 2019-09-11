@@ -28,10 +28,6 @@ a {
   background: red;
 }
 
-.hover-button {
-  display: inline;
-}
-
 .hover-img {
   position: absolute;
   top:0;
