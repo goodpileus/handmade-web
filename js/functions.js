@@ -28,9 +28,6 @@ var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
 
-    // resizes window to fix flickity height
-    window.dispatchEvent(new Event('resize'));
-
     // toggles active class on accordion
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
