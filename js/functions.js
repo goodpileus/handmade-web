@@ -60,7 +60,7 @@ function openWindow() {
 
     }, 3000);
   } else {
-    //if winodw is open, load fade-in second
+    //if window is open, load fade-in second
     windowRoom.classList.toggle("close-window");
 
     setTimeout(function(){
