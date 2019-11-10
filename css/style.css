@@ -32,7 +32,7 @@ body{
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
 }
 /* -------------------------------------- */
 
@@ -419,6 +419,11 @@ hr {
 
 .content-panel h3 {
   margin-bottom:0rem;
+}
+
+.content-panel img {
+  margin:2rem auto;
+  display: block;
 }
 
 .content-panel .footnote {
