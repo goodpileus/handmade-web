@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Thank you</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="table-wrap">
+		    <div class="table">
+          <div class="plate title">Thank You</div>
+          <a href="#" target="_blank" class="plate">kiersten</a>
+          <a href="#" target="_blank" class="plate">jisoo</a>
+          <a href="#" target="_blank" class="plate">ryan</a>
+          <a href="#" target="_blank" class="plate">julia</a>
+          <a href="#" target="_blank" class="plate">marleah</a>
+          <a href="#" target="_blank" class="plate">mia</a>
+          <a href="#" target="_blank" class="plate">cathy</a>
+          <a href="june/thankyou.html" target="_blank" class="plate">june</a>
+
+          <a href="#" target="_blank" class="plate">sam</a>
+          <a href="madison/index.html" target="_blank" class="plate">madison</a>
+          <a href="#" target="_blank" class="plate">tommy</a>
+          <a href="#" target="_blank" class="plate">cody</a>
+          <a href="#" target="_blank" class="plate">skye</a>
+          <a href="elisa/index.html" target="_blank" class="plate"><img src="img/elisa.gif"><span>elisa</span></a>
+          <a href="#" target="_blank" class="plate">allison</a>
+          <a href="#" target="_blank" class="plate">alexis</a>
+          <a href="aidan/index.html" target="_blank" class="plate"><img class="rotate" src="img/aidan.png"><span>aidan</span></a>
+        </div>
+        <div class="leg-wrap">
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+          <div class="leg"></div>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+    jQuery(function($) {
+    // changed .hover to .each
+    $('.plate').each(function() {
+        var a = Math.random() * 6 - 6;
+        $(this).css('transform', 'rotate(' + a + 'deg)');
+    });
+});
+    </script>
+  </body>
+</html>

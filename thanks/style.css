@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  background:rgb(132, 145, 130);
+  /* background: white; */
+  overflow-y: hidden;
+  max-height:100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.table-wrap {
+  height:100vh;
+  width:4000px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 0 6rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.table {
+  /* position: absolute; */
+  /* z-index: 1; */
+  /* top:50%;
+  transform: translateY(-50%); */
+  background: rgb(194, 159, 107);
+  width:100%;
+  height:60%;
+  box-shadow: 0px 24px 24px -1px rgba(0,0,0,0.38);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* border-radius: 30px 30px 0px 0px; */
+}
+
+.leg-wrap {
+  width:100%;
+  height:30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leg {
+  background: rgb(194, 159, 107);
+  width:150px;
+  height:100%;
+  box-shadow: 0px 34px 24px -1px rgba(0,0,0,0.38);
+
+}
+
+.plate {
+  width:9%;
+  margin:0 1%;
+  height:35%;
+  background:white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "im fell english";
+}
+
+.title {
+  font-size: 3rem;
+  transform: rotate(3deg);
+}
+
+.plate span {
+  display:none;
+}
+
+.plate:hover {
+  background:rgb(255, 242, 154);
+}
+
+.plate:hover img{
+  display:none;
+}
+
+.plate:hover span{
+  display:block;
+}
+
+.title:hover {
+  background: white;
+}
+
+.title:hover::after {
+  content: '❤';
+}
+
+img {
+  /* max-width:50%; */
+  max-height: 80%;
+}
+
+.rotate {
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}

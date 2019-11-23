@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Saol-Text-Light-Italic";
+  src: url("fonts/saol_text_light_italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Happy-Times-reg";
+  src: url("fonts/happy-times-NG_regular_master_web.woff") format("woff");
+}
+
+body {
+  overflow: hidden;
+  background-color: #dca200;
+}
+
+.headertext {
+  position: absolute;
+  top: 630px;
+  left: 30px;
+  font-family: "Happy-Times-reg", serif;
+  font-size: 51px;
+  animation: fadein 3s;
+}
+
+.headertext span {
+  font-family: "Saol-Text-Light-Italic", serif;
+}
+
+/* text */
+.text-1 {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  font-family: "Saol-Text-Light-Italic", serif;
+  font-size: 11px;
+  animation: fadein 10s;
+}
+
+.text-2 {
+  position: absolute;
+  top: 340px;
+  left: 580px;
+  font-family: "Saol-Text-Light-Italic", serif;
+  font-size: 11px;
+  animation: fadein 10s;
+}
+
+.text-3 {
+  position: absolute;
+  top: 320px;
+  left: 925px;
+  font-family: "Saol-Text-Light-Italic", serif;
+  font-size: 11px;
+  animation: fadein 10s;
+}
+
+.text-4 {
+  position: absolute;
+  top: 555px;
+  left: 60px;
+  font-family: "Saol-Text-Light-Italic", serif;
+  font-size: 11px;
+  animation: fadein 10s;
+}
+
+.text-5 {
+  position: absolute;
+  top: 560px;
+  left: 350px;
+  font-family: "Saol-Text-Light-Italic", serif;
+  font-size: 11px;
+  animation: fadein 10s;
+}
+
+.text-6 {
+  position: absolute;
+  top: 660px;
+  left: 700px;
+  font-family: "Saol-Text-Light-Italic", serif;
+  font-size: 11px;
+  animation: fadein 10s;
+}
+
+.text-7 {
+  position: absolute;
+  top: 660px;
+  left: 950px;
+  font-family: "Saol-Text-Light-Italic", serif;
+  font-size: 11px;
+  animation: fadein 10s;
+}
+
+/* ascii art  */
+.mountains {
+  display: grid;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  animation: fadein 10s;
+}
+
+.skies {
+  display: grid;
+  position: absolute;
+  top: 50px;
+  left: 510px;
+  animation: fadein 20s;
+}
+
+.flowers {
+  display: grid;
+  position: absolute;
+  top: 50px;
+  left: 910px;
+  animation: fadein 30s;
+}
+
+.coffee {
+  display: grid;
+  position: absolute;
+  top: 350px;
+  left: 30px;
+  animation: fadein 2s;
+  animation-delay: 40s;
+}
+
+.water {
+  display: grid;
+  position: absolute;
+  top: 370px;
+  left: 310px;
+  animation: fadein 50s;
+}
+
+.resees {
+  display: grid;
+  position: absolute;
+  top: 390px;
+  left: 580px;
+  animation: fadein 60s;
+}
+
+.sims {
+  display: grid;
+  position: absolute;
+  top: 390px;
+  left: 900px;
+  animation: fadein 70s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
