@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+#full-screen{
+  height: 100vh;
+  width: 100%;
+}
+
+
+.floor .text {
+  z-index: 10;
+  color: white;
+  opacity: 70%;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.floor .floor-6{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+video{
+
+}
+.mirror-wrap{
+  width:300px;
+  height:480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li a {
+  padding: 10px 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: lowercase;
+  background: #eee;
+  opacity: 25%;
+  border-radius:3px;
+  margin-bottom:2px;
+  color: #eee;
+}
+
+li a:hover{
+  cursor:pointer;
+  background: white;
+  color: grey;
+}
+
+
+.links-to-floor{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+
+}
+
+.selected a{
+  color: gray;
+  background:white;
+  opacity: 70%;
+}
+.selected a:hover{
+  color: white;
+  background:#4fade3;
+}
+
+#breathe{
+  padding: 0px;
+  margin: 0px;
+}
+
+#contact{
+  padding: 0;
+  margin: 0;
+  max-width:20%;
+  height:auto;
+}
+
+#dance{
+  padding: 0;
+  margin: 0;
+  height:auto;
+  opacity: 50%;
+}

@@ -1,0 +1,255 @@
+.img {
+  position:absolute;
+  top: 0px;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.text {
+  position: absolute;
+  font-size: 45px;
+  z-index: 999;
+  color: white;
+  font-family: 'Teko', sans-serif;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text {
+  0% {
+    transform: translate3d(-18vw, 93vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(76vw, 24vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(0vw, -5vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(28vw, 23vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(43vw, 67vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(-18vw, 93vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes mac {
+  0% {
+    transform: translate3d(50vw, 40vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(2vw, 80vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(30vw, 0vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(60vw, 23vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(-22vw, -25vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(50vw, 40vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes pie {
+  0% {
+    transform: translate3d(2vw, 17vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(68vw, 20vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(-9vw, 30vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(9vw, 20vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(-10vw, -1vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(2vw, 17vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes rolls {
+  0% {
+    transform: translate3d(12vw, 0vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  25% {
+    transform: translate3d(45vw, 9vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  50% {
+    transform: translate3d(3vw, -13vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  75% {
+    transform: translate3d(35vw, 68vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  100% {
+    transform: translate3d(12vw, 0vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes potatoes {
+  0% {
+    transform: translate3d(9vw, 93vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(17vw, 74vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(6vw, 34vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(66vw, 76vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(55vw, 11vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(9vw, 93vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes brussels {
+  0% {
+    transform: translate3d(82vw, -9vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(26vw, 63vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(-4vw, 4vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(96vw, 14vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(8vw, 45vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(82vw, -9vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes turkey {
+  0% {
+    transform: translate3d(13vw, 87vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(46vw, -8vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(23vw, 56vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(0vw, 53vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(87vw, 5vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(12vw, 87vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes soup {
+  0% {
+    transform: translate3d(38vw, -56vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(3vw, 4vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(72vw, 54vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(13vw, 6vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(87vw, 40vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(38vw, -56vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}
+
+@keyframes garlic {
+  0% {
+    transform: translate3d(-6vw, 67vh, 0px);
+        animation-timing-function: ease-in;
+      }
+  20% {
+    transform: translate3d(-4vw, 8vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  40% {
+    transform: translate3d(93vw, 29vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  60% {
+    transform: translate3d(25vw, 9vh, 0px);
+        animation-timing-function: 3s, ease-in;
+      }
+  80% {
+    transform: translate3d(74vw, 13vh, 0px);
+        animation-timing-function: 3s, ease-in;
+        }
+  100% {
+    transform: translate3d(-6vw, 67vh, 0px);
+        animation-timing-function: ease-in;
+      }
+}

@@ -8,6 +8,8 @@ body {
   /* background: white; */
   overflow-y: hidden;
   max-height:100vh;
+  background-image: url('img/noise1.png');
+  background-size: 300px;
 }
 
 a {
@@ -41,12 +43,15 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  /* border-radius: 30px 30px 0px 0px; */
+  border-radius: 15px 15px 0px 0px;
+  background-image: url('img/noise3.png');
+  /* background-size: 300px; */
 }
 
 .leg-wrap {
   width:100%;
   height:30%;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -56,7 +61,9 @@ a {
   width:150px;
   height:100%;
   box-shadow: 0px 34px 24px -1px rgba(0,0,0,0.38);
-
+  border-radius: 0px 0px 15px 15px;
+  background-image: url('img/noise3.png');
+  /* background-size: 300px; */
 }
 
 .plate {
@@ -69,6 +76,8 @@ a {
   justify-content: center;
   align-items: center;
   font-family: "im fell english";
+  background-image: url('img/noise4.png');
+  box-shadow: 0px 0px 24px -1px rgba(0,0,0,0.18);
 }
 
 .title {
@@ -81,7 +90,8 @@ a {
 }
 
 .plate:hover {
-  background:rgb(255, 242, 154);
+  /* background:#fff29a; */
+  /* background-image: url('img/noise5.png'); */
 }
 
 .plate:hover img{
@@ -93,7 +103,6 @@ a {
 }
 
 .title:hover {
-  background: white;
 }
 
 .title:hover::after {
@@ -101,7 +110,7 @@ a {
 }
 
 img {
-  /* max-width:50%; */
+  max-width:60%;
   max-height: 80%;
 }
 

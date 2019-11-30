@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+          <div id="full-screen">
+
+
+          </div>
+          <div id="ascensorBuilding">
+            <div class="floor floor-1"><span class="text">an exercise in thankfulness.<br><span style="font-size:25px">(use left and right arrows to navigate)</span></span></div>
+            <div class="floor floor-2"><span class="text">just breathe:<br>follow the guide below.<img id="breathe" src="img/breathe.gif"><br><span style="font-size:25px">(continue when ready)</span></span></div>
+            <div class="floor floor-3"><span class="text">think of something that you've recently enjoyed.</span></div>
+            <div class="floor floor-4"><span class="text">what was it that made you happy?<br>who was around you?</span></div>
+            <div class="floor floor-5"><span class="text">send them a message!<br><span style="font-size:25px">tell them why you appreciate their company. :~)</span><br><img id="contact" src="img/contact.gif"></span></div>
+            <div class="floor floor-6">
+                <div>
+                <span class="text">take a look in the mirror.</span>
+                  <br>
+                </div>
+                <div>
+                  <div class="mirror-wrap">
+                  <video id="video" width="640" height="480" autoplay></video>
+                  <canvas id="canvas" width="640" height="480"></canvas></div>
+                </div>
+            </div>
+            <div class="floor floor-7"><span class="text">always appreciate the features that make you unique. >_<<br><span style="font-size:25px">(take care of the body you have + give it lots of love!)</span></span></div>
+            <div class="floor floor-8"><span class="text">thanks for taking the time to do this exercise<br><br><img id="dance" src="img/dance.gif"></span></div>
+          </div>
+
+          <nav>
+            <ul class="links-to-floor">
+              <li><a>welcome</a></li>
+              <li><a>breathe</a></li>
+              <li><a>remember</a></li>
+              <li><a>identify</a></li>
+              <li><a>contact</a></li>
+              <li><a>self</a></li>
+              <li><a>care</a></li>
+              <li><a>thanks</a></li>
+            </ul>
+          </nav>
+          <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+          <script src="js/jquery.ascensor.min.js"></script>
+          <script>
+            var ascensor = $('#ascensorBuilding').ascensor({direction:"x"},{loop:"true"});
+            var ascensorInstance = $('#ascensorBuilding').data('ascensor');
+
+
+            $(".links-to-floor li").click(function(event, index) {
+              ascensorInstance.scrollToFloor($(this).index());
+
+            });
+
+            $(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+
+            ascensor.on("scrollStart", function(event, floor){
+              $(".links-to-floor li").removeClass("selected");
+              $(".links-to-floor li:eq("+floor.to+")").addClass("selected");
+            });
+
+          </script>
+          <script src="js/three.r92.min.js"></script>
+          <script src="js/vanta.fog.min.js"></script>
+          <script>
+          VANTA.FOG({
+            el: "#full-screen",
+            highlightColor: 0xfab3b3,
+            midtoneColor: 0xc3e6f5,
+            lowlightColor: 0xf090df,
+            baseColor: 0xf5c398,
+            blurFactor: 0.90,
+            speed: 5.00,
+            zoom: 0.30
+          })
+          </script>
+          <script src="js/functions.js"></script>
+
+  </body>
+</html>
