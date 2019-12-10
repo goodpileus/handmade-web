@@ -1,0 +1,27 @@
+body{
+  background-color: rgb(190, 188, 245);
+  padding: 0;
+  margin:0;
+}
+p{
+  font-family: 'Varela Round', sans-serif;
+  color:white;
+  text-align: center;
+  /* padding-top: 350px; */
+
+  max-width:400px;
+  margin:0;
+  transition: opacity 2s;
+}
+
+p:hover{
+  opacity: 0;
+}
+
+.flex{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}

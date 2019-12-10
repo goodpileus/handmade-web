@@ -1,0 +1,69 @@
+body{
+width:100vw;
+height:100vh;
+background-color:red;
+background-image: linear-gradient(to bottom right, lime, pink);
+margin-top: 50px;font-size: 100px;
+color: white;
+padding: 0;
+margin: 0;
+}
+
+p {
+text-align: center;
+animation: text .2s infinite alternate;
+}
+
+
+.images {
+height: 100vw;
+width: 2000px;
+}
+
+.background {
+height: 100vh;
+width: 100vw;
+/* background-color: yellow; */
+display: flex;
+justify-content: center;
+align-items: center;
+position:fixed;
+opacity: .8;
+top:0;
+left:0;
+animation: bear .5s infinite alternate;
+/* margin-left: 25%; */
+}
+
+/* .img src {
+justify-content: center;
+align-items: center;
+position:fixed;
+} */
+
+.img .hover {
+transform: scale(x,y)(2);
+}
+
+audio {
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 9999;
+opacity: 0;
+
+}
+
+#grad {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+@keyframes text {
+  from {color: white;}
+  to {color: hotpink;}
+}
+
+@keyframes bear {
+  from 0% {0}
+  to 100% {1};
+}
