@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+}
+
+.tablecloth {
+  width: 90%;
+  background: floralwhite;
+  outline: 4px dotted floralwhite;
+  outline-offset: -2px;
+  padding: 1em;
+  top: 20%;
+  left: 5%;
+  position: absolute;
+  transform: translateX(-50%), translateY(-50%);
+  animation: fadein 1s linear 300ms 1 forwards;
+animation-timing-function: cubic-bezier();
+  opacity: 0;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1531914082256-1b9047242426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80);
+}
+
+.textarea {
+  padding: 1rem;
+  border-radius: 2px;
+  border: 2px solid transparent;
+}
+
+.output {
+  transition: 0.3s;
+}
+
+.half {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+.render {
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 0.1em 1.25em;
+  color: #ff4848;
+  text-align: center;
+  border: 2px solid #ff4848;
+  border-radius: 2px;
+  user-select: none;
+  font-size: .5em;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}

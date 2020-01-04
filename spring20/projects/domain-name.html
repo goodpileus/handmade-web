@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW...Domain Names</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i|IBM+Plex+Sans:300,300i,400,400i,600,600i&display=swap" rel="stylesheet">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="../img/favi.png">
+</head>
+
+<body>
+
+    <div class="main-wrap">
+
+      <div class="nav-wrap">
+        <div class="nav">
+          <a class="nav-btn" href="../index.html">Home</a>
+          <a class="nav-btn" href="../calendar.html">Calendar</a>
+          <a class="nav-btn sel" href="index.html">Projects</a>
+          <a class="nav-btn" href="../library.html">Library</a>
+          <a class="nav-btn" href="../resources.html">Resources</a>
+          <a class="nav-btn" href="../lessons.html">Tips</a>
+          <a class="nav-btn" href="https://www.are.na/aidan-quinlan/class-collection-s-2020">Are.na</a>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <div class="content-panel">
+          <h1 class="text-c proj-title">Domain Names</h1>
+          <h1>Buying the Name</h1>
+          <p>Now it's time to secure a domain name for our website. Consider the name you would like to use for your site and search for it using a DNS (domain name system) registrar like: <a href="https://www.name.com/" target="_blank">name.com</a>, <a href="https://domains.google/" target="_blank">Google Domains</a>, <a href="https://iwantmyname.com/" target="_blank">iwantmyname</a>. (I will be using name.com for demonstration) Depending on the TLD (top-level domain—the part that immediately follows the "." of the url), most domain names are fairly cheap and usually only ask for a yearly fee.</p>
+          <p>When you've found the one you like, go ahead and purchase it.</p>
+
+          <hr class="hr-blank">
+
+          <h1>Connecting the Name</h1>
+          <p>Now that we have the name, we'll need to create a connection between our github pages repository and our domain name.</p>
+          <p>First, navigate to the settings panel of your github repository and scroll down to the github pages segment. Input your new domain name into the "custom domain" field.</p>
+          <img src="../img/github-custom-name.png">
+          <p>Now, log into your DNS registrar and find the section to edit the DNS records for the domain name.</p>
+          <p>(Note that the screenshots and actions are particular to name.com and may differ based on your DNS provider)</p>
+          <p>Make sure that the type of record you are adding is an "A" record. We'll need to add 4 different A records that point to the following IP addresses:</p>
+            <ul>
+              <li>185.199.108.153</li>
+              <li>185.199.109.153</li>
+              <li>185.199.110.153</li>
+              <li>185.199.111.153</li>
+            </ul>
+          <p>You can leave the "host" section empty, but in the "answer" field paste the IP address and add each one individually.</p>
+          <img src="../img/dns-a-record.png">
+          <p>Next, we'll make a CNAME record, with "www" in the "host" field and our domain name in the "answer" field:</p>
+          <img src="../img/dns-cname.png">
+          <p>This will create a redirect to our domain name if someone were to type "www." in front of our domain name. (all this information comes from <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site" target="_blank">here</a>.)</p>
+
+          <hr class="hr-blank">
+
+          <h1>Waiting</h1>
+          <p>That's all we need to do! The last step is to wait... It may take a few minutes before the server connects the domain to the repository, so try to exercise patience.</p>
+          <p>If it still doesn't work after a while, try opening the website using the new domain name in another browser or using another device to make sure the browser cache isn't causing problems.</p>
+        </div>
+
+      </div>
+      <div class="fade"></div>
+
+    </div>
+    <a  href="#" class="flower"></a>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+
+</body>
+</html>

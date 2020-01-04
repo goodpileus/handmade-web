@@ -1,0 +1,91 @@
+html{
+  background:rgb(185, 198, 188);
+}
+
+body{
+  padding:0;
+  margin:3rem 5rem;
+  font-size: 1.3rem;
+  color:rgb(55, 53, 50);
+}
+
+hr {
+  /* border:.5px dashed black; */
+  border:0;
+  height:0;
+  margin:2rem 0;
+}
+
+a {
+  color:rgb(102, 102, 102);
+  text-decoration: none;
+  line-height: 1.4rem;
+  border-bottom: .5px dashed rgb(102, 102, 102);
+}
+
+a::after {
+  /* content:' ◌'; */
+  font-style: normal;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+a:hover::after {
+  /* content:' ○'; */
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin:0 0 .5rem 0;
+  font-weight: normal;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+li {
+  margin:0 0 .2rem 0;
+}
+
+li::before {
+  content: '⧽ ';
+}
+
+.indent {
+  margin-left: 2rem;
+}
+
+.indent::before {
+  /* content:'⸰ '; */
+}
+
+.indent2 {
+  margin-left: 4rem;
+}
+
+.indent2::before {
+  /* content:'⸰⸰ '; */
+}
+
+.float {
+  position: fixed;
+  right:5rem;
+  top:50%;
+  width:50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+img {
+  max-width: 70%;
+}

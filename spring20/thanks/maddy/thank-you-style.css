@@ -1,0 +1,186 @@
+  @import url("https://use.typekit.net/twb5iij.css");
+
+html{
+  cursor: url("cursor.png"), auto;
+  background-color:white;
+}
+
+.textbox {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  height:68.3%;
+  width:80%;
+  /* border:1px solid black; */
+  overflow:hidden;
+  text-align:justify;
+  font-family:helvetica;
+  font-size:9pt;
+
+  color:black;
+}
+
+.thankyou {
+  color:white;
+  font-weight:bold;
+  font-style:italic;
+  /* border:1px white solid; */
+}
+
+.thankyou:hover {
+  background-color:#2B96ED;
+  /* border:1px #2AA3EF solid; */
+}
+
+#g1 {
+  position: absolute;
+  /* background-color: blue; */
+  text-align: center;
+  height:140px;
+  width:280px;
+  top:60.3%;
+  right:5.9%;
+  transform:translate(-5.9%,-60.3%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g2 {
+  position: absolute;
+  /* background-color: blue; */
+  text-align: center;
+  height:140px;
+  width:187px;
+  top:12.9%;
+  right:17.8%;
+  transform:translate(-17.8%,-12.9%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g3 {
+  position: absolute;
+  /* background-color: blue; */
+  text-align: center;
+  height:140px;
+  width:170px;
+  top:29.5%;
+  left:8.3%;
+  transform:translate(-8.3%,-29.5%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g4 {
+  position: absolute;
+  /* background-color: blue; */
+  text-align: center;
+  height:150px;
+  width:150px;
+  top:27%;
+  left:59%;
+  transform:translate(-59%,-27%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g5 {
+  position: absolute;
+  /* background-color: blue; */
+  text-align: center;
+  height:140px;
+  width:247px;
+  top:12.9%;
+  left:28%;
+  transform:translate(-28%,-12.9%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g6 {
+  position: absolute;
+  /* background-color: blue; */
+  text-align: center;
+  height:140px;
+  width:185px;
+  top:58.2%;
+  left:30.3%;
+  transform:translate(-30.3%,-58.1%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g7 {
+  position: absolute;
+  /* background-color: blue; */
+  text-align: center;
+  height:140px;
+  width:247px;
+  bottom:17.9%;
+  left:63%;
+  transform:translate(-63%,-17.9%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g8 {
+  position: absolute;
+  background-color: blue;
+  text-align: center;
+  height:140px;
+  width:180px;
+  bottom:9.3%;
+  left:18.6%;
+  transform:translate(-18.6%,-9.3%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#g9 {
+  position: absolute;
+  background-color: blue;
+  text-align: center;
+  height:140px;
+  width:185px;
+  bottom:7.8%;
+  right:12.1%;
+  transform:translate(-12.1%,-7.8%);
+  cursor: move;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#gif {
+  height:140px;
+}
+
+#gif:hover {
+  cursor: url("cursor.png"), auto;
+}

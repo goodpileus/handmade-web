@@ -1,0 +1,28 @@
+.container {
+  display:flex;
+  background:green;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items: center;
+  align-content: space-between;
+  height: 500px;
+}
+
+.box {
+  width:400px;
+  height:200px;
+  background:red;
+}
+
+.blue {
+  background:blue;
+}
+
+.yellow {
+  background:yellow;
+}
+
+.orange {
+  background: orange;
+}

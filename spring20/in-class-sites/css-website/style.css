@@ -1,0 +1,40 @@
+html {
+
+}
+
+body {
+  background:red;
+}
+
+p {
+  color: red;
+  font-family: monospace;
+  background: green;
+  margin: 20px auto;
+  text-align: center;
+  padding: 0 20px;
+  font-family: 'Gayathri', sans-serif;
+}
+
+img {
+  max-width:100%;
+}
+
+.body-p {
+  font-size:20px;
+}
+
+.good {
+  font-family: cursive;
+}
+
+#nice {
+  background:yellow;
+}
+
+.square {
+  background: red;
+  height: 40px;
+  width: 40px;
+  margin: 0 0 20px 20px;
+}
