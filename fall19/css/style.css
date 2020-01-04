@@ -555,6 +555,7 @@ hr {
   border-radius: 10px;
   width:100%;
   /* max-width: 60rem; */
+  margin:1px auto;
 }
 
 .column {
