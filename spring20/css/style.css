@@ -28,6 +28,8 @@ body{
   background: var(--yellow);
   color: var(--text);
   font-family: 'ibm plex sans', sans-serif;
+  opacity:0;
+  transition: opacity .2s ease;
 }
 
 img {
@@ -35,11 +37,10 @@ img {
 }
 
 .main-wrap {
-  opacity:0;
-  transition: opacity .2s ease;
   min-height: 80vh;
   background: var(--yellow);
   margin-bottom: 4rem;
+  width:100%;
 }
 /* -------------------------------------- */
 
@@ -345,24 +346,37 @@ hr {
   width:100%;
 }
 
+.flower-wrap {
+  /* background:red; */
+  height:50px;
+  /* width:100%; */
+  left: 1rem;
+  right: 1rem;
+  position: fixed;
+  z-index: -1;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+}
+
 .flower {
   width:50px;
-  position: fixed;
+  position: absolute;
   bottom:0;
-  z-index: -1;
-  left:50%;
-  transform: translateX(-50%);
+  /* left:50%; */
+  /* transform: translateX(-50%); */
   margin-top:2rem;
   height:43px;
   background-image: url('../img/bottom.svg');
   background-size: 43px;
   background-position:  bottom center;
   background-repeat: no-repeat;
-  transition: transform .3s ease;
+  transition: bottom .3s ease;
 }
 
 .flower:hover {
-  transform: translate(-50%, -5px);
+  /* transform: translate(-50%, -5px); */
+  bottom:5px;
 }
 /* -------------------------------------- */
 

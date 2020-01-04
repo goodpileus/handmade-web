@@ -58,6 +58,14 @@ $( ".more-btn" ).click(function() {
   }
 });
 
+jQuery(function($) {
+    // changed .hover to .each
+    $('.flower').each(function() {
+        var a = Math.random() * 120 - 110;
+        $(this).css('transform', 'rotate(' + a + 'deg)');
+    });
+});
+
 // var windowBtn = document.getElementsByClassName('window-btn');
 // var windowRoom = document.querySelector('.window-room');
 // var loading = document.querySelector(".loading");

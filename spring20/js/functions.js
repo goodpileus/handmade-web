@@ -2,7 +2,7 @@
 window.onload = function() {
   console.log('Loaded :-)');
 
-  document.querySelector(".main-wrap").style.opacity = "1";
+  document.body.style.opacity = "1";
 };
 
 // $( ".more-btn" ).click(function() {
@@ -56,6 +56,14 @@ $( ".more-btn" ).click(function() {
   } else {
     more.style.maxHeight = more.scrollHeight + "px";
   }
+});
+
+jQuery(function($) {
+    // changed .hover to .each
+    $('.flower').each(function() {
+        var a = Math.random() * 120 - 110;
+        $(this).css('transform', 'rotate(' + a + 'deg)');
+    });
 });
 
 // var windowBtn = document.getElementsByClassName('window-btn');
