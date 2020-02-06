@@ -3,13 +3,13 @@ body{
   height:100%; */
   padding:0;
   margin:0;
+  background:rgb(164, 185, 209);
 }
 
 .flex {
   display:flex;
   width:100vw;
   height:100vh;
-  background:rgb(164, 185, 209);
   justify-content: space-around;
   align-items: center;
 }
@@ -37,6 +37,15 @@ body{
   bottom:0;
   left:0;
   animation: run 7s infinite ease;
+}
+
+.name {
+  position:fixed;
+  font-size: 120px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:-1;
 }
 
 @keyframes pulse {
