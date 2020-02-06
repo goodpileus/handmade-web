@@ -30,6 +30,8 @@ body{
   font-family: 'ibm plex sans', sans-serif;
   opacity:0;
   transition: opacity .2s ease;
+  font-size: 1.4rem;
+  font-weight: normal;
 }
 
 img {
@@ -499,6 +501,34 @@ hr {
 
 .less span::before {
   content:'less';
+}
+
+.tally-wrap {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tally-row {
+  display:flex;
+  border-bottom: 1px solid black;
+}
+
+.tally-row:last-of-type {
+  border-bottom: none;
+}
+
+.tally-count {
+  border-right:1px solid black;
+  width:2.5rem;
+  /* padding-right:1rem; */
+  padding:.5rem 0;
+}
+
+.tally-desc {
+  width: 15rem;
+  padding-left:1rem;
+  padding:.5rem 0 .5rem 1rem;
 }
 
 /* -------------------------------------- */
