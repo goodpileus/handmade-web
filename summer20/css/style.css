@@ -15,11 +15,11 @@
 }
 
 @font-face {
-    font-family: 'notcouriersans';
-    src: url('assets/notcouriersans-webfont.woff2') format('woff2'),
-         url('assets/notcouriersans-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'notcouriersansregular';
+  src: url('assets/notcouriersans-webfont.woff2') format('woff2'),
+   url('assets/notcouriersans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -36,7 +36,7 @@ body{
   margin:0;
   background: var(--yellow);
   color: var(--text);
-  font-family: 'notcouriersans', mono;
+  font-family: 'notcouriersansregular', monospace;
   opacity:0;
   transition: opacity .2s ease;
   font-size: 1.3rem;
