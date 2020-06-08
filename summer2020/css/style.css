@@ -141,7 +141,7 @@ i {
 xmp {
   padding:1rem;
   margin:0 auto;
-  /* font-size: 1rem; */
+  font-size: 1.5rem;
   text-align: left;
   border: 2px dotted var(--border);
   background: rgba(255, 255, 255, 0.26);
