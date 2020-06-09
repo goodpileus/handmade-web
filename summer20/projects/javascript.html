@@ -33,7 +33,7 @@
           <h1 class="text-c proj-title">Javascript Intro</h1>
           <p>Now that we understand the fundamentals of the web, we can start venturing into the weeds of javascript...</p>
           <p>This excercise will focus on copy/pasting code from sources and tweaking it to get it to behave the way we want it to.</p>
-          <p>First, let's make a button that toggles a class on a specific div.</p>
+          <p>First, let’s make a button that toggles a class on a specific div.</p>
           <p>The HTML:</p>
 <xmp><div onclick="toggle()">Click me...</div>
 
@@ -52,7 +52,7 @@
 }
 </xmp>
           <br><br>
-          <p>The Javascript we'll place at the bottom of our body, inside a script tag:</p>
+          <p>The Javascript we’ll place at the bottom of our body, inside a script tag:</p>
 <xmp><script>
 function toggle() {
 var element = document.getElementById("box");
@@ -61,25 +61,25 @@ element.classList.toggle("style");
 </script>
 </xmp>
 <br><br><br>
-          <p>Next, let's borrow code from elsewhere. A quick search for "javascript marquee" brought me here: <a href="https://github.com/aamirafridi/jQuery.Marquee" target="_blank">jQuery.marquee</a>.</p>
-          <p>Since this script was written in jQuery we'll need to link the jQuery library to our website. "jQuery is a fast, small, and feature-rich JavaScript library." Essentially, it simplifies javascript programming.</p>
-          <p>Download the latest "compressed production build" from <a href="https://jquery.com/download/" target="_blank">here</a>.</p>
+          <p>Next, let’s borrow code from elsewhere. A quick search for “javascript marquee” brought me here: <a href="https://github.com/aamirafridi/jQuery.Marquee" target="_blank">jQuery.marquee</a>.</p>
+          <p>Since this script was written in jQuery we’ll need to link the jQuery library to our website. “jQuery is a fast, small, and feature-rich JavaScript library.” Essentially, it simplifies javascript programming.</p>
+          <p>Download the latest “compressed production build” from <a href="https://jquery.com/download/" target="_blank">here</a>.</p>
 
           <p>Copy the jQuery .js file to your website folder. Ideally, you will have an assets or a specific js folder for it.</p>
-          <p>Next, we'll create a link to it in our html document. We'll place it at the bottom of the body:</p>
+          <p>Next, we’ll create a link to it in our html document. We’ll place it at the bottom of the body:</p>
 <xmp><script src="path-to-js/jquery.js"></script>
 </xmp>
 <br><br><br>
 
-          <p>Create a new file in the same js folder and name it something like "functions.js". This will be the js file that we will add our specific functions to.</p>
+          <p>Create a new file in the same js folder and name it something like “functions.js”. This will be the js file that we will add our specific functions to.</p>
 
-          <p>Create a link to it in the same way that we linked the "jquery.js" file, but make sure it is below the jQuery link.</p>
+          <p>Create a link to it in the same way that we linked the “jquery.js” file, but make sure it is below the jQuery link.</p>
 
 <xmp><script src="path-to-js/functions.js"></script>
 </xmp>
 <br><br><br>
 
-          <p>Now, we'll just follow the install instructions on <a href="https://github.com/aamirafridi/jQuery.Marquee" target="_blank">jQuery.marquee</a> to set everything up!</p>
+          <p>Now, we’ll just follow the install instructions on <a href="https://github.com/aamirafridi/jQuery.Marquee" target="_blank">jQuery.marquee</a> to set everything up!</p>
 
 
           <hr>
