@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:20px;
+  background:rgb(186, 213, 188);
+}
+
+p {
+  background: blanchedalmond;
+  display: block;
+  padding:20px;
+}
+
+.relative {
+  background:lightblue;
+  position: relative;
+  left:40px;
+  width:600px;
+}
+
+.absolute {
+  background:rgb(255, 158, 70);
+  position: absolute;
+  width:300px;
+  bottom:20px;
+  right:40px;
+}
+
+.relative-container {
+  background: rgb(181, 181, 129);
+  position: relative;
+  height:200px;
+  padding:20px;
+}
+
+.absolute-contained {
+  background:rgb(122, 120, 181);
+  position: absolute;
+  top:40px;
+  right:30px;
+  width:300px;
+  padding:20px;
+}
+
+.fixed {
+  background:red;
+  width: 800px;
+  height: 600px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  z-index: -1;
+}
+
+
+
+.box {
+  background:rgb(176, 195, 71);
+  width:400px;
+  padding:60px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%) rotate(20deg);
+}
+
+.sticky {
+  position:sticky;
+  top:0;
+}
