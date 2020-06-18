@@ -131,6 +131,12 @@ i {
   font-size: 1.55rem;
 }
 
+.na {
+  text-decoration: line-through;
+  color:red;
+  pointer-events: none;
+}
+
 .indent {
   width:80px;
   display: inline-block;
