@@ -1,3 +1,7 @@
+html {
+  font-size:100%;
+}
+
 body {
   margin:0;
 }
@@ -42,10 +46,14 @@ body {
 p {
   margin:0;
   color:rgb(133, 37, 37);
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 @media screen and (min-width: 800px) {
+  html {
+    font-size: 6em;
+  }
+
   .main-content {
     flex-direction: row;
   }
@@ -59,7 +67,7 @@ p {
   }
 
   p {
-    font-size:60px;
+    /* font-size:60px; */
   }
 
 }
