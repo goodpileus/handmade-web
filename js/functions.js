@@ -3,7 +3,24 @@ window.onload = function() {
   console.log('Loaded :-)');
 
   document.querySelector(".main-wrap").style.opacity = "1";
+  newBg();
 };
+
+
+
+function newBg() {
+  var randomColor = '#'+ ('474747' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+
+  $('.main-wrap').css({
+    'background' : randomColor,
+  });
+}
+
+var interval = setInterval(timer, 15000);
+
+function timer() {
+  newBg();
+}
 
 // $( ".more-btn" ).click(function() {
 //   $(".more").toggleClass("show");
