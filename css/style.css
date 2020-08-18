@@ -3,7 +3,7 @@
   --bg2: rgba(152, 137, 134, 1);
   --acc: rgba(226, 222, 210, 0.51);
 
-  --btn: rgba(209, 194, 183, 0.5);
+  --btn: rgba(209, 194, 183, 0.26);
   --btnsel: rgba(255, 255, 255, 1);
   --btn-lighter: rgba(0, 0, 0, 0.03);
 
@@ -62,7 +62,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition:background .3s ease-in-out;
+  opacity: 0;
+  transition: background .4s ease-in-out,
+              opacity .3s ease;
 }
 /* -------------------------------------- */
 
@@ -206,7 +208,10 @@ xmp {
   left:0;
   padding:.2rem;
   transition: opacity 3s;
-  margin-bottom:2rem;
+  padding: 1rem;
+  border-radius: var(--br);
+  /* background: rgba(201, 201, 201, 0.33); */
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -238,7 +243,7 @@ xmp {
 
 .nav-btn:hover {
   background: var(--btn-lighter);
-  border:1px var(--link) dashed;
+  border:1px var(--text) dashed;
 }
 
 .note {
