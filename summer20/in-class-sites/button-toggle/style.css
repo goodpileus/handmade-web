@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin:0;
+}
+
+.menu {
+  position:fixed;
+  top:0;
+  right:-200px;
+  width:260px;
+  background:rgb(159, 104, 96);
+  height:100vh;
+  transition: transform .3s ease;
+  z-index:10;
+}
+
+.button {
+  background:rgb(193, 252, 107);
+  cursor:pointer;
+  padding:1rem;
+  width:60px;
+  height:100%;
+}
+
+.open {
+  transform: translateX(-200px);
+}
+
+.marquee {
+  /* width: 300px; */
+  overflow: hidden;
+  border:1px solid #ccc;
+  font-size: 2rem;
+}
