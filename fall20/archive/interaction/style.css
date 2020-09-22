@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:rgb(85, 138, 98);
+  font-size: 20px;
+}
+
+img {
+  max-width:400px;
+}
+
+a {
+  color:rgb(230, 126, 153);
+  text-decoration: none;
+}
+
+a:hover {
+  color:rgb(219, 180, 43);
+}
+
+.special {
+  color:rgb(227, 163, 53);
+  cursor: cell;
+}
+
+.special:hover {
+  color:white;
+}
+
+.hidden {
+  /* display:none; */
+  position: fixed;
+  z-index: 1;
+  opacity:0;
+  transition: opacity .3s ease;
+  pointer-events: none;
+}
+
+.img-a {
+  top:20%;
+  left:20%;
+}
+
+.img-b {
+  bottom:20%;
+  right:20%;
+}
+
+.special:hover .hidden {
+  opacity:1;
+}
+
+.object {
+  width:200px;
+  height:200px;
+  background:rgb(213, 199, 154);
+  border-radius:50%;
+  position: fixed;
+  top:45%;
+  left:45%;
+  cursor:grab;
+  transition: transform .5s ease,
+              background .5s ease,
+              border-radius .5s ease;
+}
+
+.object:hover {
+  transform: scale(2);
+  background:rgb(155, 240, 114);
+  border-radius:0;
+}
