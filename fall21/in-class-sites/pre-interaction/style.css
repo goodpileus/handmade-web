@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:20px;
+  background:rgb(217, 159, 92);
+  font-size: 21px;
+}
+
+
+.hover {
+  color:rgb(159, 240, 174);
+  cursor: alias;
+  display: inline-block;
+}
+
+.hover-img {
+  position: absolute;
+  display: none;
+  bottom:20px;
+  right:20px;
+}
+
+.one {
+  top:70px;
+  left:70px;
+}
+
+.two {
+  bottom:20px;
+  right:20px;
+}
+
+.hover:hover .hover-img {
+  display: block;
+}
+
+.obj {
+  background:rgb(136, 111, 67);
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  position: absolute;
+  top:400px;
+  left:400px;
+  cursor: help;
+  transition:background 1s ease, transform 1s ease, border-radius 1s ease;
+}
+
+.obj:hover {
+  background:rgb(179, 206, 223);
+  transform: scale(3);
+  border-radius: 0;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW...Box Model</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/arh3ibt.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="../img/favi.png">
+</head>
+
+<body>
+
+    <div class="main-wrap">
+
+      <div class="nav-wrap">
+        <div class="nav">
+          <a class="nav-btn" href="../index.html">Home</a>
+          <a class="nav-btn" href="../calendar.html">Calendar</a>
+          <a class="nav-btn sel" href="index.html">Projects</a>
+          <a class="nav-btn" href="../library.html">Library</a>
+          <a class="nav-btn" href="../resources.html">Resources</a>
+          <a class="nav-btn" href="../lessons.html">Tips</a>
+
+        </div>
+      </div>
+
+      <div class="content">
+
+        <div class="content-panel">
+          <h1 class="text-c proj-title">The Box Model</h1>
+          <h1>Box Model</h1>
+          <p>Every HTML element on a web page is a rectangular box and understanding how it is constructed is an important step towards exercising control over our websites.</p>
+          <p>The box model looks something like this:</p>
+          <img style="max-width:600px;" src="../img/box-model-02.svg">
+          <p>We can set values for each of these parameters to change the size and behavior of each box by adjusting the <em>width</em>, <em>height</em>, <em>padding</em>, <em>border</em>, and <em>margin</em> of an element.</p>
+          <p>By setting a width and height value we can control the size of the content box. By default, however, this does not account for the values for padding, border, and margin.</p>
+          <p>So, in order to calculate the total width of an element we would need to add the values for:
+<xmp>margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+</xmp><br>
+          <p>And for the total height of an element:
+<xmp>margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
+</xmp><br>
+          <p>So, when we set the width and height values of an element, we are only setting the values for the content box:</p>
+          <img style="max-width:600px;" src="../img/box-model-01.svg">
+          <p>Some other things to note:</p>
+          <ul>
+            <li>Block level elements have a default width of 100% and will take up the full width of the viewport unless specified.</li>
+            <li>Width and height values will have no effect of inline elements.</li>
+            <li>Inline-block elements will behave like inline elements and will stack alongside other elements but, unlike inline elements, can be given width, height, padding, and margin values.</li>
+          </ul>
+          <hr>
+          <h1>Box-Sizing</h1>
+          <p>We are able to change how the total width of an element is calculated with the <em>box-sizing</em> property. By default, the <em>box-sizing</em> property is set to <em>content-box</em>. If we change the <em>box-sizing</em> property to <em>border-box</em> we can include the padding and border in the total width and height of an element.</p>
+
+<xmp>box-sizing: border-box;</xmp><br>
+
+          <p>This means when we set the width and height properties of an element, they will always render at that exact width and height regardless of the padding and border sizes.</p>
+          <img style="max-width:600px;" src="../img/box-model-03.svg">
+          <p>This is generally the preferred method of box sizing by most developers because it simplifies the calculation of the actual size of an element. When using <em>border-box</em>, the only thing left to be accounted for is the margin.</p>
+          <p>To make things easier we can add these lines to the top of our stylesheet to make every element render using <em>border-box</em>:</p>
+<xmp>* {
+  box-sizing: border-box;
+}</xmp><br>
+
+          <p>Typically, I add this to every stylesheet I’m working on!</p>
+
+          <hr>
+
+          <h1 class="text-c">Further Reading</h1>
+          <div class="btn-wrap">
+            <a class="btn" target="_blank" href="https://learn.shayhowe.com/html-css/opening-the-box-model/">Opening<br> the Box Model</a>
+            <a class="btn" target="_blank" href="https://www.w3schools.com/css/css_boxmodel.asp">w3schools<br> Box Model</a>
+            <a class="btn" target="_blank" href="https://www.w3schools.com/css/css3_box-sizing.asp">w3schools<br> box-sizing</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="fade"></div>
+
+    </div>
+    <div class="flower-wrap"><a  href="#" class="flower"></a></div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+
+</body>
+</html>
