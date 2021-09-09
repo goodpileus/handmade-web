@@ -54,11 +54,11 @@
           </ul>
           <hr>
           <h1>Box-Sizing</h1>
-          <p>We are able to change how the total width of an element is calculated with the <em>box-sizing</em> property. By default, the <em>box-sizing</em> property is set to <em>content-box</em>. If we change the <em>box-sizing</em> property to <em>border-box</em> we can include the padding and border in the total width and height of an element.</p>
+          <p>We are able to change how the total width of an element is calculated with the <em>box-sizing</em> property. By default, the <em>box-sizing</em> property is set to <em>content-box</em>. If we change the <em>box-sizing</em> property to <em>border-box</em> we can include the padding and border sizes in the total width and height of an element.</p>
 
 <xmp>box-sizing: border-box;</xmp><br>
 
-          <p>This means when we set the width and height properties of an element, they will always render at that exact width and height regardless of the padding and border sizes.</p>
+          <p>This means that when we set the width and height properties of an element, they will always render at that exact width and height regardless of the padding and border sizes.</p>
           <img style="max-width:600px;" src="../img/box-model-03.svg">
           <p>This is generally the preferred method of box sizing by most developers because it simplifies the calculation of the actual size of an element. When using <em>border-box</em>, the only thing left to be accounted for is the margin.</p>
           <p>To make things easier we can add these lines to the top of our stylesheet to make every element render using <em>border-box</em>:</p>
