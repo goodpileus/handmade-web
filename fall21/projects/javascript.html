@@ -38,8 +38,11 @@
           <p>This excercise will focus on copy/pasting code from sources and tweaking it to get it to behave the way we want it to.</p>
           <p>First, let’s make a button that toggles a class on a specific div.</p>
           <p>The HTML:</p>
-<xmp><div onclick="toggle()">Click me...</div>
+<xmp><!-- first we set up the button that is triggering our javascript -->
+<!-- note that the element doesn't need to be a <button> to work -->
+<button onclick="toggle()">Click me...</button>
 
+<!-- the box that we will be altering with our javascript -->
 <div id="box">
   the box
 </div>
@@ -58,8 +61,8 @@
           <p>The Javascript we’ll place at the bottom of our body, inside a script tag:</p>
 <xmp><script>
 function toggle() {
-var element = document.getElementById("box");
-element.classList.toggle("active");
+  var element = document.getElementById("box");
+  element.classList.toggle("active");
 }
 </script>
 </xmp>
