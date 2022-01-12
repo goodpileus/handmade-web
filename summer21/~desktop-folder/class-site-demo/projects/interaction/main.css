@@ -1,0 +1,38 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  background:rgb(147, 193, 218);
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin:20px;
+  font-family: 'Cinzel', serif;
+  font-size:25px;
+}
+
+.object {
+  background:rgb(246, 254, 107);
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  display:block;
+  position:absolute;
+  bottom:300px;
+  right:300px;
+  transition:border-radius 1s ease, transform .5s ease, background 1s ease;
+}
+
+.object:hover {
+  border-radius:0;
+  /* width:400px;
+  height:400px; */
+  transform:scale(2);
+  background:rgb(255, 125, 52);
+}
