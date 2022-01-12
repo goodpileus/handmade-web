@@ -1,0 +1,44 @@
+* {
+  box-sizing:border-box;
+}
+
+*::selection {
+  background:black;
+}
+
+body {
+  margin:20px;
+}
+
+.btn {
+  background:rgb(161, 152, 204);
+  cursor:pointer;
+  padding:10px;
+  width:80px;
+}
+
+.btn::selection {
+  display:none;
+  background:transparent;
+}
+
+.btn:hover {
+  background:rgb(188, 178, 237);
+}
+
+#box {
+  height:100%;
+  background:rgb(124, 122, 204);
+  position:fixed;
+  width:400px;
+  top:0;
+  right:-400px;
+  color: white;
+  font-size: 25px;
+  padding: 25px;
+  transition:transform .5s;
+}
+
+.active {
+  transform:translateX(-400px);
+}

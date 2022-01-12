@@ -1,0 +1,57 @@
+* {
+  box-sizing:border-box;
+}
+
+html {
+  /* font-size: 100%; */
+  /* font-size:10px; */
+}
+
+body {
+  margin:1rem;
+}
+
+.box {
+  background:rgb(170, 183, 199);
+  max-width:900px;
+  min-height:50vh;
+  font-size:25px;
+}
+
+p {
+  margin:0;
+  font-size:1em;
+}
+
+h1 {
+  font-size:2rem;
+}
+
+.flex {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+
+.item {
+  background:rgb(192, 210, 186);
+  width:32%;
+  height:200px;
+  margin-bottom:20px;
+}
+
+@media screen and (max-width:800px) {
+  html {
+    font-size:130%;
+  }
+
+  .item {
+    width:49%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .item {
+    width:49%;
+  }
+}

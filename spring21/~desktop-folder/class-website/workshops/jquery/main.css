@@ -1,0 +1,14 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+}
+
+.marquee {
+  /* width: 300px; */
+  overflow: hidden;
+  border:1px solid #ccc;
+  font-size:60px;
+}

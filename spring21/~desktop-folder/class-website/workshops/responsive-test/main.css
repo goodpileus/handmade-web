@@ -1,0 +1,43 @@
+* {
+  box-sizing:border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  margin:20px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.box {
+  background:rgb(202, 219, 214);
+  max-width: 900px;
+  min-height: 150px;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width:33%;
+  height:400px;
+  background:rgb(166, 224, 184);
+}
+
+@media screen and (max-width:800px) {
+  .flex {
+    flex-direction: column;
+  }
+  .item {
+    width:100%;
+    margin-bottom: 10px;
+  }
+}

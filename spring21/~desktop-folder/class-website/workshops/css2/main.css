@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'codystarlight';
+  src: url('codystar-light-webfont.woff2') format('woff2'),
+       url('codystar-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin:20px;
+  background: rgb(73, 223, 116);
+  /* font-family: 'codystarlight', sans-serif; */
+}
+
+h1 {
+  font-family: 'bungee', sans-serif;
+}
+
+p {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 27%, rgba(205,174,81,1) 59%, rgba(120,190,153,1) 76%);
+  border-radius: 20px;
+  -webkit-box-shadow: 19px 21px 28px 8px #000000;
+  box-shadow: 19px 21px 28px 8px #000000;
+}

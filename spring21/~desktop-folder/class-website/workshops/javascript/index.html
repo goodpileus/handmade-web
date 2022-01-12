@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>javascript workshop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="btn" onclick="toggle()">Click me...</div>
+
+  <div id="box">
+    the box
+  </div>
+
+  <script>
+    function toggle() {
+      // box = #box
+      var box = document.getElementById("box");
+      box.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
