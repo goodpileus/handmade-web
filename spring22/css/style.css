@@ -458,6 +458,15 @@ hr {
   padding-right:0;
 }
 
+.hw-note {
+  font-size: .8rem;
+  display: inline-block;
+  position: relative;
+  left:6px;
+  bottom:3px;
+  transform: rotate(-5deg);
+}
+
 .home-window {
   height:450px;
   background:var(--bg);
