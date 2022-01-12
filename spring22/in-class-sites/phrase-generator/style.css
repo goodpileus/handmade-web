@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin:0;
+  font-size: 2rem;
+}
+
+/* this is the element that is targeted by the javascript, you can turn off or alter the positioning to whatever works for you */
+#phrase {
+  cursor: pointer;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+/* this will make it so that when you click it won't select the text and add a background color */
+#phrase::selection {
+  background: transparent;
+}
