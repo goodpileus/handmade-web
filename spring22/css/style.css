@@ -144,6 +144,10 @@ a:hover, a:focus {
   text-align: center;
 }
 
+.remove {
+  text-decoration: line-through;
+}
+
 xmp {
   padding:1rem;
   margin:0 auto;
