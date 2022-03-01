@@ -12,50 +12,32 @@ body {
   cursor:cell;
 }
 
-.special-img {
+.hidden {
   position: absolute;
-  display:none;
+  opacity: 0;
+  transition:.3s ease;
 }
 
 .special:hover {
   color:rgb(241, 41, 71);
 }
 
-.special:hover .special-img {
-  display:block;
+.special:hover + .hidden {
+  opacity: 1;
+}
+
+.object:hover + .hidden {
+  opacity: 1;
 }
 
 .one {
-  top:300px;
-  left:300px;
+  bottom:10px;
+  left:10px;
 }
 
 .two {
-  bottom:100px;
+  top:100px;
   right:200px;
-}
-
-.show-text {
-  background:rgb(57, 102, 88);
-  width:100px;
-  height:50px;
-  cursor:help;
-}
-
-.show-text:hover {
-  background:rgb(139, 108, 205);
-}
-
-.text {
-  display: none;
-  color:black;
-  position: absolute;
-  top:200px;
-  left:200px;
-}
-
-.show-text:hover .text{
-  display: inline;
 }
 
 .object {
@@ -66,7 +48,7 @@ body {
   position: absolute;
   top:200px;
   left:700px;
-  transition: border-radius ,.5s ease,
+  transition: border-radius .5s ease,
               background .5s ease,
               transform .5s ease;
   cursor: pointer;
