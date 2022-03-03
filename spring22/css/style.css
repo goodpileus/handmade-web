@@ -234,11 +234,20 @@ ul li::before {
 }
 
 .hwork li::before {
-  content:'→'
+  content:'→';
 }
 
 .reading li::before {
-  content:'\2630'
+  content:'\2630';
+}
+
+ul ul {
+  padding-left:2.3em;
+}
+
+
+ul ul li::before {
+  content:'-';
 }
 /* -------------------------------------- */
 
