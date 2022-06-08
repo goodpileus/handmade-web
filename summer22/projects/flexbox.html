@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW...Flexbox</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/arh3ibt.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="../img/favi.png">
+</head>
+
+<body>
+
+    <div class="main-wrap">
+
+      <div class="nav-wrap">
+        <div class="nav">
+          <a class="nav-btn" href="../index.html">Home</a>
+          <a class="nav-btn" href="../calendar.html">Calendar</a>
+          <a class="nav-btn sel" href="index.html">Projects</a>
+          <a class="nav-btn" href="../library.html">Library</a>
+          <a class="nav-btn" href="../resources.html">Resources</a>
+          <a class="nav-btn" href="../lessons.html">Tips</a>
+          <a class="nav-btn" href="https://www.are.na/aidan-quinlan/class-collection" target="_blank">✶✶</a>
+          <a class="nav-btn" href="https://www.are.na/aidan-quinlan/ballad-of-the-handmade-web" target="_blank"> ♫ </a>
+
+        </div>
+      </div>
+
+      <div class="content">
+
+        <div class="content-panel">
+          <h1 class="text-c proj-title">Flexbox</h1>
+          <p>The flexbox is one method we can use to start to create dynamic (flexible) layouts, grids, and compositions on our web pages. A flexbox has two basic parts: the flex container and flex items. We can turn any element into a flex container by giving it the property:</p>
+<xmp>display:flex;</xmp>
+<br>
+          <p>Any elements contained within this element (its children) will be considered flex items. Flex items can also be given <em>display:flex;</em> and will become flex containers themselves, allowing us to nest dynamic containers within dynamic containers.</p>
+          <p>For the purpose of this tutorial, we'll be focusing on the flex container and we'll be referencing this guide:</p>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks,<br>Flexbox Guide</a>
+          </div>
+
+          <hr>
+
+          <p>After having gone through that guide, let's practice some more by recreating this image using flexbox:</p>
+          <img style="max-width:1000px; width:100%;" src="../img/flex-practice.png">
+          <p>Before beginning, assess the compostion and try to determine how many flex containers we will need and what direction each should be working in (as a tip: we will need at least one large flex container for all of our other containers). Here's a working example that you can inspect if you get lost or stuck:
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="../in-class-sites/flex-practice/index.html">Working Example</a>
+          </div><br><br>
+          <p>And finally, for more flexbox practice there is a small educational game called flexbox froggy :-) I recommend going through it once!</p>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="https://flexboxfroggy.com/">Flexbox Froggy</a>
+          </div>
+        </div>
+      </div>
+      <div class="fade"></div>
+
+    </div>
+    <div class="flower-wrap"><a  href="#" class="flower"></a></div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+
+body {
+  background:rgb(206, 165, 207);
+  font-size: 21px;
+}
+
+.special {
+  color:rgb(92, 119, 74);
+  font-style: italic;
+  display: inline;
+  cursor:cell;
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+  transition:.3s ease;
+}
+
+.special:hover {
+  color:rgb(241, 41, 71);
+}
+
+.special:hover + .hidden {
+  opacity: 1;
+}
+
+.object:hover + .hidden {
+  opacity: 1;
+}
+
+.one {
+  bottom:10px;
+  left:10px;
+}
+
+.two {
+  top:100px;
+  right:200px;
+}
+
+.object {
+  background:rgb(132, 104, 139);
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  position: absolute;
+  top:200px;
+  left:700px;
+  transition: border-radius .5s ease,
+              background .5s ease,
+              transform .5s ease;
+  cursor: pointer;
+}
+
+.object:hover {
+  border-radius:0;
+  background:rgb(255, 230, 94);
+  transform: scale(3);
+}
