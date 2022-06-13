@@ -7,8 +7,8 @@
   --btnsel: rgba(255, 255, 255, 1);
   --btn-lighter: rgba(177, 196, 190, 0.4);
 
-  --text: #648371;
-  --link: #648371;
+  --text: #516b5c;
+  --link: #516b5c;
   --due: #af6242;
   --hwork: #b9904a;
   --read: #56568a;
@@ -490,8 +490,14 @@ hr {
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.home-window img {
+  max-height: 120px;
+  z-index: 99;
+  margin:0;
 }
 
 .burst-1 {
@@ -504,7 +510,7 @@ hr {
   left:50%;
   transform:translate(-50%,-50%);
   border-radius:50%;
-  animation:burst 6s ease infinite;
+  animation:burst 12s ease infinite;
   /* filter:blur(40px); */
 }
 
@@ -512,13 +518,13 @@ hr {
   width:50%;
   height:50%;
   /* background:var(--btnsel); */
-  background: radial-gradient(ellipse at center, #fffedd 10%, rgba(255, 255, 255, 0) 50%);
+  background: radial-gradient(ellipse at center, #f1d9a7 10%, rgba(255, 255, 255, 0) 50%);
   position: absolute;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
   border-radius:50%;
-  animation:burst 6s 3s ease infinite;
+  animation:burst 12s 6s ease infinite;
   /* filter:blur(40px); */
   opacity:0;
 }
