@@ -163,7 +163,8 @@ xmp {
 kbd {
   background: var(--btn-lighter);
   display: inline-block;
-  padding:2px;
+  padding:2px 4px;
+  margin-right:3px;
   border-radius:5px;
   font-family: inherit;
 }
