@@ -92,7 +92,7 @@ h1 {
   margin-top:1rem;
   margin-bottom: 1rem;
   color: var(--link);
-
+  font-size:1.2rem;
 }
 
 h2 {
@@ -158,6 +158,14 @@ xmp {
   font-size: .9rem;
   color: var(--text);
   font-family: fira code, monospace;
+}
+
+kbd {
+  background: var(--btn-lighter);
+  display: inline-block;
+  padding:2px;
+  border-radius:5px;
+  font-family: inherit;
 }
 
 .proj-title {
