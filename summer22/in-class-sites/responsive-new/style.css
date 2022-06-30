@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: burlywood;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  background: LemonChiffon;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: flex;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.main-content div {
+  padding:10px;
+}
+
+.nav {
+  background: LemonChiffon;
+  width:25%;
+}
+
+.center {
+  background: LemonChiffon;
+  width:50%;
+}
+
+.side {
+  background: LemonChiffon;
+  width:25%;
+}
+
+.footer {
+  background: Lemonchiffon;
+  padding:10px;
+}
+
+@media screen and (max-width:800px) {
+  body {
+    background: olivedrab;
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+  }
+
+  .nav, .center, .side {
+    width:100%;
+  }
+}
