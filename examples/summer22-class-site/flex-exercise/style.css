@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.total-container {
+  background: lightblue;
+  height: 100vh;
+}
+
+.top-container {
+  background: darkseagreen;
+  height: 20%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.top-item {
+  background: khaki;
+  height: 100%;
+  width: 100%;
+}
+
+.bottom-container {
+  background: darksalmon;
+  height: 80%;
+}

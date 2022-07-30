@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Handmade Web</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" type="image/png" href="/img/favi.png">
+</head>
+
+<body>
+<nav id="nav"></nav>
+<button class="mobile m-nav-btn"></button>
+
+<div class="sun">
+  <div><div><div><div><div><div><div><div><div>
+  </div></div></div></div></div></div></div></div></div>
+</div>
+<div class="moon"></div>
+
+<section id="main">
+  <div class="inner">
+    <h3>Favicon</h3>
+    <p>A favicon is the little icon that appears next to the webpage title in the browser tab. The favicon must be either <em>32x32px</em> or <em>16x16px</em> in size and must be either a <em>.png, .gif,</em> or <em>.ico</em> in order to work properly.</p>
+    <img src="/img/favicon32.png">
+    <img src="/img/favicon16.png">
+    <p>Once you have an image that fulfills these requirements, add the image to your website folder. Then just add this line to the &lt;head&gt; element of your html document (making sure to adjust the href and file type to match your file):</p>
+<xmp><link rel="icon" type="image/png" href="myicon.png">
+</xmp>
+  </div>
+</section>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/functions.js"></script>
+
+<!-- opens relevant sidebar dropdown -->
+<script>
+  setTimeout(function() {
+    $("#nav-exercises").attr("open", "open");
+  }, 500);
+</script>
+
+</body>
+</html>

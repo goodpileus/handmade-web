@@ -1,0 +1,27 @@
+p {
+  background-color: lightblue;
+  font-size: 40px;
+  border: 3px dashed red;
+  padding: 20px;
+}
+
+a {
+  color: red;
+  cursor: cell;
+  text-decoration: line-through;
+}
+
+a:hover {
+  color: green;
+  text-decoration: overline;
+}
+
+.special {
+  color: purple;
+  background-color: lightgreen;
+  font-size:60px;
+}
+
+.good {
+  border: 3px dashed red;
+}

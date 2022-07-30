@@ -1,0 +1,95 @@
+<div class="nav-inner">
+  <a class="title" href="/index.html">Handmade Web</a>
+
+    <span class="current-season">Fall 22</span>
+    <div class="current-class">
+      <a href="/fall22/index.html">Syllabus</a>
+      <a href="/fall22/calendar.html">Calendar</a>
+      <details>
+        <summary>Projects</summary>
+        <a href="/projects/passion.html">Passion</a>
+        <a href="/projects/structure.html">Structure</a>
+        <a href="/projects/screensaver.html">Screensaver</a>
+        <a href="/projects/accordion.html">Accordion</a>
+        <a href="/projects/tool.html">Tool</a>
+        <a href="/projects/final.html">Final</a>
+      </details>
+      <a href="/fall22/community.html">Community</a>
+    </div>
+
+
+  <details id="nav-exercises">
+    <summary>Exercises</summary>
+    <a href="/exercises/class-site.html">Class Site</a>
+    <a href="/exercises/collection.html">Class Collection</a>
+    <a href="/exercises/journal.html">Journal</a>
+    <a href="/exercises/favicon.html">Favicon</a>
+    <a href="/exercises/box-model.html">Box Model</a>
+    <a href="/exercises/flexbox.html">Flexbox</a>
+    <a href="/exercises/responsiveness.html">Responsiveness</a>
+    <a href="/exercises/javascript.html">Javascript</a>
+    <a href="/exercises/jquery.html">jQuery</a>
+    <a href="/exercises/domain-name.html">Domain Names</a>
+  </details>
+
+  <a href="/library.html">Library</a>
+  <a href="/encyclopedia.html">Encyclopedia</a>
+  <a href="/resources.html">Resources</a>
+
+  <details id="nav-past">
+    <summary>Past Classes</summary>
+    <a href="/summer22/index.html">22 Summer</a>
+    <a href="/spring22/index.html">22 Spring</a>
+    <a href="/fall21/index.html">21 Fall</a>
+    <a href="/summer21/index.html">21 Summer</a>
+    <a href="/spring21/index.html">21 Spring</a>
+    <a href="/fall20/index.html">20 Fall</a>
+    <a href="/summer20/index.html">20 Summer</a>
+    <a href="/spring20/index.html">20 Spring</a>
+    <a href="/fall19/index.html">19 Fall</a>
+    <a href="/workshops/interlude/index.html">Web Interlude Workshop</a>
+    <a href="/workshops/useless/index.html">Useless Web Workshop</a>
+  </details>
+
+  <!-- <a href="#">About</a> -->
+
+  <hr style="margin: 1rem 0 0 -.5rem">
+
+  <!-- SCREENSAVER TIMER -->
+  <span id="timer"></span>
+</div>
+
+<div class="lightswitches">
+  <div>
+    <button class="day-btn" onclick="dayTime()"></button>
+    <!-- ------------ -->
+    <button class="night-btn" onclick="nightTime()"></button>
+  </div>
+
+  <div>
+    <button class="ray-btn" onclick="rays()"></button>
+  </div>
+
+</div>
+
+<div id="icon">
+  <img class="icon-day" src="/img/tree-day.png">
+  <img class="icon-night" src="/img/tree-night.png">
+</div>
+
+<footer>
+  <span></span>
+  <span></span>
+</footer>
+
+
+
+<script>
+$("*").addClass("no-transition");
+
+$(".m-nav-btn").click(function() {
+  console.log('nav click');
+  $('nav').toggleClass("active");
+  $('.m-nav-btn').toggleClass("active");
+});
+</script>

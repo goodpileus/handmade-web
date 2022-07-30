@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Handmade Web</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" type="image/png" href="/img/favi.png">
+</head>
+
+<body>
+<nav id="nav"></nav>
+<button class="mobile m-nav-btn"></button>
+
+<div class="sun">
+  <div><div><div><div><div><div><div><div><div>
+  </div></div></div></div></div></div></div></div></div>
+</div>
+<div class="moon"></div>
+
+<section id="main">
+  <div class="inner">
+    <h3>Journal</h3>
+    <p>For some assigned readings I will ask you to respond to the reading with a short journal entry that you will upload to your class site. A few sentences is all that is required, but feel free to write and add however much you would like—this is your space after all!</p>
+    <p>There will be some time for reading discussions, but class time will largely be reserved for work, review, and activities. However, these readings will help facilitate a common understanding about the history and present context of the web. Ideally, they will also serve as inspiration for you (as they have for me).</p>
+  </div>
+</section>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/functions.js"></script>
+
+<!-- opens relevant sidebar dropdown -->
+<script>
+  setTimeout(function() {
+    $("#nav-exercises").attr("open", "open");
+  }, 500);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,352 @@
+:root {
+  --yellow: #d6826b;
+
+  --btn: #ffb186;
+  --btnsel: rgba(255, 255, 255, 1);
+  --btn-lighter: rgba(0, 0, 0, 0.03);
+
+  --text: #4a4036;
+  --link: rgba(93, 78, 67, 0.7);
+  --link-hover: rgba(156, 32, 5, 1);
+
+  --border: rgba(0, 0, 0, 0.2);
+
+  --br: 20rem;
+}
+
+@font-face {
+  font-family: 'notcouriersansregular';
+  src: url('../assets/notcouriersans-webfont.woff2') format('woff2'),
+   url('../assets/notcouriersans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* overflow-y: scroll; */
+  scroll-behavior: smooth;
+}
+
+body{
+  /* margin:1rem; */
+  margin:0;
+  background: var(--yellow);
+  color: var(--text);
+  font-family: 'notcouriersansregular', monospace;
+  opacity:0;
+  transition: opacity .2s ease;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-wrap {
+  /* min-height: 80vh; */
+  background: var(--yellow);
+  /* margin-bottom: 4rem; */
+  width:100%;
+}
+/* -------------------------------------- */
+
+
+
+
+
+
+
+
+/* TYPOGRAPHY
+----------------------------------------- */
+p, h1, h2, h3, h4, h5, h6, ol, ul {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+p{
+  margin:0 0 1rem 0;
+  padding:0;
+}
+
+h1, h2, h3 {
+  font-style: italic;
+}
+
+h1 {
+  /* text-align: center; */
+  margin:0 auto;
+  max-width: 60rem;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+  /* font-size: 1.2rem; */
+}
+
+h2 {
+  text-align: center;
+  margin:0 0 2rem 0;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+a {
+  /* font-family: 'ibm plex mono', monospace; */
+  /* font-style: italic; */
+  /* font-size: 1.2rem; */
+  color: var(--link);
+  text-decoration: none;
+  transition: color .1s ease-in-out;
+}
+
+a:hover {
+  color:var(--link-hover);
+}
+
+i {
+  font-family: 'ibm plex mono', monospace;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.emph {
+  font-style: italic;
+}
+
+.fancy {
+  text-align: center;
+  font-family: cursive;
+  font-size: 1.55rem;
+}
+
+.indent {
+  width:80px;
+  display: inline-block;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.small  {
+  font-size: 1rem;
+}
+
+xmp {
+  padding:1rem;
+  margin:0 auto;
+  font-size: 1rem;
+  text-align: left;
+  border: 2px dotted var(--border);
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 20px 20px 0 0;
+  overflow-x: scroll;
+  font-family: 'ibm plex mono', monospace;
+  max-width:60rem;
+}
+
+.proj-title {
+  padding-bottom:1rem;
+  margin-bottom: 1rem;
+  border-bottom:2px dotted var(--border);
+}
+/* -------------------------------------- */
+
+
+
+
+
+
+
+/* LISTS, ETC
+----------------------------------------- */
+
+ul {
+  padding-left: 0;
+}
+
+ol {
+  padding-left: 1.1em;
+}
+
+ol li {
+  padding-left: 15px;
+}
+
+ul li {
+  padding-left: 2em;
+  list-style: none;
+  text-indent:-2em;
+}
+
+ul li::before {
+  display: inline-block;
+  width:40px;
+  content:'✽';
+  padding-right: .3em;
+  text-indent: 0;
+}
+
+.due li::before {
+  content:'⚑';
+}
+
+.hwork li::before {
+  content:'→'
+}
+
+.reading li::before {
+  content:'\2630'
+}
+/* -------------------------------------- */
+
+
+/* FLEX
+----------------------------------------- */
+.row {
+  flex-direction: row;
+}
+
+.column .btn{
+  border-radius: 10px;
+  width:100%;
+  margin:1px auto;
+}
+
+.column {
+  flex-direction: column;
+}
+/* -------------------------------------- */
+
+
+/* HORIZONTAL RULE
+----------------------------------------- */
+hr {
+  border: none;
+  max-width: 60rem;
+  margin:2rem auto;
+  border-top: 2px dotted var(--border);
+  height:0;
+}
+
+.hr-blank {
+  border:none;
+}
+
+.hr-sun {
+  height:20px;
+  width:20px;
+  background: var(--text);
+  border-radius: 50%;
+  margin: 6rem auto 6rem auto;
+  filter: blur(3px);
+  animation: pulse 3s alternate ease-in-out infinite;
+}
+/* -------------------------------------- */
+
+
+.home-window {
+  height:100vh;
+  background:var(--yellow);
+  width: 100vw;
+  /* margin: 0 auto 2rem auto; */
+  /* border-radius: 20px; */
+  position: fixed;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  z-index: -1;
+  top:0;
+  left:0;
+}
+
+.sun {
+  position: absolute;
+  width:250px;
+  height:200px;
+  background:var(--btn);
+  border-radius: 50%;
+  top:30%;
+  left:70%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  animation: sun 4s infinite alternate ease-in-out;
+}
+
+.horizon {
+  position: absolute;
+  width:150%;
+  height:50px;
+  background:var(--yellow);
+  top:65%;
+  left:50%;
+  transform: translate(-50%, -35%);
+  filter: blur(5px);
+}
+
+.sky {
+  width:100%;
+  height:65%;
+}
+
+.ocean {
+  width:100%;
+  height:35%;
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0% , var(--btn) 70%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: repeat;
+  animation: down 70s infinite linear;
+  background-size:100% 20%;
+}
+
+.info {
+  margin:1rem;
+  position: absolute;
+  max-width: 600px;
+}
+
+
+/* ANIMATIONS
+----------------------------------------- */
+@keyframes down {
+  0% {background-position:  0 -200%;}
+  100% {background-position:  -400% 0}
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.4);}
+}
+
+@keyframes sun {
+  0% {top:30%;}
+  100% {top:28%;}
+}
+
+/* -------------------------------------- */
+
+
+
+
+
+
+/* MEDIA QUERY
+----------------------------------------- */
+@media only screen and (max-width: 800px) {
+body {
+  text-align: center;
+}
+
+  .sun {
+    left:50%;
+
+  }
+}

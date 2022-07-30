@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: orange;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+}
+
+.item {
+  background: green;
+  color: white;
+  height: 80px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

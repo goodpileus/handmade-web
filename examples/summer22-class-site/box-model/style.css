@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+.content {
+  background-color:lightblue;
+  width:200px;
+  height:200px;
+  padding: 30px;
+  border: 10px solid pink;
+  margin: 50px;
+}
+
+.border {
+  background-color:lightgreen;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  border: 10px solid lightgray;
+  margin: 50px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 90px;
+  left:90px;
+}
