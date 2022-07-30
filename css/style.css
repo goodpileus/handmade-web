@@ -208,8 +208,8 @@ hr {
   color: inherit;
   margin:1rem 0;
   opacity: 1;
-  width:calc(100% + 2rem);
-  margin-left:-1rem;
+  width:calc(100% + 3rem);
+  margin-left:-1.5rem;
   /* position: relative; */
 }
 
@@ -374,6 +374,8 @@ button {
 
 .lightswitches {
   height:100%;
+  margin-bottom: .5rem;
+  margin-top: -.5rem;
 }
 
 .lightswitches div {
@@ -772,7 +774,7 @@ footer {
 
 @media only screen and (max-width: 700px) {
   html {
-    font-size:1.1rem;
+    font-size:1rem;
   }
 
   body {
@@ -791,6 +793,7 @@ footer {
     z-index: 9;
     padding:1rem;
     line-height: 2rem;
+    font-size: 1.1rem;
   }
 
   nav {
@@ -822,8 +825,6 @@ footer {
     border-right:1px solid;
     border-left:1px solid;
     display: flex;
-    writing-mode: vertical-rl;
-    text-orientation:upright;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -837,6 +838,9 @@ footer {
 
   .m-nav-btn::after {
     content:'menu';
+    writing-mode: vertical-rl;
+    text-orientation:upright;
+    -webkit-text-orientation: upright;
   }
 
   .m-nav-btn.active::after {
@@ -847,12 +851,17 @@ footer {
     line-height: 1rem;
   }
 
+  .lightswitches button {
+    width: 35px;
+    height: 35px;
+  }
+
   #icon {
     bottom:-1rem;
   }
 
   .sun {
-    left:50%;
+    left: calc(50% + 1rem);
   }
 
   #next, #prev {
