@@ -12,7 +12,7 @@ $(function(){
     var href = window.location.pathname;
     $('#nav').find('a[href="' + href + '"]').addClass('active');
     $("*").removeClass("no-transition");
-  }, 150);
+  }, 300);
 });
 
 
