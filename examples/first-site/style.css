@@ -1,0 +1,45 @@
+body {
+    background-color: lightblue;
+    width: 600px;
+    margin: 0 auto;
+    font-family: monospace;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    background: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style:upper-alpha;
+}
+
+a {
+    color: #48753e;
+    text-decoration: line-through;
+}
+
+a:hover {
+    background: #d19bd2;
+}
+
+.special {
+    color: rgb(46, 62, 143);
+    font-size: 130%;
+    font-family: cursive;
+    border:2px dashed red;
+    margin:30px;
+}
