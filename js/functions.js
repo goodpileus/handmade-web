@@ -32,7 +32,7 @@ $(".cal-nav button").click(function() {
 Cookies.set('dayTime', true);
 
 var elem = document.getElementById("timer"), timeout, startTimer = function timer() {
-    timeout = setTimeout(timer, 10000)
+    timeout = setTimeout(timer, 20000)
     $('.sun').addClass( "saving" );
     $('.moon').addClass( "saving" );
     $('html').addClass( "saving" );
