@@ -240,6 +240,13 @@ table {
   /* width:100%; */
   max-width: var(--max-width);
 }
+
+.caption {
+  font-size:80%;
+  margin-top:-.8rem;
+  margin-bottom:1rem;
+  max-width:500px;
+}
 /* ----------------------------- */
 
 
