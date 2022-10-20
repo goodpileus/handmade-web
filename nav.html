@@ -96,4 +96,14 @@ $(".m-nav-btn").click(function() {
   $('nav').toggleClass("active");
   $('.m-nav-btn').toggleClass("active");
 });
+
+if(Cookies.get('night') == 'true') {
+  nightTime();
+
+  $('.icon-day').addClass( "saving night-time");
+  $('.icon-night').addClass( "saving night-time");
+
+} else if(Cookies.get('dayTime') == 'true'){
+  dayTime();
+}
 </script>

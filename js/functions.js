@@ -80,18 +80,18 @@ function nightTime() {
   Cookies.set('night', true);
 };
 
-if(Cookies.get('night') == 'true') {
-  nightTime();
+// if(Cookies.get('night') == 'true') {
+//   nightTime();
 
-  setTimeout(function() {
-    var href = window.location.pathname;
-    $('.icon-day').addClass( "saving night-time");
-    $('.icon-night').addClass( "saving night-time");
-  }, 150);
+//   setTimeout(function() {
+//     var href = window.location.pathname;
+//     $('.icon-day').addClass( "saving night-time");
+//     $('.icon-night').addClass( "saving night-time");
+//   }, 150);
 
-} else if(Cookies.get('dayTime') == 'true'){
-  dayTime();
-}
+// } else if(Cookies.get('dayTime') == 'true'){
+//   dayTime();
+// }
 
 if(Cookies.get('rays') == 'true') {
   $('.sun div').css( "transition", '0s');
