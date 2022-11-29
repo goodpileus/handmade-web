@@ -228,6 +228,7 @@ table,th, td {
 
 th, td {
   padding:.5rem;
+  width:25%;
 }
 
 th {
@@ -238,7 +239,7 @@ th {
 table {
   border-collapse: collapse;
   /* width:100%; */
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
 }
 
 .caption {
