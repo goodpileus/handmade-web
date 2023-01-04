@@ -242,6 +242,10 @@ table {
   /* max-width: var(--max-width); */
 }
 
+table ul {
+  margin: .5rem 0;
+}
+
 .caption {
   font-size:80%;
   margin-top:-.8rem;
@@ -339,7 +343,7 @@ details summary {
  width:calc(100% + 1rem);
 }
 
-details[open] summary {
+details[open] > summary {
   margin-bottom:1rem;
   background: var(--acc);
 }
