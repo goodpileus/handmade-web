@@ -1,0 +1,19 @@
+body {
+    background: darkseagreen url('img/cat.jpg') no-repeat center fixed;
+    background-size: 300px;
+    font-family: monospace;
+}
+
+p {
+    color:red;
+    background-color:chartreuse;
+    padding: 50px;
+}
+
+.special {
+    color:bisque;
+    background: rgb(92, 92, 92);
+    font-size: 150%;
+    font-family: cursive;
+    margin: 30px;
+}

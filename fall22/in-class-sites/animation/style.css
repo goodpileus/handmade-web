@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    background-color:darkolivegreen;
+    overflow: hidden;
+}
+
+.flex {
+    display:flex;
+    width:100vw;
+    height:100vh;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.circle {
+    width:300px;
+    height: 300px;
+    background-color: azure;
+    border-radius:50%;
+
+    animation: pulse 1s infinite alternate ease-in-out;
+}
+
+.square {
+    width:300px;
+    height: 300px;
+    background-color: azure;
+
+    animation: spin 4s infinite linear;
+}
+
+.mover {
+    width: 200px;
+    height:50px;
+    background-color: azure;
+    position: fixed;
+    bottom:0;
+    left:0;
+
+    animation: move 4s infinite;
+}
+
+.hard-boiled-egg {
+    background-color: azure;
+    width:50px;
+    height:80px;
+    border-radius:50% 50% 30% 30%;
+    animation: egg-scale 1s infinite alternate;
+}
+
+.shell {
+    /* background:red; */
+    position:fixed;
+    top:0;
+    left:0;
+    animation:  egg-move 5s -2.5s infinite alternate,
+                spin 3s infinite linear,
+                show .1s 4s both;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: azure;
+        transform:scale(1);
+    }
+    100% {
+        background-color:tomato;
+        transform:scale(1.3);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform:translateX(-200px);
+    }
+    100% {
+        transform:translateX(100vw);
+    }
+}
+
+@keyframes egg-move {
+    0% {
+        top:0;
+        left:0;
+    }
+    100% {
+        top:90vh;
+        left:90vw;
+    }
+}
+
+@keyframes egg-scale {
+    0% {
+        background-color:azure;
+        transform:scale(1);
+    }
+    100% {
+        background-color:rgb(255, 175, 101);
+        transform:scale(1.5);
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+

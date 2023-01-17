@@ -1,0 +1,39 @@
+* {
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: 'xanh_monoregular';
+    src: url('xanhmono-regular-webfont.woff2') format('woff2'),
+         url('xanhmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin:0;
+    background-color: cornflowerblue;
+}
+
+.content {
+    background-color:rgb(61, 139, 78);
+    color:blanchedalmond;
+    width:800px;
+    /* height:200px; */
+    padding: 30px;
+    border:10px solid chartreuse;
+    margin: 50px auto;
+    font-family: 'xanh_monoregular', monospace;
+    font-size:90px;
+}
+
+.border {
+    background-color:rgb(61, 139, 78);
+    color:blanchedalmond;
+    width:200px;
+    height:200px;
+    padding: 30px;
+    border:10px solid chartreuse;
+    margin:50px;
+    box-sizing:border-box;
+}
