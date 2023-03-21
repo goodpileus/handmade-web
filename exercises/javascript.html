@@ -42,7 +42,7 @@
     </p>
 
     <h3><em>Events</em></h3>
-    <p>An event is something that "the browser does, or something a user does." Events are happening all the time in the background as the user interacts with the webpage and we can use javascript to react to those events. In this example, we'll be using the 'onclick' event to trigger our function.
+    <p>An event is something that "the browser does, or something a user does." Events are happening all the time in the background as the user interacts with the webpage and we can use javascript to react to those events. In this example, we'll be using the 'onclick' event to trigger our function. As the name suggests, this event will be triggered when the user clicks on a specified element.
     <br>
     More on events at <a href="https://www.w3schools.com/js/js_events.asp">w3schools</a>.
     </p>
@@ -53,8 +53,8 @@
 <!-- note that the element doesn't need to be a <button> to work -->
 <button onclick="toggle()">Click me...</button>
 
-<!-- the box that we will be altering with our javascript -->
-<div id="box">
+<!-- the element that we will be altering with our javascript -->
+<div id="menu" class="box">
   the box
 </div>
 </xmp>
@@ -73,7 +73,7 @@
 
 <xmp><script>
 function toggle() {
-  var element = document.getElementById("box");
+  var element = document.getElementById("menu");
   element.classList.toggle("active");
 }
 </script>
