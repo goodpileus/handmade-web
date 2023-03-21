@@ -51,9 +51,9 @@
     <p>The HTML:</p>
 <xmp><!-- first we set up the button that is triggering our javascript -->
 <!-- note that the element doesn't need to be a <button> to work -->
-<button onclick="toggle()">Click me...</button>
+<button onclick="FUNCTION">Click me...</button>
 
-<!-- the element that we will be altering with our javascript -->
+<!-- this is the element that we will be altering with our javascript -->
 <div id="menu" class="box">
   the box
 </div>
@@ -69,15 +69,23 @@
 }
 </xmp>
 
-    <p>The Javascript we’ll place at the bottom of our body, inside a script tag:</p>
+    <p>The Javascript we’ll place at the bottom of our body, inside script tags:</p>
 
 <xmp><script>
-function toggle() {
-  var element = document.getElementById("menu");
-  element.classList.toggle("active");
+<!-- this is the function we want to call when the button is clicked -->
+function FUNCTION-NAME() {
+  <!-- first we set up a variable to store a longer line of code in case we want to reference it quickly later -->
+  <!-- here, we're creating a shorthand way of targeting a specific element with an id by using javascript's getElementById method -->
+  var VARIABLE = document.getElementById("ID");
+
+  <!-- in this line we use javascript's built-in classList property and toggle method to toggle a class on and off -->
+  VARIABLE.classList.toggle("NEW-CLASS");
 }
 </script>
 </xmp>
+  <p>
+    Now all that remains to be done is to go through and replace the ALL-CAPS words in the code with our own identifiers.
+  </p>
 
   </div>
 </section>
