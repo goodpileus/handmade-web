@@ -40,9 +40,9 @@
     <p>Now that we have the name and our new repository, we’ll need to create a connection between the github pages repository and our domain name.</p>
     <p>First, navigate to the settings panel of your github repository and scroll down to the github pages segment. Input your new domain name into the “custom domain” field.</p>
     <img src="/img/github-custom-name.png">
-    <p>Now, log into your DNS registrar and find the section to edit the DNS records for the domain name.</p>
-    <p>(Note that the screenshots and actions are particular to name.com and may differ based on your DNS provider)</p>
-    <p>Make sure that the type of record you are adding is an “A” record. We’ll need to add 4 different A records that point to the following IP addresses:</p>
+    <p>Now, log into your DNS registrar and search for the section to edit the DNS records for the domain name. Usually the option you’re looking for is called something like “Manage DNS Records”. Sometimes you have to open the advanced options for the particular domain you are trying to edit. If you are having trouble finding the correct page, try searching google for “[Your DNS Registrar] edit DNS records”.</p>
+    <p>(Note that the screenshots and actions are particular to name.com and will differ based on your DNS provider)</p>
+    <p>The first type of record we’ll be making is called an “A” record, so make sure to select that from the record dropdown. We’ll need to add 4 different A records that point to the following IP addresses:</p>
       <ul>
         <li>185.199.108.153</li>
         <li>185.199.109.153</li>
@@ -51,9 +51,11 @@
       </ul>
     <p>You can leave the “host” section empty (in some services like NameCheap they require something in the host field, if this is the case input “@” into the host field), but in the “answer” field paste the IP address and add each one individually.</p>
     <img src="/img/dns-a-record.png">
+    <p>These IP addresses are the servers that github uses to host github pages sites. There are 4 IP addresses for failsafe reasons &mdash; if one or more servers crash or fail for some reason, then there are backup servers to redirect traffic in the meantime.</p>
     <p>Next, we’ll make a CNAME record, with “www” in the “host” field and our domain name in the “answer” field:</p>
     <img src="/img/dns-cname.png">
-    <p>This will create a redirect to our domain name if someone were to type “www.” in front of our domain name. (all this information comes from <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site" target="_blank">here</a>.)</p>
+    <p>This will create a redirect to our domain name if someone were to type “www.” in front of our domain name.</p> 
+    <p>All of the information from this guide comes from <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site" target="_blank">here</a>.</p>
 
     <hr>
 
