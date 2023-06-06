@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:lightblue;
+  transition: background .5s;
+}
+
+body.dark {
+  background:darkolivegreen;
+}
+
+.flex {
+  display:flex;
+  margin-top:100px;
+  justify-content: space-evenly;
+}
+
+.box {
+  width:200px;
+  height:200px;
+  background:lightsteelblue;
+  border:1px solid;
+  transition: background .5s, box-shadow .5s;
+  animation: spin 50s infinite linear;
+  animation-play-state:paused;
+}
+
+.box.dark {
+  background:darkslategray;
+}
+
+.box.glow {
+  background:yellow;
+  box-shadow: 0 0 10px 5px yellow;
+}
+
+.box.spin {
+  animation-play-state:running;
+}
+
+.chair {
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  width:200px;
+  opacity:0;
+  transition: opacity .5s;
+}
+
+/* .show {
+  opacity:1;
+} */
+
+.drag {
+  cursor: grab;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

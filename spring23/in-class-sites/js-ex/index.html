@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>js example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button onclick="toggle()">Click me...</button>
+
+<div id="menu" class="box">
+    the box
+</div>
+
+<div id="spinner" class="obj"></div>
+
+
+<script>
+function toggle() {
+    var box = document.getElementById("menu");
+    var obj = document.getElementById("spinner");
+
+    box.classList.toggle("active");
+    obj.classList.toggle("spin");
+    document.body.classList.toggle('dark');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  background-color:lightblue;
+  margin:0;
+}
+
+.content-box {
+  background-color:white;
+  width:200px;
+  height:200px;
+  padding: 30px;
+  border:10px solid black;
+  margin: 50px;
+}
+
+.border-box {
+  background-color:pink;
+  width:200px;
+  height:200px;
+  padding: 30px;
+  border:10px solid black;
+  margin:50px;
+  box-sizing:border-box;
+}

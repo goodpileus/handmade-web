@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <title>Javascript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- first we set up the button that is triggering our javascript -->
+  <!-- note that the element doesn't need to be a <button> to work -->
+  <button onclick="toggleClass()">Click me...</button>
+
+  <!-- this is the element that we will be altering with our javascript -->
+  <div id="menu" class="box">
+    the box
+  </div>
+
+  <div id="obj" class="square"></div>
+
+
+  <script>
+    function toggleClass() {
+      var menu = document.getElementById("menu");
+      var obj = document.getElementById("obj");
+      var docbody = document.body;
+    
+      menu.classList.toggle("activated");
+      obj.classList.toggle("activated");
+      docbody.classList.toggle("activated");
+    }
+  </script>
+</body>
+</html>
