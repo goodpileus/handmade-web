@@ -13,6 +13,16 @@ p {
   /* height: 200px; */
 }
 
+.special {
+  font-size:25px;
+}
+
+.new {
+  background-color:darkkhaki;
+}
+
+
+
 p:hover {
   background-color:azure;
 }
@@ -27,11 +37,5 @@ a:hover {
   text-decoration: line-through;
 }
 
-.special {
-  font-size:25px;
-}
 
-.new {
-  background-color:darkkhaki;
-}
 
