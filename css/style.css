@@ -592,17 +592,17 @@ select option {
 
 .community .half div span {
   display: inline-block;
-  width:32px;
-  height:32px;
+  width:16px;
+  height:16px;
   /* border: 1px solid; */
   margin-right: .5rem;
-  margin-bottom: -.2rem;
+  /* margin-bottom: -.2rem; */
   text-align: center;
 }
 
 .community .half div span img {
-  max-width: 32px;
-  max-height: 32px;
+  max-width: 16px;
+  max-height: 16px;
   margin:0;
 }
 
