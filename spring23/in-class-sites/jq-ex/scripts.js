@@ -16,6 +16,4 @@ $(".reveal-btn").click(function(){
   $(".reveal-btn").hide();
 });
 
-$( function() {
-  $( ".draggable" ).draggable();
-} );
+$( ".draggable" ).draggable();
