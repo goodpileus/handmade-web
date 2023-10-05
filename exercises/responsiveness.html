@@ -23,23 +23,32 @@
 <section id="main">
   <div class="inner">
     <h3>Responsiveness</h3>
-    <p>Remember to always include this meta tag in the &lt;head&gt; of every html document to assist in making your website mobile-friendly:</p>
+
+    <p>As we build our websites, we are most likely writing them on a single computer and using a specific monitor or browser size to test them. But, as we know, there are many possible screen sizes that exist and we can’t assume that our website visitors will be using the exact same screen size as us. So, we will want to try to build our websites <i>responsively</i>, so that they can adapt to the variety of device demensions and scales as best as possible.</p>
+
+    <p>In order to prepare our pages to be responsive we should include this meta tag in the &lt;head&gt; element of every html document:</p>
 
 <xmp><meta name="viewport" content="width=device-width, initial-scale=1.0"></xmp>
 
-    <p>Here's a quick summary of responsive units:</p>
+    <p>This will let the browser know how it should adjust the dimensions and scaling of elements on the page depending on the device being used.</p>
+
+    <p>However, this is just the first step. This will account for making most of the default behaviors and scaling of html elements responsive, but there’s a good chance that our website structures and layouts will be more complex than just unstyled html documents. To exercise more control over our pages’ responsiveness, we can use <i>media queries</i> to define browser-size breakpoints. This way we can adjust the design of our page as we lose or gain space with different screen sizes. Let's consult w3schools as we practice using media queries:</p>
+
+    <p><a target="_blank" href="https://www.w3schools.com/css/css3_mediaqueries_ex.asp">CSS media queries</a></p>
+
+    <!-- <p>Here’s a quick summary of responsive units:</p>
     <ul>
-      <li>% is relative to the parent element's size</li>
-      <li>VW, VH are relative to the viewport's (browser window or screen) size</li>
-      <li>EM is relative to the current element or parent element's font-size</li>
-      <li>REM is relative to the root element's (&lt;html&gt;) font-size</li>
-    </ul>
+      <li>% is relative to the parent element’s size</li>
+      <li>VW, VH are relative to the viewport’s (browser window or screen) size</li>
+      <li>EM is relative to the current element or parent element’s font-size</li>
+      <li>REM is relative to the root element’s (&lt;html&gt;) font-size</li>
+    </ul> -->
 
     <hr>
 
     <h2>Further Reading</h2>
     <ul>
-      <li><a target="_blank" href="https://www.w3schools.com/css/css3_mediaqueries_ex.asp">CSS media queries</a></li>
+      <li><a target="_blank" href="https://www.w3schools.com/html/html_responsive.asp">Responsive HTML</a></li>
       <li><a target="_blank" href="https://www.w3schools.com/cssref/css_units.asp">CSS units</a></li>
       <li><a target="_blank" href="https://www.freecodecamp.org/news/css-unit-guide/">CSS unit guide</a></li>
       <li><a target="_blank" href="https://zellwk.com/blog/rem-vs-em/">rem vs. em</a></li>
