@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'xanh';
+  src: url('xanhmono-regular-webfont.woff2') format('woff2'), url('xanhmono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color:#c3bf84;
+}
+
+.defaults {
+  font-family:'sdlakfja', 'helvetica', sans-serif;
+}
+
+.google {
+  font-family: 'Zilla Slab', serif;
+  font-style:italic;
+}
+
+.new-google {
+  font-family: 'Amatic SC', sans-serif;
+  font-style:normal;
+}
+
+.squirrel {
+  font-family: 'xanh', monospace;
+}
+

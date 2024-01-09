@@ -1,0 +1,28 @@
+body {
+  background-color:rgb(222, 203, 158);
+}
+
+p {
+  background-color: rgb(157, 107, 69);
+  padding: 30px;
+  border-radius: 100%;
+  text-align:center;
+}
+
+p:hover {
+  font-size:30px;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  cursor:crosshair;
+}
+
+a:visited {
+  color:brown;
+}
+
+a:hover {
+  background-color:cadetblue;
+}

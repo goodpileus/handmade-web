@@ -23,6 +23,7 @@
 <section id="main">
   <div class="inner">
     <h3>Accordion</h3>
+    <p class="due">due: 3/14</p>
 
     <p>While making websites, you will find yourself frequently resizing your browser window, dragging from the sides and the corners to test and visualize how the site looks at different screen or window sizes. Most websites don't consider this behavior a useful way of engaging with a website, and most users won't think to see what happens when the window is resized -- but that doesn't mean we can't experiment with it (and maybe we can even change some minds...).</p>
 
@@ -48,6 +49,13 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/js.cookie.min.js"></script>
 <script src="/js/functions.js"></script>
+
+<!-- opens relevant sidebar dropdown -->
+<script>
+  setTimeout(function() {
+    $("#nav-projects").attr("open", "open");
+  }, 500);
+</script>
 
 </body>
 </html>

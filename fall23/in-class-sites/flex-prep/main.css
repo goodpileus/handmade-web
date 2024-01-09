@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color:lightblue;
+  padding:10px;
+
+  /* 2 */
+  display: flex;
+
+  /* 3 */
+  flex-wrap:wrap;
+
+  /* 4 */
+  flex-direction: column;
+  flex-direction: row;
+
+  /* 5 */
+  /* default: flex-start  */
+  justify-content: center;
+
+  /* 6 */
+  height: 400px;
+
+  /* 7 */
+  /* default: stretch */
+  align-items: flex-end;
+  
+  /* 8 */
+  align-items: center;
+  
+  /* 9 */
+  align-content: center;
+
+  /* 10 */
+  gap: 10px;
+}
+
+.item {
+  background-color:bisque;
+  border:1px solid;
+  padding:10px;
+
+  /* 2 */
+  width:100%;
+
+  /* 3 */
+  width: 200px;
+}

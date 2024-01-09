@@ -23,6 +23,7 @@
 <section id="main">
   <div class="inner">
     <h3>Control</h3>
+    <p class="due">due: 4/2</p>
     <p>Holly Whyte, in narrating his documentary <em><a target="_blank" href="https://drive.google.com/file/d/1rZLzqOikcfTkLC54hD0MpMpEBHRk5otH/view?usp=share_link">The Social Life of Small Urban Space</a></em>, observed: </p>
       
     <blockquote>
@@ -54,6 +55,13 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/js.cookie.min.js"></script>
 <script src="/js/functions.js"></script>
+
+<!-- opens relevant sidebar dropdown -->
+<script>
+  setTimeout(function() {
+    $("#nav-projects").attr("open", "open");
+  }, 500);
+</script>
 
 </body>
 </html>
