@@ -26,7 +26,7 @@
     <p>Every HTML element on a web page is a rectangular box and understanding how it is constructed is an important step towards exercising control over our websites.</p>
     <p>The box model looks something like this:</p>
     <img style="width:700px;" src="/img/box-model-00.png">
-    <p>We can set values for each of these parameters to change the size and behavior of each box by adjusting the <em>width</em>, <em>height</em>, <em>padding</em>, <em>border</em>, and <em>margin</em> of an element.</p>
+    <p>We can change the size and behavior of each box by adjusting the <em>width</em>, <em>height</em>, <em>padding</em>, <em>border</em>, and <em>margin</em> of an element.</p>
     <p>By setting a width and height value we can control the size of the <em>content box</em>. By default, however, this does not account for the values for padding, border, and margin.</p>
     <p>So, in order to calculate the <em>total</em> width of an element we would need to add the values for:
 <xmp>margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
@@ -36,17 +36,11 @@
 </xmp>
     <p>So, when we set the width and height values of an element, we are only setting the values for the <em>content box</em>:</p>
     <img style="width:700px;" src="/img/box-model-01.png">
-    <p>Some other things to note regarding the box model and element sizing:</p>
-    <ul>
-      <li>Block level elements have a default width of 100% and will take up the full width of the viewport unless specified otherwise.</li>
-      <li>Width and height values will have no effect on inline elements.</li>
-      <li>Inline-block elements will behave like inline elements and will stack alongside other elements but, unlike inline elements, can be given width, height, padding, and margin values.</li>
-    </ul>
     
     <hr>
 
     <h3>Box-Sizing</h3>
-    <p>We are able to change how the total width of an element is calculated with the <em>box-sizing</em> property. By default, the <em>box-sizing</em> property is set to <em>content-box</em>. But, if we change the <em>box-sizing</em> property to <em>border-box</em> we can include the padding and border sizes in the total width and height of an element.</p>
+    <p>We are able to change how the total width and height of an element is calculated with the <em>box-sizing</em> property. By default, the <em>box-sizing</em> property is set to <em>content-box</em>. But, if we change the <em>box-sizing</em> property to <em>border-box</em> we can include the padding and border sizes in the total width and height of an element.</p>
 
 <xmp>box-sizing: border-box;</xmp>
 
@@ -59,6 +53,15 @@
 }</xmp>
 
     <p>Typically, I add this to every stylesheet I’m working on.</p>
+
+    <hr>
+
+    <p>Some other things to note regarding the box model and element sizing:</p>
+    <ul>
+      <li>Block level elements have a default width of 100% and will take up the full width of the viewport unless specified otherwise.</li>
+      <li>Width and height values will have no effect on inline elements.</li>
+      <li>Inline-block elements will behave like inline elements and will stack alongside other elements but, unlike inline elements, can be given width, height, padding, and margin values.</li>
+    </ul>
 
     <hr>
 
