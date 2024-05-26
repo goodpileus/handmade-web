@@ -1,0 +1,88 @@
+body {
+  background-color:lightblue;
+  color: rgb(94, 128, 118);
+  margin:40px;
+
+  font-family: 'Cormorant Garamond', serif;
+}
+
+img {
+  max-width:100%;
+  width:500px;
+}
+
+h1 {
+  color: rgb(45, 135, 162);
+}
+
+p {
+  color: yellow;
+  background-color: rgb(51, 81, 66);
+  font-size: 20px;
+  
+  border: 10px inset lightgreen;
+  border-radius: 20px;
+
+  padding: 30px;
+
+  max-width: 500px;
+
+  overflow: auto;
+
+  text-align: justify;
+  line-height:18px;
+}
+
+.special {
+  color: blue;
+  background-color: orangered;
+  font-family: 'Kablammo', cursive;
+  filter:blur(10px);
+}
+
+.special:hover {
+  background-color:khaki;
+  text-align:center;
+  filter:blur(0);
+}
+
+/* css rules that are further down in the document have higher specificity */
+.neat {
+  color:blueviolet;
+}
+
+.cool {
+  font-weight:bold;
+  text-decoration:underline wavy;
+  font-style: italic;
+
+  color:firebrick;
+}
+
+.dim {
+  background-color:burlywood;
+  padding:10px;
+  margin:10px;
+
+  width:200px;
+  height:200px;
+}
+
+.spam {
+  background-color:darkkhaki;
+}
+
+
+a {
+  color:rgb(242, 47, 47);
+  text-decoration: none;
+}
+
+a:visited {
+  color:pink;
+}
+
+a:hover {
+  background-color:darkslateblue;
+}
+

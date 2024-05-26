@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+
+    <button onclick="change()">Click me...</button>
+
+    <div id="menu" class="box">
+      the box
+    </div>
+
+    <div id="spinner" class="object"></div>
+
+    <script>
+      function change() {
+        console.log("menu button clicked");
+
+        var menu = document.getElementById("menu");
+        var spinner = document.getElementById("spinner");
+
+        menu.classList.toggle("active");
+        spinner.classList.toggle("spin");
+        document.body.classList.toggle("dark");
+      }
+    </script>
+
+  </body>
+</html>
