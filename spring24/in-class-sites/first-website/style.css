@@ -1,0 +1,22 @@
+html {
+  background-color:darkkhaki;
+  color:white;
+}
+
+p {
+  color:red;
+  font-size:30px;
+  background-color:#c0dab4;
+  border: 1px solid;
+}
+
+h1 {
+  color:blue;
+  text-decoration:line-through;
+}
+
+ul {
+  color: green;
+  background-color:white;
+  list-style-type:square;
+}

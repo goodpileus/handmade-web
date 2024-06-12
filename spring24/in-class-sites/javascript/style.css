@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body {
+  background-color:bisque;
+  transition: background-color .3s;
+}
+
+.dark {
+  background-color:rgb(188, 143, 102);
+}
+
+.sidebar {
+  padding: 20px;
+  background-color: slategray;
+  color: white;
+  font-size: 20px;
+  position:fixed;
+  top:0;
+  right:-300px;
+  width:300px;
+  height:100vh;
+  text-align: center;
+  
+  transition: all .3s;
+}
+
+.active {
+  right:0;
+}
+
+.box {
+  background-color:slategray;
+  width:100px;
+  height:100px;
+  position:fixed;
+  bottom:30px;
+  left:30px;
+
+  transition: all .3s;
+}
+
+.spin {
+  transform: rotate(180deg);
+}
+
+.glow {
+  color:darkblue;
+  background-color:lemonchiffon;
+}

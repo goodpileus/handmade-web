@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body {
+  background-color:darkseagreen;
+}
+
+p {
+  background-color:lightblue;
+  padding:10px;
+  font-size:30px;
+}
+
+p {
+  background-color:pink;
+}
+
+.more-specific {
+  background-color:darkkhaki;
+}
+
+#even-more-specific {
+  background-color:honeydew;
+}
+
+.square {
+  background-color:honeydew;
+  width:200px;
+  height:200px;
+  border:1px solid darkblue;
+  margin:20px 0;
+}
+
+.relative {
+  background-color:burlywood;
+  position:relative;
+  bottom:-40px;
+  right:-40px;
+}
+
+.fixed {
+  background-color:pink;
+  position:fixed;
+  top:10px;
+  right:10px;
+  margin:0;
+}
+
+.container {
+  background-color:dimgrey;
+  width:500px;
+  height:500px;
+  border:1px solid black;
+  margin:20px 0;
+  position:relative;
+  border-radius:100%;
+}
+
+.absolute {
+  background-color:coral;
+  position:absolute;
+  top:0;
+  right:-200px;
+  margin:0;
+}
+
+
+
+

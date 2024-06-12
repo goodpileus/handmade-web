@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+.active {
+  padding: 20px;
+  background-color: slategray;
+  color: white;
+  font-size: 20px;
+}

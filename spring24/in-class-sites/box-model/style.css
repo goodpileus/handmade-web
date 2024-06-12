@@ -1,0 +1,30 @@
+body {
+  background-color:darkseagreen;
+}
+
+.content-box {
+  background-color:pink;
+  padding:20px;
+  border: 10px dashed red;
+  margin:20px;
+  width:200px;
+  height:200px;
+}
+
+.border-box {
+  background-color:lightblue;
+  padding:20px;
+  border: 10px dashed red;
+  margin:20px;
+  width:200px;
+  height:200px;
+  box-sizing:border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+.small {
+  width:100px;
+}
