@@ -23,24 +23,24 @@
 <section id="main">
   <div class="inner">
     <h3>Box Model</h3>
-    <p>Every HTML element on a web page is a rectangular box and understanding how it is constructed is an important step towards exercising control over our websites.</p>
+    <p>Every HTML element on a web page is a rectangular box and understanding how it is constructed is an important step towards exercising control over our websites. This is known as the <em>box model</em>.</p>
     <p>The box model looks something like this:</p>
     <img style="width:700px;" src="/img/box-model-00.png">
     <p>We can change the size and behavior of each box by adjusting the <em>width</em>, <em>height</em>, <em>padding</em>, <em>border</em>, and <em>margin</em> of an element.</p>
-    <p>By setting a width and height value we can control the size of the <em>content box</em>. By default, however, this does not account for the values for padding, border, and margin.</p>
+    <p>By setting a width and height value we can control the size of the <em>content box</em>. However, this does not account for the values for padding, border, and margin.</p>
     <p>So, in order to calculate the <em>total</em> width of an element we would need to add the values for:
 <xmp>margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
 </xmp>
     <p>And for the <em>total</em> height of an element:
 <xmp>margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
 </xmp>
-    <p>So, when we set the width and height values of an element, we are only setting the values for the <em>content box</em>:</p>
+    <p>So, when we set the width and height values of an element, we are only setting the values for the <em>content box</em> and not for the total size of the element:</p>
     <img style="width:700px;" src="/img/box-model-01.png">
     
     <hr>
 
     <h3>Box-Sizing</h3>
-    <p>We are able to change how the total width and height of an element is calculated with the <em>box-sizing</em> property. By default, the <em>box-sizing</em> property is set to <em>content-box</em>. But, if we change the <em>box-sizing</em> property to <em>border-box</em> we can include the padding and border sizes in the total width and height of an element.</p>
+    <p>We are able to change how the total width and height of an element is calculated with the <em>box-sizing</em> property. By default, the <em>box-sizing</em> property is set to <em>content-box</em>. If we change the <em>box-sizing</em> property to <em>border-box</em> we can include the padding and border sizes in the total width and height of an element.</p>
 
 <xmp>box-sizing: border-box;</xmp>
 
