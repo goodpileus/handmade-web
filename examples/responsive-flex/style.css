@@ -60,11 +60,15 @@ footer {
   }
 
   main {
-    flex-direction: column;
+    flex-wrap:wrap;
   }
 
-  .left, .center, .right {
+  .left {
     width:100%;
+  }
+
+  .center, .right {
+    width:calc(50% - 5px);
   }
 }
 
@@ -75,5 +79,9 @@ footer {
 
   body {
     background: #dbbebb;
+  }
+
+  .left, .center, .right {
+    width:100%;
   }
 }
