@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>javascript exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    
+    <!-- first we set up the button that is triggering our javascript -->
+    <!-- note that the element doesn't need to be a <button> to work -->
+    <button onclick="change()">Click me...</button>
+
+    <button onclick="glow()">glow</button>
+
+    <!-- this is the element that we will be altering with our javascript -->
+    <div id="menu" class="sidebar">
+      Hello World!
+    </div>
+
+    <div id="spinner" class="box"></div>
+
+    <script>
+      var menu = document.getElementById("menu");
+      var spinner = document.getElementById("spinner");
+
+      function change() {
+        menu.classList.toggle("active");
+        spinner.classList.toggle("spin");
+        document.body.classList.toggle("dark");
+      }
+
+      function glow() {
+        spinner.classList.toggle("glow");
+        menu.classList.toggle("glow");
+      }
+    </script>
+  </body>
+
+</html>
