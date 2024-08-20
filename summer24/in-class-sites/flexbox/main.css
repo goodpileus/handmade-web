@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+.container {
+  background:lightblue;
+  padding:20px;
+  height:600px;
+
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+  /* justify-content is for horizontal alignment on row oriented flexboxes */
+  justify-content:center;
+
+  /* align-items is for vertical alignment on row oriented flexboxes */
+  align-items:center;
+
+  /* align-content is for vertical alignment on row oriented flexboxes with wrap enabled */
+  align-content:center;
+
+  gap:20px;
+}
+
+.item {
+  background:bisque;
+  padding:10px;
+  border:1px solid;
+  width:200px;
+}
