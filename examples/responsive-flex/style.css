@@ -53,7 +53,7 @@ footer {
   text-align: center;
 }
 
-
+/* max width desktop first */
 @media screen and (max-width:900px) {
   body {
     background: #e5c6aa;
@@ -68,6 +68,7 @@ footer {
   }
 
   .center, .right {
+    width:49%;
     width:calc(50% - 5px);
   }
 }
