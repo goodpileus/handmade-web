@@ -47,45 +47,63 @@
     More on events at <a href="https://www.w3schools.com/js/js_events.asp">w3schools</a>.
     </p>
     <hr>
-    <p>Now, let’s make a button that toggles a class on a specific div.</p>
-    <p>The HTML:</p>
-<xmp><!-- first we set up the button that is triggering our javascript -->
-<!-- note that the element doesn't need to be a <button> to work -->
-<button onclick="FUNCTION">Click me...</button>
 
-<!-- this is the element that we will be altering with our javascript -->
-<div id="sidebar" class="sidebar">
+    <p>We’ll start by writing some javascript directly inside our HTML document. We can place this anywhere we like, but it’s recommended to place it at the bottom of the body element, just before the closing tag. If we are adding javascript to our HTML document, it must be written between script tags.</p>
+    <p>Copy and paste this script with a simple function inside to the bottom of your body element:</p>
+<xmp><script>
+function change() {
+  console.log('it works!');
+}
+</script>
+</xmp>
+
+    <p>On its own, this function won’t do anything until we determine how we want to execute it. To execute it, let’s create a button with an onclick event listener applied to it. This we can place anywhere within our body element:</p>
+
+<xmp><button onclick="">Click me...</button>
+</xmp>
+
+    <p>Keep in mind: the onclick attribute can be used on any kind of HTML element, it does not need to be a button.</p>
+
+    <p>Now, let’s add the 'change()' function name to the onclick attribute. Make sure to include the parentheses!</p>
+
+<xmp><button onclick="change()">Click me...</button>
+</xmp>
+
+    <p>This should be all we need to get our javascript working. However, for the time being, we won’t see anything happen on our page when we click on the button. To confirm it’s working, let’s open our browser developer tools (right click + inspect) and navigate to the “console” tab. The console is the dedicated javascript and error log for our browser. Anytime we’re writing or debugging javascript, it’s a good idea to have the console window open to make sure things are working as intended.</p>
+
+    <p>In our function is a single line:</p>
+
+<xmp>console.log('it works!');</xmp> 
+
+<p>This line will send whatever text is within its parentheses to the browser’s console when it is executed. So, if you click on your button and ‘it works!’ appears in your console then your javascript is working as intended! </p>
+
+<p>Now that we know it works, let’s do something more interesting with our function. Let’s add this line to our script, underneath the console.log() line:</p>
+
+<xmp>document.querySelector(".CLASS").classList.toggle("NEW-CLASS");</xmp>
+
+<p>There’s a lot going on in this line, but, essentially, it will toggle a class on and off on the specified element when executed. We specify the element we want to target with querySelector() and we designate the class we want to toggle with classList.toggle().</p>
+
+<p>Pay close attention to the casing of the letters! This form of notation is called camelCase and it’s crucial to follow exactly, otherwise our functions won’t work properly.</p>
+
+<p>Now, let’s create an element that we want to alter when we click on our button:</p>
+
+<xmp><div class="menu">
   Hello World!
 </div>
 </xmp>
 
-    <p>The CSS:</p>
+<p>Let’s update our javascript toggle line with the class of our div:</p>
+<xmp>document.querySelector(".menu").classList.toggle("NEW-CLASS");</xmp>
 
+<p>Next, let’s create a name for the class that we want to toggle on the element when the button is clicked:</p>
+<xmp>document.querySelector(".menu").classList.toggle("active");</xmp>
+
+<p>And finally, let’s define the .active class in our CSS:</p>
 <xmp>.active {
-  padding: 20px;
-  background-color: slategray;
-  color: white;
-  font-size: 20px;
-}
-</xmp>
+  background: lightblue;
+  font-size: 150%;
+}</xmp>
 
-    <p>The Javascript we’ll place at the bottom of our body, inside script tags:</p>
-
-<xmp><script>
-// this is the function we want to call when the button is clicked
-function FUNCTION() {
-  // first we set up a variable to store a longer line of code in case we want to reference it quickly later
-  // here, we're creating a shorthand way of targeting a specific element with an id by using javascript's getElementById method
-  var VARIABLE = document.getElementById("ID");
-
-  // in this line we use javascript's built-in classList property and toggle method to toggle a class on and off
-  VARIABLE.classList.toggle("NEW-CLASS");
-}
-</script>
-</xmp>
-  <p>
-    Now all that remains to be done is to go through and replace the ALL-CAPS words in the code with our own identifiers.
-  </p>
 
   </div>
 </section>
