@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body {
+  background:darkslateblue;
+}
+
+.smiley {
+  background:lightslategray;
+  width:200px;
+  height:200px;
+  margin:200px;
+  border-radius:50%;
+  position:relative;
+}
+
+.eye {
+  background:red;
+  width:40px;
+  height:30px;
+  border-radius:100%;
+  position:absolute;
+}
+
+.left {
+  top:30%;
+  left:20%;
+}
+
+.right {
+  top:30%;
+  right:20%;
+}
+
+.mouth {
+  background:red;
+  width:40px;
+  height:40px;
+  border-radius:0 0 100% 100%;
+  position:absolute;
+  bottom:16%;
+  left:50%;
+  transform: translateX(-50%);
+}

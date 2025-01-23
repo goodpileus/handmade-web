@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'xanh mono';
+  src: url('xanhmono-regular-webfont.woff2') format('woff2'),
+       url('xanhmono-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'xanh mono';
+  src: url('xanhmono-italic-webfont.woff2') format('woff2'),
+       url('xanhmono-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  background:#aac2cc;
+  font-family: "Crimson Text", serif;
+  font-size:120%;
+}
+
+img {
+  max-width:100%;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.special {
+  font-family: 'xanh mono', monospace;
+}
