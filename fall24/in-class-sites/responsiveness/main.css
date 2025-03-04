@@ -75,7 +75,7 @@ main {
   }
 
   .center, .right {
-    width:calc(50% - 5px);
+    width:49%;
   }
 }
 
