@@ -24,7 +24,7 @@
   <div class="inner">
     <h3>Domain Names</h3>
     <h3>Buying the Name</h3>
-    <p>Now it’s time to secure a domain name for our website. Consider the name you would like to use for your site and search for it using a DNS (domain name system) registrar like: <a href="https://porkbun.com/" target="_blank">Porkbun</a>, <a href="https://www.name.com/" target="_blank">name.com</a>, <a href="https://iwantmyname.com/" target="_blank">iwantmyname</a>. (I will be using porkbun.com for demonstration) Depending on the TLD (top-level domain—.com, .net, .org, etc), most domain names are fairly cheap and usually only ask for a yearly fee. Because we’ll be using github pages to host our websites we won’t need to pay for monthly hosting fees and server space, which is normally the case.</p>
+    <p>Now it’s time to secure a domain name for our website. Consider the name you would like to use for your site and search for it using a DNS (domain name system) registrar like: <a href="https://porkbun.com/" target="_blank">Porkbun</a>, <a href="https://www.name.com/" target="_blank">name.com</a>, <a href="https://iwantmyname.com/" target="_blank">iwantmyname</a>. (I will be using porkbun.com for demonstration) Depending on the TLD (top-level domain—.com, .net, .org, etc), most domain names are fairly cheap and usually only ask for a yearly fee. Because we’re using github pages to host our websites we don’t need to pay for monthly hosting fees and server space, which is normally the case.</p>
     <p>When you’ve found the one you like, go ahead and purchase it.</p>
 
     <hr>
@@ -41,7 +41,7 @@
     <p>First, navigate to the settings panel of your github repository and open the github pages segment. Input your domain name into the “custom domain” field. This should just be the basic domain including the domain name ending. Make sure not to include “https://” or “www.”</p>
     <img src="/img/github-custom-name.png">
     <p>Now, log into your DNS registrar and search for the section to edit the DNS records for the domain name. Usually the option you’re looking for is called something like “Manage DNS Records”. Sometimes you have to open the advanced options for the particular domain you are trying to edit. If you are having trouble finding the correct page, try searching google for “[Your DNS Registrar] edit DNS records”.</p>
-    <p>(Note that the screenshots and actions are particular to name.com and will differ based on your DNS provider)</p>
+    <p>(Note that the screenshots and actions are particular to porkbun and will differ based on your DNS provider)</p>
     <p>The first type of record we’ll be making is called an “A” record. An A record connects the domain name to the specified IP address of the server hosting the site. Github uses 4 dedicated servers for github pages websites. If one or more servers crash or fail for some reason, then there are backup servers to redirect traffic in the meantime. So, we’ll need to add 4 different A records that point to the following IP addresses:</p>
       <ul>
         <li>185.199.108.153</li>
@@ -49,11 +49,11 @@
         <li>185.199.110.153</li>
         <li>185.199.111.153</li>
       </ul>
-    <p>You can leave the “host” section empty (in some services like NameCheap they require something in the host field, if this is the case input “@” into the host field). In the “answer” field paste the IP address and add each one individually.</p>
-    <img src="/img/dns-a-record.png">
-    <p>We can leave the TTL (Time to live) at the default value (in most cases around 300). The TTL determines how long particular records are cached on a nameserver. The units used in TTL are in seconds, so a TTL of 300 is 5 minutes long.</p> 
+    <p>You can leave the “host” section empty (in some services like NameCheap they require something in the host field, if this is the case input “@” into the host field). In the “answer” field paste the IP address. Repeat this for the 3 other IP addresses.</p>
+    <img src="/img/dns-a-record.png" width="800">
+    <p>We can leave the TTL (Time to live) at the default value. The TTL determines how long particular records are cached on a nameserver. The units used in TTL are in seconds, so a TTL of 300 is 5 minutes long.</p> 
     <p>Next, we’ll make a CNAME record, with “www” in the “host” field and our domain name in the “answer” field:</p>
-    <img src="/img/dns-cname.png">
+    <img src="/img/dns-cname.png" width="800">
     <p>This will create a redirect to our domain name if someone were to type “www.” in front of our domain name.</p> 
     <p>All of the information from this guide comes from <a href="https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site" target="_blank">here</a>.</p>
 
