@@ -1,0 +1,113 @@
+body {
+  background-color:lightblue;
+  color: darkslateblue;
+  font-family: "Bitter", serif;
+}
+
+/*
+  serif
+  sans-serif
+  monospace
+  cursive
+  fantasy
+*/
+
+p {
+  /* border expects border-width, border-style, and border-color */
+  border: 1px dashed;
+  padding: 10px;
+  margin:20px auto;
+  max-width:600px;
+}
+
+.banner {
+  background-color: aliceblue;
+  font-size: 30px;
+  text-align:center;
+  color:cornflowerblue;
+  border: 5px dotted;
+  padding: 20px;
+  margin: 50px auto;
+  font-family: "drunk-cowboy", sans-serif;
+}
+
+p:hover {
+  background-color:antiquewhite;
+}
+
+h1 {
+  text-decoration:underline;
+}
+
+img {
+  border:5px inset #91b4c0;
+  max-width: 100%;
+}
+
+details {
+  /* background-color: pink; */
+  margin-bottom: 30px;
+}
+
+summary {
+  /* background-color:crimson; */
+  padding:10px;
+  cursor:pointer;
+}
+
+summary:hover {
+  background-color:antiquewhite;
+}
+
+a {
+  color:#a35e2f;
+  text-decoration:none;
+}
+
+a:hover {
+  color:bisque;
+  background-color:#a35e2f;
+}
+
+div {
+  background-color:lightgray;
+}
+
+.test {
+  background-color:coral;
+}
+
+#special {
+  background-color:darkolivegreen;
+}
+
+#special {
+  background-color:deeppink;
+}
+
+.small {
+  font-size:60%;
+  font-style:italic;
+  letter-spacing: 3px;
+}
+
+.big {
+  font-size:200%;
+  font-weight:bold;
+  letter-spacing:6px;
+}
+
+.circle {
+  max-width:500px;
+  height:300px;
+  background-color:darkslateblue;
+  border-radius: 100%;
+  margin:10px auto;
+}
+
+/*
+margin:
+1 value = all around;
+2 values = top/bottom, left/right;
+4 values = top, right, bottom, left;
+*/
