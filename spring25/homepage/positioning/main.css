@@ -1,0 +1,156 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background:lightsteelblue;
+}
+
+img {
+  max-width:100%;
+}
+
+.block {
+  background:lightpink;
+  border:1px solid;
+  padding:10px;
+  margin:10px;
+}
+
+.inline {
+  background:lightgreen;
+  border:1px solid;
+  /* inline elements don't work well with padding, margin, width, or height */
+}
+
+.inline-block {
+  display:inline-block;
+  background:lightgray;
+  border:1px solid;
+  padding:30px;
+  margin:10px;
+  width:100px;
+  height:100px;
+}
+
+.container {
+  background:lightgoldenrodyellow;
+  border:1px solid;
+  padding:20px;
+  margin:10px;
+}
+
+.content-box {
+  background:lightcyan;
+  padding:50px;
+  border:5px dashed blue;
+  margin:50px;
+  width:200px;
+  height:200px;
+  box-sizing:content-box;
+}
+
+.border-box {
+  background:lightcyan;
+  padding:50px;
+  border:5px dashed blue;
+  margin:50px;
+  width:200px;
+  height:200px;
+  box-sizing:border-box;
+}
+
+.smiley {
+  background:lightgoldenrodyellow;
+  border:1px solid blue;
+  padding:10px;
+  width:200px;
+  height:200px;
+  position:relative;
+  top:20px;
+  left:50px;
+}
+
+.smile {
+  background:red;
+  border:1px solid;
+  width:100px;
+  height:30px;
+  /* in order for absolute position to work, it needs to be contained in another positioned element */
+  position:absolute;
+  bottom:35px;
+  right:50px;
+}
+
+.nose {
+  background:red;
+  border:1px solid;
+  width:20px;
+  height:70px;
+
+  position:absolute;
+  top:35px;
+  right:90px;
+}
+
+.eye-right {
+  background:orange;
+  border:1px solid;
+  width:20px;
+  height:20px;
+
+  position:absolute;
+  top:35px;
+  right:40px;
+}
+
+.eye-left {
+  background:orange;
+  border:1px solid;
+  width:20px;
+  height:20px;
+
+  position:absolute;
+  top:35px;
+  left:40px;
+}
+
+.ear-left {
+  background:lightgoldenrodyellow;
+  border:1px solid;
+  width:40px;
+  height:60px;
+
+  position:absolute;
+  top:55px;
+  left:-40px;
+}
+
+.ear-right {
+  background:lightgoldenrodyellow;
+  border:1px solid;
+  width:40px;
+  height:60px;
+
+  position:absolute;
+  top:55px;
+  right:-40px;
+}
+
+.fixed {
+  background:lightseagreen;
+  border:1px solid;
+  padding:20px;
+  position:fixed;
+  top:0;
+  right:0;
+}
+
+.sticky {
+  background:lightsalmon;
+  border:1px solid;
+  padding:20px;
+  position:sticky;
+  top:10px;
+}
+

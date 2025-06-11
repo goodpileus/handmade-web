@@ -1,0 +1,33 @@
+body {
+  background-color:darkgray;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* color refers to the text color, not the background */
+
+p {
+  color: cornflowerblue;
+  background-color:burlywood;
+  font-size: 30px;
+  border: 20px dashed;
+  padding: 50px;
+  text-align: center;
+}
+
+.special {
+  background-color: lightyellow;
+}
+
+.highlight {
+  color:#5ea236;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
