@@ -9,7 +9,7 @@ img {
 .container {
   background:lightblue;
   padding: 10px;
-  height:600px;
+  height:400px;
 
   display:flex;
   flex-direction:row;
@@ -31,4 +31,7 @@ img {
   padding:10px;
   border:1px solid;
   width:200px;
+
+  display: flex;
+  justify-content: center;
 }
