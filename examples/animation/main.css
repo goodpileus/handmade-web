@@ -55,8 +55,8 @@ img {
 
 .circle {
   background:lightgoldenrodyellow;
-  width:15vw;
-  height:15vw;
+  width:10vw;
+  height:10vw;
   border-radius:100%;
   animation: pulse 2s infinite alternate ease-in-out;
 }
@@ -65,33 +65,37 @@ img {
   0% {
     background:lightgoldenrodyellow;
     transform:scale(1);
+    scale:1;
   }
   100% {
     background: #f78132; 
-    transform:scale(1.4);
+    /* transform:scale(1.4); */
+    scale:1.4;
   }
 }
 
 .box {
   background:lightgoldenrodyellow;
-  width:15vw;
-  height:15vw;
+  width:10vw;
+  height:10vw;
   animation: spin 4s infinite linear;
 }
 
 @keyframes spin {
   0% {
-    transform:rotate(0);
+    /* transform:rotate(0); */
+    rotate:0;
   }
   100% {
-    transform:rotate(360deg);
+    /* transform:rotate(360deg); */
+    rotate:360deg;
   }
 }
 
 .mover {
   background:lightgoldenrodyellow;
-  width:100px;
-  height:25px;
+  width:150px;
+  height:40px;
   position:absolute;
   bottom:0;
   left:0;
@@ -100,41 +104,46 @@ img {
 
 @keyframes move {
   0% {
-    transform:translateX(-150px);
+    /* transform:translateX(-200px); */
+    translate:-200px;
   }
   100% {
-    transform:translateX(105vw);
+    /* transform:translateX(105vw); */
+    translate:105vw;
   }
 }
 
 .changer {
-  background:pink;
+  background:lightgoldenrodyellow;
   width:10vw;
   height:10vw;
 
   transition: 
     background 4s, 
     border-radius 4s, 
-    transform 4s;
+    rotate 4s;
 }
 
 .changer:hover {
   /* animation: change 4s forwards; */
 
-  background:lightgoldenrodyellow;
-  transform:rotate(360deg);
+  background:#f78132;
+  /* transform:rotate(360deg); */
+  rotate:360deg;
   border-radius:100%;
 }
 
 @keyframes change {
   0% {
     background:pink;
-    transform:rotate(0);
+    /* transform:rotate(0); */
+    rotate: 0;
     border-radius:0;
   }
   100% {
     background:lightgoldenrodyellow;
-    transform:rotate(360deg);
+    /* transform:rotate(360deg); */
+    rotate: 360deg;
     border-radius:100%;
   }
 }
