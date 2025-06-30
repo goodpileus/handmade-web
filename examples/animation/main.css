@@ -64,7 +64,7 @@ img {
 @keyframes pulse {
   0% {
     background:lightgoldenrodyellow;
-    transform:scale(1);
+    /* transform:scale(1); */
     scale:1;
   }
   100% {
