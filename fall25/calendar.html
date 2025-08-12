@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Handmade Web</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/img/favi.png">
+</head>
+
+<body>
+<nav id="nav"></nav>
+<button class="mobile m-nav-btn"></button>
+
+
+<div class="sun">
+  <div><div><div><div><div><div><div><div><div>
+  </div></div></div></div></div></div></div></div></div>
+</div>
+<div class="moon"></div>
+
+<section id="main">
+  <div class="inner cal-inner">
+
+    <div id="cal-header">
+      <h3>Fall 25 Calendar</h3>
+
+      <div class="cal-nav">
+        <button id="prev"><</button>
+        <select id="weeks">
+          <option value="w1" selected="selected"> + Week &nbsp;1 | Introductions, HTML</option>
+          <option value="w2"> ◌ Week &nbsp;2 | CSS, Homepages</option>
+          <option value="w3"> ◌ Week &nbsp;3 | Box Model</option>
+          <option value="w4"> ◌ Week &nbsp;4 | Flexbox ● /passion</option>
+          <option value="w5"> ◌ Week &nbsp;5 | Studio Time ● /structure</option>
+          <option value="w6"> ◌ Week &nbsp;6 | Animation</option>
+          <option value="w7"> ◌ Week &nbsp;7 | Responsiveness ● /screensaver</option>
+          <option value="w8"> ◌ Week &nbsp;8 | Javascript</option>
+          <option value="w9"> ◌ Week &nbsp;9 | Studio Time</option>
+          <option value="w10"> ◌ Week 10 | Studio Time ● /control</option>
+          <option value="w11"> ◌ Week 11 | Prep Meetings</option>
+          <option value="w12"> ◌ Week 12 | Studio Time</option>
+          <option value="w13"> ◌ Week 13 | Studio Time</option>
+          <option value="w14"> ◌ Week 14 | Domain Name, Debugging</option>
+          <option value="w15"> ◌ Week 15 | Fall Break</option>
+          <option value="w16"> ◌ Week 16 | Share Finals ● /final</option>
+        </select>
+        <button id="next">></button>
+      </div>
+    </div>
+
+    <div id="w1" class="week">
+      <h2>Week 1</h2>
+      <h3>Tuesday, 8/19</h3>
+      
+      <ul>
+        <li>Introductions</li>
+        <li>Syllabus</li>
+        <li>Class website</li>
+        <li>Software and materials</li>
+        <li>Overview of terms and technologies</li>
+        <li>Are.na, discord</li>
+        <li>Look through this collection of <a href="https://www.are.na/aidan-quinlan/hw-handmade-website-examples" target="_blank">handmade website examples + some of my sites</a></li>
+        <li>Hello World</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make sure you've joined the class Discord (let me know if you need the invite link again)</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 8/21</h3>
+      <ul>
+        <li><a href="/assets/html.pdf" target="_blank">HTML Basics Slideshow</a></li>
+        <li>File Management Tips</li>
+        <li>HTML basics walkthrough</li>
+        <li>Look through <a href="https://www.w3schools.com/tags/default.asp" target="_blank">w3schools HTML tags</a></li>
+        <li>Introduce <a href="/projects/passion.html" class="proj">Passion</a> (due 9/9)</li>
+        <li>Start Work on <a href="/projects/passion.html" class="proj">Passion</a> (part 1)</li>
+      </ul>
+      
+      <h5>Optional</h5>
+      <ul class="reading">
+        <li><a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank">w3schools text formatting</a></li>
+        <li><a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">w3schools block and inline elements</a></li>
+      </ul>
+
+      <h5>Reading</h5>
+      <ul class="reading">
+        <li><a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" target="_blank">Laurel Schwulst, My Website is a Shifting House ...</a> &mdash; (<a href="../assets/schwulst_website-is-a-shifting-house.pdf" target="_blank">pdf</a>)</li>
+        <li><a href="https://web.archive.org/web/20201108174738/http://www.ursulakleguinarchive.com/Note-Technology.html" target="_blank">Ursula K. Le Guin, A Rant on Technology</a> &mdash; (<a href="../assets/leguin_rant-on-technology.pdf" target="_blank">pdf</a>)</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make a journal entry reflecting on the readings. Hold on to it for now. You’ll add it to your <a href="/exercises/homepage.html" class="ex">Homepage</a> once we get it up and running.</li>
+        <li>Continue working on <a href="/projects/passion.html" class="proj">Passion</a> (part 1)</li>
+      </ul>
+
+    </div>
+
+    <!-- WEEK 2 -->
+    <div id="w2" class="week">
+      <h2>Week 2</h2>
+      <h3>Tuesday, 8/26</h3>
+      <ul>
+        <li><a href="/assets/css.pdf" target="_blank">CSS Basics Slideshow</a></li>
+        <li>CSS basics walkthrough</li>
+        <li>Look through <a href="https://www.w3schools.com/cssref/default.asp" target="_blank">w3schools CSS properties</a></li>
+        <li>Introduce <a href="/projects/passion.html" class="proj">Passion</a> (part 2)</li>
+      </ul>
+
+      <h5>Optional</h5>
+      <ul class="reading">
+        <li>Check out <a target="_blank"  href="https://flukeout.github.io/">CSS Diner</a></li>
+        <li>Read through <a target="_blank" href="https://2019.wattenberger.com/blog/css-cascade">The CSS Cascade</a></li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Start work on <a href="/projects/passion.html" class="proj">Passion</a> (part 2)</li>
+        <li>Make an account on <a href="https://github.com/" target="_blank">GitHub</a></li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 8/28</h3>
+      <ul>
+        <li>Reading discussion</li>
+        <ul class="reading">
+          <li><a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" target="_blank">Laurel Schwulst, My Website is a Shifting House ...</a> &mdash; (<a href="../assets/schwulst_website-is-a-shifting-house.pdf" target="_blank">pdf</a>)</li>
+          <li><a href="https://web.archive.org/web/20201108174738/http://www.ursulakleguinarchive.com/Note-Technology.html" target="_blank">Ursula K. Le Guin, A Rant on Technology</a> &mdash; (<a href="../assets/leguin_rant-on-technology.pdf" target="_blank">pdf</a>)</li>
+        </ul>
+        <br>
+        <li>Set up <a href="/exercises/homepage.html" class="ex">Homepages</a></li>
+        <li>Email me the url to your <a href="/exercises/homepage.html" class="ex">Homepage</a></li>
+        <li>Work on <a href="/exercises/homepage.html" class="ex">Homepage</a></li>
+      </ul>
+
+      <h5>Reading</h5>
+      <ul class="reading">
+        <li><a href="http://luckysoap.com/statements/handmadeweb.html" target="_blank">J.R. Carpenter, A Handmade Web</a> &mdash; (<a href="../assets/carpenter_handmade-web.pdf" target="_blank">pdf</a>)</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make a journal entry reflecting on the reading</li>
+        <li>Add your journal entries to your <a href="/exercises/homepage.html" class="ex">Homepage</a></li>
+        <li>Continue working on <a href="/projects/passion.html" class="proj">Passion</a> (part 2)</li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 3 -->
+    <div id="w3" class="week">
+      <h2>Week 3</h2>
+      <h3>Tuesday, 9/2</h3>
+      <ul>
+        <li>Reading Discussion</li>
+        <ul class="reading">
+          <li><a href="http://luckysoap.com/statements/handmadeweb.html" target="_blank">J.R. Carpenter, A Handmade Web</a> &mdash; (<a href="../assets/carpenter_handmade-web.pdf" target="_blank">pdf</a>)</li>
+        </ul>
+        <br>
+        <li>Making a Boilerplate</li>
+        <li>Expanding on HTML and CSS</li>
+        <li><a href="https://www.w3schools.com/css/css_specificity.asp" target="_blank">CSS specificity</a></li>
+        <li><a href="https://www.w3schools.com/html/html_filepaths.asp" target="_blank">File Paths</a></li>
+        <li>Introduce <a href="/projects/passion.html" class="proj">Passion</a> (part 3)</li>
+      </ul>
+      
+      <h5>Optional</h5>
+      <ul class="reading">
+        <li>Review the w3schools <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">CSS selectors</a> page</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Start working on <a href="/projects/passion.html" class="proj">Passion</a> (part 3)</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 9/4</h3>
+      <ul>
+        <li><a href="/exercises/box-model.html" class="ex">Box Model</a> & box-sizing</li>
+        <li>Positioning walkthrough</li>
+        <li>Look through <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">w3schools positioning tutorial</a></li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Continue working on <a href="/projects/passion.html" class="proj">Passion</a> (part 3)</li>
+        <li>Have the 2 variations of your <a href="/projects/passion.html" class="proj">Passion</a> site ready to share on Tuesday next week</li>
+      </ul>
+
+      
+
+    </div>
+    
+    <!-- WEEK 4 -->
+    <div id="w4" class="week">
+      <h2>Week 4</h2>
+      <h3>Tuesday, 9/9</h3>
+      <ul>
+        <li>Share <a href="/projects/passion.html" class="proj">Passion</a></li>
+        <li>Introduce <a href="/projects/structure.html" class="proj">Structure</a> (due 9/18)</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Sketch some ideas for <a href="/projects/structure.html" class="proj">Structure</a></li>
+
+        <li><a href="/exercises/favicon.html" class="ex">Favicon</a> workshop</li>
+        <li>Add your favicon to your <a href="/exercises/homepage.html" class="ex">Homepage</a></li>
+        <li>Send me your favicon file so I can add it to the community page</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 9/11</h3>
+      <ul>
+        <li><a href="/exercises/flexbox.html" class="ex">Flexbox</a> walkthrough</li>
+      </ul>
+
+      <h5>Reading</h5>
+      <ul class="reading">
+        <li>
+          <a href="/assets/choi_hello-world.pdf" target="_blank">Taeyoon Choi, Hello World!</a>
+        </li>
+      </ul>
+
+      <h5>Optional</h5>
+      <ul class="reading">
+        <li>
+          Check out <a target="_blank" href="https://2019.wattenberger.com/blog/css-percents">Percents in CSS</a>
+        </li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make a journal entry reflecting on the reading</li>
+        <li>Continue working on <a href="/projects/structure.html" class="proj">Structure</a></li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 5 -->
+    <div id="w5" class="week">
+      <h2>Week 5</h2>
+      <h3>Tuesday, 9/16</h3>
+      <ul>
+        <li>Reading Discussion</li>
+        <ul class="reading">
+          <li>
+            <a href="/assets/choi_hello-world.pdf" target="_blank">Taeyoon Choi, Hello World!</a>
+          </li>
+        </ul>
+        <br>
+        <li>Share progress on <a href="/projects/structure.html" class="proj">Structure</a> in small groups</li>
+        <li>Studio time</li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Have <a href="/projects/structure.html" class="proj">Structure</a> ready to share on Thursday</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 9/18</h3>
+      <ul>
+        <li>Share <a href="/projects/structure.html" class="proj">Structure</a></li>
+        <li>Introduce <a href="/projects/screensaver.html" class="proj">Screensaver</a> (due 10/2)</li>
+      </ul>
+
+      <h5>Reading</h5>
+      <ul class="reading">
+        <li><a href="https://a-friend-is-writing.bewe.me/" target="_blank">Callum Copley - A Friend is Writing</a> &mdash; (<a href="/assets/copley_friend-is-writing.pdf" target="_blank">pdf</a>)</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make a journal entry reflecting on the reading</li>
+        <li>Sketch some ideas for <a href="/projects/screensaver.html" class="proj">Screensaver</a></li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 6 -->
+    <div id="w6" class="week">
+      <h2>Week 6</h2>
+      <h3>Tuesday, 9/23</h3>
+      <ul>
+        <li>Animation walkthrough</li>
+        <li><a href="/examples/animation/index.html">Animation example</a></li>
+        <li>Look through <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">w3schools animation tutorial</a></li>
+      </ul>
+
+      <h5>Optional</h5>
+      <ul class="reading">
+        <li><a href="https://www.youtube.com/watch?v=4PStxeSIL9I" target="_blank">Looking at animation performance</a></li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Continue working on <a href="/projects/screensaver.html" class="proj">Screensaver</a></li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 9/25</h3>
+      <ul>
+        <li>Reading Discussion</li>
+        <ul class="reading">
+          <li><a href="https://a-friend-is-writing.bewe.me/" target="_blank">Callum Copley - A Friend is Writing</a> &mdash; (<a href="/assets/copley_friend-is-writing.pdf" target="_blank">pdf</a>)</li>
+        </ul>
+        <br>
+        <li>Share progress on <a href="/projects/screensaver.html" class="proj">Screensaver</a> in small groups</li>
+        <li>Studio time</li>
+        <li>Optional: CSS interaction/transition exercise</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Have <a href="/projects/screensaver.html" class="proj">Screensaver</a> ready to share on Tuesday next week</li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 7 -->
+    <div id="w7" class="week">
+      <h2>Week 7</h2>
+      <h3>Tuesday, 9/30</h3>
+      <ul>
+        <li><a href="/exercises/responsiveness.html" class="ex">Responsiveness exercise</a></li>
+        <li><a href="/examples/responsive-flex/index.html">Responsiveness example</a></li>
+        <li>Transitions</li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Have <a href="/projects/screensaver.html" class="proj">Screensaver</a> ready to share on Thursday</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 10/2</h3>
+      <ul>
+        <li>Share <a href="/projects/screensaver.html" class="proj">Screensaver</a></li>
+        <li>Introduce <a href="/projects/control.html" class="proj">Control</a> (due 10/21)</li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Sketch some ideas for <a href="/projects/control.html" class="proj">Control</a></li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 8 -->
+    <div id="w8" class="week">
+      <h2>Week 8</h2>
+      <h3>Tuesday, 10/7</h3>
+      <ul>
+        <li><a href="/exercises/javascript.html" class="ex">Javascript</a> walkthrough</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 10/9</h3>
+      <ul>
+        <li><a href="/exercises/jquery.html" class="ex">jQuery</a> walkthrough</li>
+        <li><a href="/examples/jquery/index.html">jQuery example</a></li>
+        <li>Other javascript libraries</li>
+      </ul>
+
+      <h5>Reading</h5>
+      <ul class="reading">
+        <li><a href="https://www.are.na/blog/the-internet%27s-back-to-the-land-movement" target="_blank">Becca Abbe, The Internet’s Back-to-the-Land Movement</a> &mdash; (<a href="../assets/abbe_internets-back-to-the-land.pdf" target="_blank">pdf</a>)</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make a journal entry reflecting on the reading</li>
+        <li>Continue working on <a href="/projects/control.html" class="proj">Control</a></li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 9 -->
+    <div id="w9" class="week">
+      <h2>Week 9</h2>
+      <h3>Tuesday, 10/14</h3>
+      <ul>
+        <li>Reading Discussion</li>
+        <ul class="reading">
+          <li><a href="https://www.are.na/blog/the-internet%27s-back-to-the-land-movement" target="_blank">Becca Abbe, The Internet’s Back-to-the-Land Movement</a> &mdash; (<a href="../assets/abbe_internets-back-to-the-land.pdf" target="_blank">pdf</a>)</li>
+        </ul><br>
+        <li>Share progress on <a href="/projects/control.html" class="proj">Control</a> in small groups</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 10/16</h3>
+      <ul>
+        <li>Studio Time</li>
+        <li>Optional 1-on-1 meetings</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Have <a href="/projects/control.html" class="proj">Control</a> ready to share on Tuesday</li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 10 -->
+    <div id="w10" class="week">
+      <h2>Week 10</h2>
+      <h3>Tuesday, 10/21</h3>
+      <ul>
+        <li>Share <a href="/projects/control.html" class="proj">Control</a></li>
+        <li>Introduce <a href="/projects/final.html" class="proj">Final</a> (due 12/4)</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 10/23</h3>
+      <ul>
+        <li>Share 1-on-1 Signup Sheet</li>
+        <li>Introduce <a href="/exercises/domain-name.html">Domain Name Workshop</a></li>
+        <li>CMS and Portfolio info session</li>
+        <br>
+        <li>Spend some time surfing the web, add interesting and inspiring sites to the <a href="https://www.are.na/aidan-quinlan/class-collection">class collection</a></li>
+        <li>Some places to start surfing:</li>
+        <ul>
+          <li><a href="https://gossipsweb.net/">Gossip’s Web</a></li>
+          <li><a href="https://www.are.na/aidan-quinlan/class-collection">Class Collection</a> and are.na in general</li>
+          <li><a href="https://www.are.na/aidan-quinlan/website-1518386176">My personal favorite websites channel</a></li>
+          <li><a href="https://www.are.na/laurel-schwulst/model-sites-mewvo9x0og8">Laurel’s model sites channel</a></li>
+          <li><a href="https://www.are.na/elliott-cost/model-sites">Elliott’s model sites channel</a></li>
+          <li><a href="https://neocities.org/browse">Neocities website directory</a></li>
+        </ul>
+        <br>
+        <li>Sketch ideas for final</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Continue working on <a href="/projects/final.html" class="proj">Final</a></li>
+        <li>Sign up for a 1-on-1 meeting</li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 11 -->
+    <div id="w11" class="week">
+      <h2>Week 11</h2>
+      <h3>Tuesday, 10/28</h3>
+      <ul>
+        <li>First group of final prep meetings</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 10/30</h3>
+      <ul>
+        <li>Second group of final prep meetings</li>
+      </ul>
+
+      <h5>Reading</h5>
+      <ul class="reading">
+        <li><a href="https://frankchimero.com/blog/2018/the-good-room/" target="_blank">Frank Chimero, The Good Room</a> &mdash; (<a href="/assets/chimero_good-room.pdf" target="_blank">pdf</a>)</li>
+        <li>Suggested re-read: <a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" target="_blank">Laurel Schwulst, My Website is a Shifting House...</a></li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make a journal entry reflecting on the reading</li>
+        <li>Continue working on <a href="/projects/final.html" class="proj">Final</a></li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 12 -->
+    <div id="w12" class="week">
+      <h2>Week 12</h2>
+      <h3>Tuesday, 11/4</h3>
+      * No Class, please vote! *
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Make sure to read <a href="https://frankchimero.com/blog/2018/the-good-room/" target="_blank">Frank Chimero’s The Good Room</a> by Thursday</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 11/6</h3>
+      <ul>
+        <li>Reading Discussion</li>
+        <ul class="reading">
+          <li><a href="https://frankchimero.com/blog/2018/the-good-room/" target="_blank">Frank Chimero, The Good Room</a> &mdash; (<a href="/assets/chimero_good-room.pdf" target="_blank">pdf</a>)</li>
+        </ul>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Continue working on <a href="/projects/final.html" class="proj">Final</a></li>
+      </ul>
+
+    </div>
+    
+    <!-- WEEK 13 -->
+    <div id="w13" class="week">
+      <h2>Week 13</h2>
+      <h3>Tuesday, 11/11</h3>
+      <ul>
+        <li>Studio Time</li>
+        <li>Optional 1-on-1 meetings</li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Prepare for group meetings on Thursday</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 11/13</h3>
+      <ul>
+        <li>Meet in small groups to share and discuss <a href="/projects/final.html" class="proj">Final</a> sites</li><br>
+        <ul>
+          <li>Share code and techniques you've come across through exploration or experimentation.</li>
+          <li>Ask for specific feedback and ideas about your project — have a conversation, riff!</li>
+          <li>Talk about things you wish the project was able to do, but isn't able to at the moment — someone may have an idea on how to accomplish that.</li>
+          <li>Share interesting sites and resources that you may have come across while working on this project.</li>
+        </ul>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Continue working on <a href="/projects/final.html" class="proj">Final</a></li>
+        <li>Have a domain name purchased if you intend to join/follow along in the domain name workshop on Tuesday next week.</li>
+      </ul>
+
+    </div>
+
+    <!-- WEEK 14 -->
+    <div id="w14" class="week">
+      <h2>Week 14</h2>
+      <h3>Tuesday, 11/18</h3>
+      <ul>
+        <li>Optional <a href="/exercises/domain-name.html">Domain Name Workshop</a></li>
+        <li>Studio time</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 11/20</h3>
+      <ul>
+        <li>Studio Time</li>
+        <li>Optional 1-on-1 meetings</li>
+      </ul>
+      
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Continue working on <a href="/projects/final.html" class="proj">Final</a></li>
+      </ul>
+    </div>
+    
+    <!-- WEEK 15 -->
+    <div id="w15" class="week">
+      <h2>Week 15</h2>
+      <h3>Fall Break</h3>
+      No class this week...
+    </div>
+    
+    <!-- WEEK 16 -->
+    <div id="w16" class="week">
+      <h2>Week 16</h2>
+      <h3>Tuesday, 12/2</h3>
+      <ul>
+        <li>Studio Time</li>
+        <li>Last chance for debugging with me!</li>
+      </ul>
+
+      <h5>For Next Class</h5>
+      <ul class="hwork">
+        <li>Have <a href="/projects/final.html" class="proj">Final</a> ready to share on Thursday, make sure it is live on your <a href="/exercises/homepage.html" class="ex">Homepage</a>.</li>
+        <li>Remember, you will still have a week after our final presentations to continue working on and finalizing your final project if you would like. We can consider the final presentation as one last in-progress critique. But, you should aim to have the project mostly done or in a place that will elicit the feedback you are looking for.</li>
+      </ul>
+
+      <hr>
+
+      <h3>Thursday, 12/4</h3>
+      <ul>
+        <li>Prior to sharing:</li>
+        <ul>
+          <li>Make sure your final project is published and accessible online.</li>
+          <li>Post the link to your Final project in your own Final discord channel. If you are unable to get it online for whatever reason, add screenshots or a screen recording.</li>
+          <li>Feel free to request any specific feedback you're looking for here as well.</li>
+        </ul>
+        <br>
+        <li>Share <a href="/projects/final.html" class="proj">Final</a></li>
+        <ul>
+          <li>We'll limit comments to just a few per presentation so we can make sure to see everyone's work.</li>
+          <li>After presentations, I will assign everyone to smaller feedback groups and we'll say our goodbyes. Once we break, spend some more time with your group members' sites on your own and leave detailed feedback on their respective Final discord channel.</li>
+        </ul>
+        <br>
+        <li>For presentations:</li>
+        <ul>
+          <li>Share your final website however you want!</li>
+          <li>Ask for specific feedback if you want to.</li>
+          <li>If the site is not finished, articulate where you expect/want it to go with more time.</li>
+          <li>Share technical struggles and solutions.</li>
+          <li>Share cool things you learned while working on it.</li>
+        </ul>
+        <br>
+        <li>For feedback:</li>
+        <ul>
+          <li>Spend a bit of time with each of your group members' sites. Treat them like websites you might have come across while browsing the web.</li>
+          <li>Try to respond to any specific feedback that was requested.</li>
+          <li>Ask yourself what the website is trying to do and respond to that. What is the site doing that aids in this effect? What is it doing that seems to distract from its intent?</li>
+          <li>If you have feedback to give for anyone outside of your group, please do so as well!</li>
+        </ul>
+      </ul>
+
+      <h5>For the End of Class</h5>
+      <ul class="hwork">
+        <li>Final work due on Friday, December 12. Make sure everything is published on your <a href="/exercises/homepage.html" class="ex">Homepage</a>.<br><br>
+          I'll be looking for:<br>
+          - passion (2 variations)<br>
+          - structure<br>
+          - screensaver<br>
+          - accordion<br>
+          - control<br>
+          - final<br><br>
+
+          - 6 journal entries<br>
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+</section>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/js.cookie.min.js"></script>
+<script src="/js/functions.js"></script>
+
+</body>
+</html>
