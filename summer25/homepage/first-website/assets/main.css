@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Cassia';
+    src: url('cassia.woff2') format('woff2'),
+    url('cassia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color:#b5cf9b;
+    font-size: 20px;
+    font-family: 'Cassia', serif;
+}
+
+p {
+    background-color:#ebecbc;
+    color: #53693b;
+
+    padding:10px;
+    margin:30px;
+
+    border: 5px double;
+}
+
+h1 {
+    color:#53693b;
+    border-top: 5px double;
+    border-bottom: 5px double;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+h2 {
+    font-family:'Barlow Condensed', sans-serif;
+}
+
+strong {
+    color:#53693b;
+    text-decoration:underline;
+}
+
+/* img elements are inline by default */
+img {
+    max-width:100%;
+}
+
+.special {
+    background-color:#d4ff89;
+    border:5px inset #cbf258;
+    font-family: 'Bellota Text', sans-serif;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* 
+stylesheet specificity
+external < embedded < inline
+*/
+
+header {
+    margin:20px;
+    padding:10px;
+    width:300px;
+    text-align: center;
+
+    background-color:lightblue;
+}
+
+/* 
+Identifier specificity
+tag < class < id
+*/
+
+main {
+    margin:20px;
+    padding:10px;
+    width:300px;
+    text-align: center;
+
+    background-color:lightgray;
+}
+
+.class {
+    background-color: lightsalmon;
+}
+
+#id {
+    background-color:cornflowerblue;
+}
+
+/* 
+Location specificity
+higher < lower
+*/
+
+footer {
+    margin:20px;
+    padding:10px;
+    width:300px;
+    text-align: center;
+
+    background-color:bisque;
+}
+
+footer {
+    background-color:darkolivegreen;
+}

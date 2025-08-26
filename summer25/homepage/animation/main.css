@@ -1,0 +1,137 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+}
+
+img {
+    max-width:100%;
+}
+
+.test {
+    background:lightseagreen;
+    width:100px;
+    height:100px;
+    position:relative;
+
+    /* animation-name: test; */
+    /* animation-duration: 4s; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count:infinite; */
+    /* animation-direction: alternate; */
+    /* animation-timing-function:cubic-bezier(1,0,0,1); */
+    /* animation-fill-mode:both; */
+
+    animation: test 4s 2s infinite alternate cubic-bezier(1,0,0,1) both;
+}
+
+@keyframes test {
+    0% {
+        background:red;
+        left:0;
+    }
+    100% {
+        background:lightgoldenrodyellow;
+        left:200px;
+    }
+}
+
+.container {
+    background:lightsteelblue;
+    height:100vh;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    /* gap:100px; */
+    position:relative;
+    overflow:hidden;
+}
+
+.circle {
+    background:lightgoldenrodyellow;
+    width:10vw;
+    height:10vw;
+    border-radius:50%;
+    animation: pulse 2s infinite alternate cubic-bezier(1,0,0,1); 
+}
+
+@keyframes pulse {
+    0% {
+        background:lightgoldenrodyellow;
+        /* width:10vw;
+        height:10vw; */
+        scale:1;
+    }
+    100% {
+        background:#ec884e;
+        /* width:15vw;
+        height:15vw; */
+        scale:1.4;
+    }
+}
+
+.square {
+    background:lightgoldenrodyellow;
+    width:10vw;
+    height:10vw;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.mover {
+    background:lightgoldenrodyellow;
+    width:15vw;
+    height:4vw;
+    position:absolute;
+    bottom:0;
+    left:0;
+    animation: move 4s infinite ease-out;
+}
+
+@keyframes move {
+    0% {
+        left:-15vw;
+    }
+    100% {
+        left:100vw;
+    }
+}
+
+.changer {
+    background:lightgoldenrodyellow;
+    width:10vw;
+    height:10vw;
+    transition: 
+        background 2s  ease-in-out, 
+        border-radius 8s  ease-in-out,
+        rotate 4s ease-in-out;
+}
+
+.changer:hover {
+    background:#ec884e;
+    rotate:360deg;
+    border-radius:100%;
+}
+
+@keyframes change {
+    0% {
+        background:lightgoldenrodyellow;
+        rotate:0;
+        border-radius:0;
+    }
+    100% {
+        background:#ec884e;
+        rotate:360deg;
+        border-radius:100%;
+    }
+}

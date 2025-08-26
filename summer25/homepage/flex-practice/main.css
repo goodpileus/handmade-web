@@ -1,0 +1,77 @@
+* {
+    box-sizing:border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.margin-center {
+    background:lavender;
+    padding:10px;
+    max-width:600px;
+    /* if margin has 2 values, the first value corresponds with the top and bottom, second with the left and right */
+    margin:10px auto;
+}
+
+.translate-center {
+    background:lightgoldenrodyellow;
+    padding:10px;
+    width:600px;
+    max-width:100%;
+
+    position:relative;
+    left:50%;
+    /* top:50%; */
+    /* transform:translate(-50%, -50%); */
+    translate: -50%;
+}
+
+.container {
+    background:lightblue;
+    padding:10px;
+    display:flex;
+
+    /* the flex direction determines the main and cross axis directions, which changes how our alignment properties work */
+    flex-direction:row;
+
+    justify-content:center;
+
+    /* align items is used for single line flexboxes */
+    /* align-items:center; */
+    /* align-items:flex-end; */
+
+    flex-wrap:wrap;
+    /* align content is used for multi-line, wrapping flexboxes */
+    align-content:center;
+
+    gap:10px;
+
+    /* height:400px; */
+    margin:0 auto;
+}
+
+.left-center {
+    background:lightgreen;
+    border:1px solid;
+    padding:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    width:625px;
+}
+
+.item {
+    background:bisque;
+    padding:10px;
+    border:1px solid;
+
+    width:200px;
+    /* margin-right:20px; */
+}
+
+.hide {
+    opacity:0;
+    height:0;
+    padding:0;
+}

@@ -1,0 +1,47 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background:lightcyan;
+}
+
+img {
+    max-width:100%;
+}
+
+.flexible {
+    background:lavender;
+    padding:10px;
+    max-width: 60%;
+    margin:0 auto;
+}
+
+/* max-width = desktop-first design */
+/* min-width = mobile-first design */
+
+@media screen and (min-width:600px) {
+
+    body {
+        background:lightgoldenrodyellow;
+    }
+
+    .flexible {
+        max-width:100%;
+    }
+
+}
+
+
+@media screen and (min-width:900px) {
+
+    body {
+        background:lightgreen;
+    }
+
+    .flexible {
+        border:1px solid;
+        max-width:80%;
+    }
+
+}
