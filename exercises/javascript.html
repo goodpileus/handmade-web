@@ -28,7 +28,7 @@
     <p>Now that we understand the fundamentals of the web, we can start venturing into the weeds of javascript...</p>
     <p>This excercise will focus on copy/pasting code from sources and tweaking it to get it to behave the way we want it to.</p>
 
-    <p>To start, it might help to define some of the things we’ll be dealing with:</p>
+    <p>To start, it will help to define some of the things we’ll be dealing with:</p>
 
     <h3><em>Functions</em></h3>
     <p>“Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure &mdash; a set of statements that performs a task or calculates a value.” In this example we’ll be writing a simple function that contains a series of tasks that we want it to execute every time that function is called.
@@ -42,13 +42,14 @@
     </p>
 
     <h3><em>Events</em></h3>
-    <p>An event is something that “the browser does, or something a user does.” Events are happening all the time in the background as the user interacts with the webpage and we can use javascript to react to those events. In this example, we’ll be using the ‘onclick’ event to trigger our function. As the name suggests, this event will be triggered when the user clicks on a specified element.
+    <p>An event is something that “the browser does, or something a user does.” Events are happening all the time in the background as the user interacts with the webpage and we can use javascript to react to those events. In this example, we’ll be using the ‘onclick’ event to trigger our function. As the name suggests, this event is triggered when the user clicks on a specified element.
     <br>
     More on events at <a href="https://www.w3schools.com/js/js_events.asp">w3schools</a>.
     </p>
     <hr>
 
-    <p>We’ll start by writing some javascript directly inside our HTML document. We can place this anywhere we like, but it’s recommended to place it at the bottom of the body element, just before the closing tag. If we are adding javascript to our HTML document, it must be written between script tags.</p>
+    <p>We’ll start by writing some javascript directly inside our HTML document. We can place this anywhere we like, but it’s recommended to place it at the bottom of the body element, just before the closing tag. Placing our scripts here improves display speed, as script interpretation (if encountered at the top of the document) could delay the page from rendering. If we are adding javascript to our HTML document, it must be written between script tags.</p>
+    
     <p>Copy and paste this script with a simple function inside to the bottom of your body element:</p>
 <xmp><script>
 function change() {
