@@ -344,6 +344,7 @@ nav.active {
 #nav a {
   text-decoration: none;
   color: var(--text);
+  display: block;
 }
 
 #nav a.active {
