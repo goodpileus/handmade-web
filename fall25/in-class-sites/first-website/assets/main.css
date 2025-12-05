@@ -1,0 +1,35 @@
+body {
+    background:#96939c;
+    color:#ffffaf;
+    font-family:sans-serif;
+}
+
+p {
+    background:#6b6b88;
+    color:beige;
+    border:5px solid;
+    padding:10px;
+    margin:15px;
+}
+
+p:hover {
+    background:beige;
+    color:#6b6b88;
+}
+
+.banner {
+    text-align:center;
+    font-size: 170%;
+    border-style:dashed;
+}
+
+a {
+    color:#e49b67;
+    font-style:italic;
+    font-weight:bold;
+}
+ 
+a:hover {
+    color:#ececdd;
+}
+
