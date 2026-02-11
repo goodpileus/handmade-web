@@ -46,8 +46,8 @@
 
     <p>This means that when we set the width and height properties of an element, they will always render at that exact width and height regardless of the padding and border sizes.</p>
     <img style="width:700px;" src="/img/box-model-02.png">
-    <p>This is generally the preferred method of box sizing by most developers because it simplifies the calculation of the actual size of an element. When using <em>border-box</em>, the only thing left to be accounted for is the margin.</p>
-    <p>To make things easier we can add these lines to the top of our stylesheet to make every element render using <em>border-box</em>:</p>
+    <p>Generally, this is the preferred method of box sizing by most developers because it simplifies the calculation of the actual size of an element. When using <em>border-box</em>, the only thing left to be accounted for is the margin.</p>
+    <p>To make things easier we can add this wildcard rule to the top of our stylesheet to make every element render using <em>border-box</em>:</p>
 <xmp>* {
   box-sizing: border-box;
 }</xmp>
