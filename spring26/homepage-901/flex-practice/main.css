@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color:bisque;
+    padding:10px;
+    height:900px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.top {
+    /* background-color:azure; */
+    height:20%;
+    display:flex;
+    gap:10px;
+}
+
+.top-item {
+    background-color:darkkhaki;
+    width:100%;
+}
+
+.bottom {
+    background-color:cadetblue;
+    height:80%;
+    display:flex;
+}
+
+.left {
+    background-color:chartreuse;
+    width:50%;
+}
+
+.right {
+    background-color: lightpink;
+    width:50%;
+}
+

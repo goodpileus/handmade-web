@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+}
+
+.buttons {
+    position:fixed;
+    top:10px;
+    left:10px;
+}
+
+.container {
+    background:#c7d1de;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.container.dark {
+    background: #90959c;
+}
+
+.box {
+    background:#90a3bb;
+    width:100px;
+    height:100px;
+    animation: spin 4s infinite linear;
+    animation-play-state:paused;
+}
+
+.box.dark {
+    background:#515c69;
+}
+
+.box.spin {
+    animation-play-state:running;
+}
+
+@keyframes spin {
+    0% {
+        rotate:0;
+    }
+    100% {
+        rotate:360deg;
+    }
+}
+
+.chair {
+    width:200px;
+    position:fixed;
+    bottom:20px;
+    right:10px;
+    display:none;
+    background:red;
+}
+
+.chair.reveal {
+    display:block;
+}
+
+.draggable {
+    cursor:grab;
+}

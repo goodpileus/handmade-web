@@ -1,0 +1,48 @@
+body {
+    background-color:#a3d6e8;
+    font-size:22px;
+    font-family: "Lobster", sans-serif;
+}
+
+p {
+    background-color:darkkhaki;
+    color:cornsilk;
+    border: dashed 200px red;
+    text-align:right;
+    /* width:400px; */
+
+    /* padding is for internal spacing */
+    padding: 20px 60px 80px 100px;
+
+    /* margin is for external spacing */
+    margin: 50px;
+}
+
+/* 
+    for padding:
+    1 value: all sides
+
+    2 values: 1st value = top/bottom, 2nd = left/right
+
+    4 values: 1st = top, 2nd = right, 3rd = bottom, 4th = left
+*/
+
+/* 
+    cmd + / or ctrl + /
+    opt + shift + a for alternative comment shortcut 
+*/
+
+h1 {
+    /* font-size:60px; */
+}
+
+.special {
+    background-color:darkorange;
+    color:brown;
+    border-radius: 100%;
+}
+
+.centered-text {
+    text-align:center;
+    padding: 20px;
+}

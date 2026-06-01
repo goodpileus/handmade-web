@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+    background:lightgoldenrodyellow;
+    transition: background .5s;
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+main {
+    display:flex;
+    gap:10px;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header, 
+.left, 
+.center, 
+.right, 
+footer {
+    border: 1px solid;
+    padding:20px;
+}
+
+.center {
+    width:50%;
+}
+
+.left, .right {
+    width:25%;
+}
+
+/* min-width = mobile first */
+/* for mobile-first, we want our media queries to increase in pixel size as we move down our css document */
+
+/* max-width = desktop first */
+/* for desktop-first, we want our media queries to decrease in pixel as we move down our css document */
+
+@media screen and (max-width: 1000px) {
+    body {
+        background:lightpink;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width:100%;
+    }
+
+    .center, .right {
+        width:calc(50% - 5px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background:lightgreen;
+        font-size: 130%;
+    }
+
+    .center, .right {
+        width:100%;
+    }
+}

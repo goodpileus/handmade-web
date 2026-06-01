@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    background-color:burlywood;
+    height:50px;
+    margin: 20px;
+    padding:20px;
+}
+
+.inline {
+    background-color:lightgreen;
+    width:100px;
+    height:50px;
+    margin:50px;
+    padding:50px;
+    display:inline-block;
+}
+
+.container {
+    background-color:blanchedalmond;
+    padding:20px;
+    display:flex;
+
+    height:600px;
+
+    /* establishes the main-axis of the flexbox */
+    flex-direction:row;
+    flex-wrap:wrap;
+
+    /* main-axis alignment */
+    justify-content:space-between;
+
+    /* cross-axis alignment for non-wrapping flexboxes */
+    align-items:flex-end;
+
+    /* cross-axis alignment for wrapping flexboxes */
+    align-content: flex-end;
+
+    gap: 20px;
+}
+
+.item {
+    background-color:chartreuse;
+    padding:10px;
+    border:1px solid;
+
+    width:100px;
+}
