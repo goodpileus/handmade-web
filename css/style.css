@@ -4,6 +4,8 @@
 
   /* --acc: rgba(163, 155, 141, 0.3); */
   --acc: rgba(152, 152, 152, 0.15);
+  --select: rgba(255, 175, 95, 0.5);
+  --select-night: rgba(173, 124, 179, 0.5);
 
   --sun: #c65841;
   --sun: #f00;
@@ -27,8 +29,16 @@
   --br: .8rem;
 
   --save-on: 30s cubic-bezier(.87,0,.19,1);
-  --save-off: 1s cubic-bezier(.87,0,.19,1);
+  --save-off: 0s cubic-bezier(.87,0,.19,1);
   --night-on: 0s cubic-bezier(.87,0,.19,1);
+}
+
+@font-face {
+  font-family: 'selectric';
+  src: url('../assets/selectric-roman.woff2') format('woff2'),
+   url('../assets/selectric-roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -72,15 +82,20 @@
 }
 
 * {
-  font-family: 'qt letter goth', monospace;
+  /* font-family: 'qt letter goth', monospace; */
+  font-family: 'selectric', serif;
   /* font-family: juliamono, monospace; */
   /* font-family: notcouriersansregular, monospace; */
   box-sizing: border-box;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
-::selection {
-  background: var(--acc);
+*::selection {
+  background: var(--select);
+}
+
+html.night-time *::selection {
+  background:var(--select-night);
 }
 
 html {
@@ -90,6 +105,9 @@ html {
   color: var(--text);
   transition: opacity .3s, background var(--save-off), color var(--save-off);
   /* background: black; */
+  letter-spacing: .7%;
+  font-size: 98%;
+  line-height:140%
 }
 
 body {
@@ -130,13 +148,31 @@ ul, ol {
 }
 
 ul {
-  padding-left:2rem;
+  padding-left:1.5rem;
   margin-bottom:.6rem;
+  margin-top:.6rem;
 }
 
 ul li {
-  padding-left:.7rem;
-  margin:.25rem 0;
+  /* padding-left:.7rem; */
+  padding:0;
+  margin:.3rem 0;
+  list-style: '';
+  position: relative;
+}
+
+ul li::before {
+  content: '◼';
+  /* background:pink; */
+  position: absolute;
+  width:1.5rem;
+  left:-1.5rem;
+  /* text-align: center; */
+  font-size: 80%;
+}
+
+ul ul li::before {
+  content:'□'
 }
 
 ol {
@@ -144,8 +180,8 @@ ol {
 }
 
 ol li {
-  padding-left:.2rem;
-  margin:.25rem 0;
+  /* padding-left:.2rem; */
+  margin:.3rem 0;
 }
 
 p {
@@ -155,17 +191,19 @@ p {
 
 h1, h2, h3, h4 {
   color: var(--header);
-  margin:0 0 1rem -1rem;
+  margin:0 0 1rem -.5rem;
+  /* font-family: 'qt letter goth', monospace; */
+
 }
 
 h1 {
   font-size: 1.35rem;
   letter-spacing: -1px;
-
 }
 
 h2 {
   font-size:1.15rem;
+  /* margin-top:1.2rem; */
 }
 
 h3 {
@@ -207,12 +245,12 @@ xmp {
 
 hr {
   border:none;
-  border-bottom:1px solid;
+  border-bottom:1px dashed;
   color: inherit;
   margin:1rem 0;
   opacity: 1;
-  width:calc(100% + 3rem);
-  margin-left:-1.5rem;
+  width:calc(100% + 3.5rem);
+  margin-left:-1.7rem;
   /* position: relative; */
 }
 
@@ -295,11 +333,12 @@ table.grades tr td:last-of-type {
 -------------------------------- */
 #main {
   margin-left:var(--nav-width);
-  padding:.5rem;
+  padding:.7rem;
   display: flex;
   justify-content: center;
   background: inherit;
   min-height: calc(100vh - 1.5rem);
+  overflow-x: hidden;
 }
 
 .inner {
@@ -322,11 +361,12 @@ table.grades tr td:last-of-type {
   display: flex;
   flex-flow: column;
   width:var(--nav-width);
-  padding:.5rem;
+  padding:.7rem;
+  padding-bottom:1.5rem;
   border-right:1px solid;
   position: fixed;
   justify-content: space-between;
-  padding-bottom:1.5rem;
+  z-index: 90;
 }
 
 nav {
@@ -357,14 +397,20 @@ nav.active {
 #nav details {
   display: flex;
   flex-flow: column;
-  margin-left:1.2rem;
+  /* margin-left:1.2rem; */
 }
 
 #nav details summary {
- margin-left:-1.2rem;
- width:calc(100% + 1.2rem);
+ /* margin-left:-1.2rem; */
+ /* width:calc(100% + 1.2rem); */
+ margin-left:0;
+ width:100%;
  margin-bottom:0;
  padding:0;
+}
+
+#nav details a {
+  padding-left:1rem;
 }
 
 details summary::marker {
@@ -379,7 +425,7 @@ details summary {
  list-style:none;
  cursor:pointer;
  /* margin-bottom:1rem; */
- margin-left:-1rem;
+ margin-left:-.5rem;
  padding:.2rem 0;
  width:calc(100% + 1rem);
 }
@@ -414,10 +460,27 @@ details summary::selection {
 }
 
 .current-class {
-  padding-left:1.2rem;
+  /* padding-left:1.2rem; */
   display: flex;
   flex-flow: column;
   margin-bottom:1rem;
+}
+
+.current-class a,
+#nav .current-class details summary {
+  padding-left:1rem;
+}
+
+#nav .current-class details a {
+  padding-left:2rem;
+}
+
+.nav-calendar span {
+  padding-left:1rem;
+}
+
+.nav-calendar a {
+  padding-left:2rem;
 }
 
 button {
@@ -429,22 +492,42 @@ button {
   height:100%;
   margin-bottom: .5rem;
   margin-top: -.5rem;
+  align-self:flex-start;
+  width:100%;
 }
 
 .lightswitches div {
   display: flex;
   /* justify-content: space-between; */
   margin-top:.5rem;
+  gap:.5rem;
 }
 
 .lightswitches button {
-  width:20px;
-  height:20px;
+  /* width:20px; */
+  width: 30px;
+  height:15px;
   border:1px solid;
 }
 
+.lightswitches button.active {
+  /* border:2px solid; */
+  position: relative;
+}
+
+.lightswitches button.active::before {
+  content:'x';
+  /* background:pink; */
+  height:100%;
+  width:100%;
+  /* line-height:75%; */
+  line-height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
 .day-btn {
-  margin-right:.5rem;
   background:var(--bg);
 }
 
@@ -452,15 +535,16 @@ button {
   background:var(--night);
 }
 
-.ray-btn {
+button.ray-btn {
   background: linear-gradient(90deg, rgba(251, 230, 216, 0.4) 0%, rgba(24, 39, 88, 0.4) 100%);
   position: relative;
+  /* width:15px; */
 }
 
 .ray-btn::after {
   position: absolute;
-  bottom:0;
-  left:30px;
+  bottom:-1.5rem;
+  left:0;
   content:"(may slow page)";
   pointer-events: none;
   width: 160px;
@@ -524,17 +608,18 @@ button {
 }
 
 .cal-inner {
-  margin-top: 6.5rem;
+  margin-top: 7.5rem;
 }
 
 #cal-header {
   position: fixed;
   width:100%;
   background: inherit;
-  margin-left: -1.5rem;
+  margin-left: -1.7rem;
   top:0;
-  padding:.5rem;
+  padding:.7rem 1.3rem;
   border-bottom: 1px solid;
+  z-index: 90;
 }
 
 #cal-header h3 {
@@ -544,14 +629,16 @@ button {
 .cal-nav button {
   background: transparent;
   border:1px solid;
-  padding: .2rem .5rem;
+  padding: .4rem .6rem .3rem .6rem;
   border-radius: 3px;
+  height:2rem;
 }
 
 select {
   margin-bottom:1rem;
   background: transparent;
-  padding: .2rem;
+  padding: .4rem .5rem .3rem .5rem;
+  height:2rem;
   border: 1px solid;
   color:inherit;
   border-radius: 3px;
@@ -562,12 +649,30 @@ select option {
   font-family: inherit;
 }
 
-.reading {
-  list-style: square;
+h2 .overview, 
+h3 .overview {
+  opacity:.7;
+  margin-left:1rem;
+  font-weight: normal;
+  font-size: 93%;
 }
 
-.hwork {
-  list-style: circle;
+h2 .overview {
+  font-size: 80%;
+}
+
+.reading li::before {
+  content: '▮';
+}
+
+.hwork li::before {
+  content: '⧗';
+  /* font-size: 70%; */
+}
+
+.optional li::before {
+  content: '◌';
+  /* font-size: 70%; */
 }
 
 .proj, .ex {

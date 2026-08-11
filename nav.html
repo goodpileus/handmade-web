@@ -1,19 +1,23 @@
 <div class="nav-inner">
   <a class="title" href="/index.html">Handmade Web</a>
 
-  <span class="current-season">Summer 26</span>
+  <span class="current-season">Fall 26</span>
   <div class="current-class">
-    <a href="/summer26/index.html">Syllabus</a>
-    <a href="/summer26/calendar.html">Calendar</a>
+    <a href="/fall26/index.html">Syllabus</a>
+    <div class="nav-calendar">
+      <span>Calendar:</span>
+      <a href="/fall26/calendar-901.html">[901] t/th</a>
+      <a href="/fall26/calendar-902.html">[902] m/w</a>
+    </div>
     <details id="nav-projects">
       <summary>Projects</summary>
-      <a href="/projects/passion-summer.html">Passion</a>
+      <a href="/projects/passion.html">Passion</a>
       <a href="/projects/structure.html">Structure</a>
       <a href="/projects/screensaver.html">Screensaver</a>
-      <!-- <a href="/projects/control.html">Control</a>  -->
-      <a href="/projects/final-summer.html">Final</a>
+      <a href="/projects/control.html">Control</a> 
+      <a href="/projects/final.html">Final</a>
     </details>
-    <a href="/summer26/community.html">Community</a>
+    <a href="/fall26/community.html">Community</a>
   </div>
 
 
@@ -37,6 +41,7 @@
 
   <details id="nav-past">
     <summary>Past Classes</summary>
+    <a href="/summer26/community.html">26 Summer</a>
     <a href="/spring26/community.html">26 Spring</a>
     <a href="/fall25/community.html">25 Fall</a>
     <a href="/summer25/community.html">25 Summer</a>
@@ -77,8 +82,8 @@
 <div class="lightswitches">
   <div>
     <button class="day-btn" onclick="dayTime()"></button>
-    <!-- ------------ -->
     <button class="night-btn" onclick="nightTime()"></button>
+    
   </div>
 
   <div>
@@ -116,5 +121,12 @@ if(Cookies.get('night') == 'true') {
 
 } else if(Cookies.get('dayTime') == 'true'){
   dayTime();
+}
+
+if(Cookies.get('rays') == 'true') {
+  $('.sun div').css( "transition", '0s');
+  $('.sun div').addClass( "active");
+  $('.ray-btn').addClass( "active");
+  console.log('rays');
 }
 </script>

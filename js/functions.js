@@ -56,6 +56,9 @@ function dayTime() {
   document.addEventListener("keypress", resetTimer);
   resetTimer();
 
+  $('.night-btn').removeClass( "active");
+  $('.day-btn').addClass( "active");
+
   Cookies.set('night', false);
 
   Cookies.set('dayTime', true);
@@ -68,6 +71,9 @@ function nightTime() {
   $('.sun').addClass( "saving night-time");
   $('.moon').addClass( "saving night-time" );
   $('html').addClass( "saving night-time");
+  
+  $('.day-btn').removeClass( "active");
+  $('.night-btn').addClass( "active");
 
   $('.icon-day').addClass( "saving night-time");
   $('.icon-night').addClass( "saving night-time");
@@ -93,14 +99,10 @@ function nightTime() {
 //   dayTime();
 // }
 
-if(Cookies.get('rays') == 'true') {
-  $('.sun div').css( "transition", '0s');
-  $('.sun div').addClass( "active");
-}
-
 function rays() {
   $('.sun div').toggleClass( "active");
   $('.sun div').css( "transition", '1s');
+  $('.ray-btn').toggleClass( "active");
 
   if(Cookies.get('rays') == 'true') {
     Cookies.set('rays', false);
