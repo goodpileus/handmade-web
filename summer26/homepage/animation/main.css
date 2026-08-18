@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+body {
+  margin:0;
+}
+
+.box {
+  background-color:lightblue;
+  width:200px;
+  height:200px;
+  position:relative;
+
+  /* animation-name: test;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: both; */
+
+  /* in the animation shorthand, the animation delay must be the second declared time value, otherwise order doesn't matter */
+  animation: test 4s 2s infinite linear alternate both;
+}
+
+@keyframes test {
+  0% {
+    background-color:#979472;
+    left:0;
+  }
+  100% {
+    background-color:#ffff6a;
+    left:200px;
+  }
+}
+
+.container {
+  background-color:#c6beb3;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  position:relative;
+  overflow:hidden;
+}
+
+.circle {
+  background-color:#979472;
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-color:#979472;
+    scale:1;
+  }
+  100% {
+    background-color:#ffff6a;
+    scale:1.4;
+  }
+}
+
+.square {
+  background-color:#979472;
+  width:100px;
+  height:100px;
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    rotate:0deg;
+  }
+  100% {
+    rotate:360deg;
+  }
+}
+
+.mover {
+  background-color: #979472;
+  width:150px;
+  height:40px;
+  position: absolute;
+  bottom:0;
+  left:0;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  0% {
+    left: -150px;
+    rotate:0deg;
+  }
+  10% {
+    rotate:0deg;
+  }
+  30% {
+    rotate:180deg;
+  }
+  35% {
+    rotate:180deg;
+  }
+  50% {
+    rotate:0deg;
+  }
+  100% {
+    left:100vw;
+    rotate:0deg;
+  }
+}

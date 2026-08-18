@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Ouvrieres soldates';
+    src: url('ouvrieres-soldates.woff2') format('woff2'),
+        url('ouvrieres-soldates.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color:#d3d0a8;
+    /* background-image: url("haymakers-resting.jpg"); */
+    background-size: 10px;
+    font-family:fantasy;
+}
+
+p {
+    color:darkslateblue;
+    background-color:lightblue;
+    font-size:25px;
+    border:10px dotted red;
+
+    /* padding is for internal element spacing */
+    padding:50px;
+
+    /* margin is for external spacing of elements */
+    margin:80px;
+
+    font-weight:bold;
+    line-height:40px;
+    letter-spacing:2px;
+    font-style:italic;
+}
+
+p:hover {
+    background-color:cornsilk;
+}
+
+h1 {
+    color:#79a7dc;
+    font-family: "Iosevka Charon", "menlo", monospace;
+    font-weight:lighter;
+    font-style:italic;
+}
+
+h2 {
+    font-family: 'Ouvrieres soldates';
+}
+
+.banner {
+    background-color: #e9c762;
+    font-size:40px;
+    text-align:center;
+}
+
+a {
+    background-color:aliceblue;
+    color:brown;
+    text-decoration:none;
+}
+
+a:hover {
+    background-color:brown;
+    color:aliceblue;
+}

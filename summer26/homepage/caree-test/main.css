@@ -1,0 +1,29 @@
+* {
+    box-sizing:border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color:black;
+}
+
+/* h3 {
+    color:aliceblue;
+    position: relative;
+    top: 600px;
+    left: 200px;
+
+} */
+
+.start {
+    color:aliceblue;
+    background-color:black;
+    position: fixed;
+    top: 600px;
+    left: 300px;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body {
+  margin-bottom:300px;
+}
+
+.box {
+  background-color:#b0e7d5;
+  width:100px;
+  height:100px;
+  margin:20px 0;
+}
+
+.relative {
+  background-color:#d8dab7;
+  position:relative;
+  /* relatively positioned elements position themselves relative to their original location */
+  top:50px;
+  left:50px;
+  z-index:1;
+}
+
+.fixed {
+  background-color:#bfa5aa;
+  position:fixed;
+  /* fixed elements position themselves relative to the viewport (or browser window) */
+  bottom:0;
+  right:0;
+  margin:0;
+}
+
+.sticky {
+  background-color:darkkhaki;
+  position:sticky;
+  /* sticky position needs a top, bottom, left, or right property in order to function */
+  top:0;
+  z-index:2;
+  /* generally, z-index will only work on elements that have been given a position value other than static */
+}
+
+.container {
+  background-color:lightgrey;
+  width:400px;
+  height:400px;
+  position:relative;
+}
+
+.absolute {
+  background-color:lightblue;
+  position:absolute;
+  top:0;
+  right:-100px;
+  margin:0;
+}
+
+.smiley {
+  background-color:#e6ffa7;
+  width:300px;
+  height:350px;
+  position:relative;
+}
+
+.eye {
+  background-color:#5b6051;
+  width:50px;
+  height:50px;
+  position:absolute;
+  top:60px;
+  border:20px solid white;
+}
+
+.left {
+  left:50px
+}
+
+.right {
+  right:50px;
+}
+
+.nose {
+  background-color:#9aaa71;
+  width:40px;
+  height:60px;
+  position:absolute;
+  top:100px;
+  left:130px;
+}
+
+.mouth {
+  background:#9aaa71;
+  width:160px;
+  height:40px;
+  position:absolute;
+  bottom:60px;
+  left:70px;
+}
+
+.hat {
+  background-color:#716d5a;
+  width:80px;
+  height:40px;
+  position:absolute;
+  left:110px;
+  top:-40px;
+}

@@ -1,0 +1,7 @@
+animation-name: test;
+animation-duration: 4s;
+animation-delay: 2s;
+animation-iteration-count:infinite;
+animation-timing-function: linear;
+animation-direction: alternate;
+animation-fill-mode: both;

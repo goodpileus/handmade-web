@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+}
+
+.container {
+  background-color:#598686;
+  padding:20px;
+  display:flex;
+  border-radius:20px;
+  height:600px;
+
+  /* default flex-direction is row */
+  /* 
+    flex-direction establishes the main axis: 
+    row = horizontal
+    column = vertical 
+  */
+  flex-direction: row;
+  flex-wrap:wrap;
+
+  /* justify-content aligns our items along the main axis */
+  justify-content: center;
+
+  /* align-items aligns our items along the cross axis, and is intended for *non-wrapping* flexboxes */
+  align-items:start;
+
+  /* align-content aligns our items along the cross axis, and is intended for *wrapping* flexboxes */
+  align-content:center;
+
+  gap: 10px;
+}
+
+.item {
+  background-color:#dee8f1;
+  padding:10px;
+  border:1px solid;
+  width:200px;
+  height:100px;
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

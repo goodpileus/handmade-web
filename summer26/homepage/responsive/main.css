@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#cde9e9;
+}
+
+img {
+    max-width:100%;
+}
+
+.responsive {
+  background-color:lightblue;
+  max-width:800px;
+  margin:0 auto;
+  padding:10px;
+}
+
+/* max-width = desktop-first, media queries get progressively smaller as we move down the css */
+/* min-width = mobile-first, media queries get progressively larger as we move down the css */
+@media screen and (max-width: 900px) {
+  body {
+    background-color:lightgoldenrodyellow;
+  }
+
+  .responsive {
+    background-color:#b9e58e;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color:#8f5353;
+  }
+
+  .responsive {
+    background-color:#cda99f;
+  }
+}

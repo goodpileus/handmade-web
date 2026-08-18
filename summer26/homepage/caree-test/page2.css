@@ -1,0 +1,137 @@
+body {
+    background-color: black;
+
+}
+
+.reset {
+    background-color: black;
+    color:aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+#closer-btn {
+    background-color:black;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    top: 700px;
+    left: 1250px;
+    position: fixed;
+    cursor: pointer;
+}
+
+#closer-btn.clicked {
+    animation: grow-planets 3s forwards;
+}
+
+@keyframes grow-planets {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(3);
+    }
+}
+
+.blueplanet {
+    position: fixed;
+    top: 600px;
+    left: 900px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    animation: grow-blueplanet 4s 2s forwards;
+
+}
+
+@keyframes grow-blueplanet {
+    from {
+        background-color: aliceblue;
+        width:1px;
+        height: 1px;
+    }
+    to {
+        background-color:rgb(147, 200, 249);
+        width: 6px;
+        height: 6px;
+    }
+}
+
+
+.redplanet {
+    position: fixed;
+    top:500px;
+    left: 750px;
+    background-color:rgb(222, 209, 211);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    animation: grow-redplanet 4s 2s forwards;
+}
+
+@keyframes grow-redplanet {
+    from {
+        background-color: rgb(222, 209, 211);
+        width:4px;
+        height: 4px;
+    }
+    to {
+        background-color: rgb(223, 168, 179);
+        width: 9px;
+        height: 9px;
+    }
+} 
+
+
+.greenplanet {
+    position: fixed;
+    top:700px;
+    left:400px;
+    background-color:rgb(224, 239, 224);
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    animation: grow-greenplanet 4s 2s forwards;
+    
+}
+
+@keyframes grow-greenplanet {
+    from {
+        width: 2px;
+        height: 2px;
+    }
+    to {
+        background-color:rgb(168, 201, 168);
+        width: 7px;
+        height: 7px;
+    }
+}
+
+
+.yellowplanet {
+    position: fixed;
+    top: 300px;
+    left: 1000px;
+    background-color:rgb(250, 246, 223);
+    border-radius: 50%;
+    width:1px;
+    height: 1px;
+    animation: grow-yellowplanet 4s 2s forwards;
+}
+
+@keyframes grow-yellowplanet {
+    from {
+        width: 1px;
+        height: 1px;
+
+    }
+    to {
+        background-color:rgb(250, 240, 182);
+        width: 6px;
+        height: 6px;
+
+    }
+}
+
+

@@ -1,0 +1,48 @@
+body {
+    background-color:#e6cdb5;
+}
+
+h1 {
+    font-weight:normal;
+}
+
+/* externally declared styles are the least specific */
+header {
+    margin:20px;
+    padding:20px;
+    border:1px solid;
+
+    background-color:lightgray;
+}
+
+/* base tag is the least specific */
+main {
+    margin:20px;
+    padding:20px;
+    border:1px solid;
+
+    background-color:#d76179;
+}
+
+/* classes are more specific than the base tag, but less specific than an id */
+.class {
+    background-color:#88babc;
+}
+
+/* id is the most specific */
+#id {
+    background-color:lightgoldenrodyellow;
+}
+
+footer {
+    margin:20px;
+    padding:20px;
+    border:1px solid;
+
+    background-color:#b9a7dc;
+}
+
+/* styles lower in the css document are more specific than styles declared above */
+footer {
+    background-color:#ed9e90;
+}

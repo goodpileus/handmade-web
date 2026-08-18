@@ -1,0 +1,42 @@
+.block {
+    background-color:#87a9e8;
+    margin:10px;
+    padding:10px;
+}
+
+.inline {
+    background-color:#e0daa8;
+    /* width, height, padding, and margin have no effect on inline elements by default */
+}
+
+.inline-block {
+    background-color:#a1c1a1;
+    display:inline-block;
+    width:100px;
+    height:100px;
+    margin:50px;
+    padding:20px;
+    /* inline-block is a hybrid display form that allows our elements to nest alongside one another, while also being able to modify the width, height, margin, and padding */
+}
+
+.content-box {
+    background-color:#a6d0c2;
+    width:200px;
+    height:200px;
+    /* by default, width and height define the size of the content box rather than the entire element */
+    padding:50px;
+    border:10px solid #5d8871;
+    margin:50px 40px 30px 20px;
+}
+
+.border-box {
+    background-color:#a6afd0;
+    width:200px;
+    height:200px;
+    /* by default, width and height define the size of the content box rather than the entire element */
+    padding:50px;
+    border:10px solid #695d88;
+    margin:50px 40px 30px 20px;
+
+    box-sizing:border-box;
+}
