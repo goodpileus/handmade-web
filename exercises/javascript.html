@@ -36,13 +36,13 @@
     More on functions at <a href="https://www.w3schools.com/js/js_functions.asp">w3schools</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">mdn docs</a>.</p>
 
     <h3><em>Variables</em></h3>
-    <p>Variables, written as ‘var’, ‘let’, or ‘const’, are “containers for storing data.” In this example we’ll be using a variable to create a shorthand way of referencing a longer string of text (in this case a ‘method’) that will be used to select an element in our HTML.
+    <p>Variables, written as <kbd>var</kbd>, <kbd>let</kbd>, or <kbd>const</kbd>, are “containers for storing data.” In this example we’ll be using a variable to create a shorthand way of referencing a longer string of text (in this case a ‘method’) that will be used to select an element in our HTML.
     <br>
     More on variables at <a href="https://www.w3schools.com/js/js_variables.asp">w3schools</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var">mdn docs</a>.
     </p>
 
     <h3><em>Events</em></h3>
-    <p>An event is something that “the browser does, or something a user does.” Events are happening all the time in the background as the user interacts with the webpage and we can use javascript to react to those events. In this example, we’ll be using the ‘onclick’ event to trigger our function. As the name suggests, this event is triggered when the user clicks on a specified element.
+    <p>An event is something that “the browser does, or something a user does.” Events are happening all the time in the background as the user interacts with the webpage and we can use javascript to react to those events. In this example, we’ll be using the <kbd>onclick</kbd> event to trigger our function. As the name suggests, this event is triggered when the user clicks on a specified element.
     <br>
     More on events at <a href="https://www.w3schools.com/js/js_events.asp">w3schools</a>.
     </p>
@@ -58,31 +58,31 @@ function change() {
 </script>
 </xmp>
 
-    <p>On its own, this function won’t do anything until we determine how we want to execute it. To execute it, let’s create a button with an onclick event listener applied to it. This we can place anywhere within our body element:</p>
+    <p>On its own, this function won’t do anything until we determine how we want to execute it. To execute it, let’s create a button with an <kbd>onclick</kbd> event listener applied to it. This we can place anywhere within our body element:</p>
 
 <xmp><button onclick="">Click me...</button>
 </xmp>
 
     <p>Keep in mind: the onclick attribute can be used on any kind of HTML element, it does not need to be a button.</p>
 
-    <p>Now, let’s add the ‘change()’ function name to the onclick attribute. Make sure to include the parentheses!</p>
+    <p>Now, let’s add the <kbd>change()</kbd> function name to the onclick attribute. Make sure to include the parentheses!</p>
 
 <xmp><button onclick="change()">Click me...</button>
 </xmp>
 
-    <p>This should be all we need to get our javascript working. However, for the time being, we won’t see anything happen on our page when we click on the button. To confirm it’s working, let’s open our browser developer tools (right click + inspect) and navigate to the “console” tab. The console is the dedicated javascript and error log for our browser. Anytime we’re writing or debugging javascript, it’s a good idea to have the console window open to make sure things are working as intended.</p>
+    <p>This should be all we need to get our <kbd>change()</kbd> function working. However, for the time being, we won’t see anything happen on our page when we click on the button. To confirm it’s working, let’s open our browser developer tools (right click + inspect) and navigate to the “console” tab. The console is the dedicated javascript and error log for our browser. Anytime we’re writing or debugging javascript, it’s a good idea to have the console window open to make sure things are working as intended.</p>
 
     <p>In our function is a single line:</p>
 
 <xmp>console.log('it works!');</xmp> 
 
-<p>This line will send whatever text is within its parentheses to the browser’s console when it is executed. So, if you click on your button and ‘it works!’ appears in your console then your javascript is working as intended! </p>
+<p>This line will send whatever text is within its parentheses to the browser’s console when it is executed. So, if you click on your button and ‘it works!’ appears in your console then your function is working as intended! </p>
 
-<p>Now that we know it works, let’s do something more interesting with our function. Let’s add this line to our script, underneath the console.log() line:</p>
+<p>Now that we know it works, let’s do something more interesting with our function. Let’s add this line to our script, underneath the <kbd>console.log()</kbd> line:</p>
 
 <xmp>document.querySelector(".CLASS").classList.toggle("NEW-CLASS");</xmp>
 
-<p>There’s a lot going on in this line, but, essentially, it will toggle a class on and off on the specified element when executed. We specify the element we want to target with querySelector() and we designate the class we want to toggle with classList.toggle().</p>
+<p>There’s a lot going on in this line, but, essentially, it will toggle a class on and off on the specified element when executed. We specify the element we want to target with <kbd>querySelector()</kbd> and we designate the class we want to toggle with <kbd>classList.toggle()</kbd>.</p>
 
 <p>Pay close attention to the casing of the letters! This form of notation is called camelCase and it’s crucial to follow exactly, otherwise our functions won’t work properly.</p>
 
@@ -93,13 +93,13 @@ function change() {
 </div>
 </xmp>
 
-<p>Let’s update our javascript toggle line with the class of our div:</p>
+<p>Let’s update our javascript toggle line with the class of the div we just created:</p>
 <xmp>document.querySelector(".menu").classList.toggle("NEW-CLASS");</xmp>
 
 <p>Next, let’s create a name for the class that we want to toggle on the element when the button is clicked:</p>
 <xmp>document.querySelector(".menu").classList.toggle("active");</xmp>
 
-<p>And finally, let’s define the .active class in our CSS:</p>
+<p>And finally, let’s define the <kbd>.active</kbd> class in our CSS:</p>
 <xmp>.active {
   background: lightblue;
   font-size: 150%;
